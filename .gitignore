@@ -1,2 +1,4 @@
 MIA-104_Machine_Learning/EF_01/dataset/Export_Spectra.csv
 MIA-104_Machine_Learning/EF_01/dataset/Export_Time.csv
+MIA-104_Machine_Learning/EF_01/svm*
+MIA-104_Machine_Learning/EF_01/nasa_bearing_dataset/*
