@@ -1,0 +1,199 @@
+
+
+(myenv) PS C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7> python train.py --data data/data.yaml --cfg cfg/training/yolov7.yaml --weights 'yolov7.pt' --batch-size 16
+YOLOR  2024-10-5 torch 2.4.1+cu118 CUDA:0 (NVIDIA GeForce RTX 3060 Laptop GPU, 6143.5MB)
+
+Namespace(weights='yolov7.pt', cfg='cfg/training/yolov7.yaml', data='data/data.yaml', hyp='data/hyp.scratch.p5.yaml', epochs=300, batch_size=16, img_size=[640, 640], rect=False, resume=False, nosave=False, notest=False, noautoanchor=False, evolve=False, bucket='', cache_images=False, image_weights=False, device='', multi_scale=False, single_cls=False, adam=False, sync_bn=False, local_rank=-1, workers=8, project='runs/train', entity=None, name='exp', exist_ok=False, quad=False, linear_lr=False, label_smoothing=0.0, upload_dataset=False, bbox_interval=-1, save_period=-1, artifact_alias='latest', freeze=[0], v5_metric=False, world_size=1, global_rank=-1, save_dir='runs\\train\\exp5', total_batch_size=16)
+tensorboard: Start with 'tensorboard --logdir runs/train', view at http://localhost:6006/
+hyperparameters: lr0=0.01, lrf=0.1, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=0.05, cls=0.3, cls_pw=1.0, obj=0.7, obj_pw=1.0, iou_t=0.2, anchor_t=4.0, fl_gamma=0.0, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.2, scale=0.9, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.15, copy_paste=0.0, paste_in=0.15, loss_ota=1
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:71: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  run_id = torch.load(weights, map_location=device).get('wandb_id') if weights.endswith('.pt') and os.path.isfile(weights) else None
+wandb: Install Weights & Biases for YOLOR logging with 'pip install wandb' (recommended)
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:87: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  ckpt = torch.load(weights, map_location=device)  # load checkpoint
+Overriding model.yaml nc=80 with nc=2
+
+                 from  n    params  module                                  arguments
+  0                -1  1       928  models.common.Conv                      [3, 32, 3, 1]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  1      8320  models.common.Conv                      [128, 64, 1, 1]
+  5                -2  1      8320  models.common.Conv                      [128, 64, 1, 1]
+  6                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+  7                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+  8                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+  9                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+ 10  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]
+ 11                -1  1     66048  models.common.Conv                      [256, 256, 1, 1]
+ 12                -1  1         0  models.common.MP                        []
+ 13                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 14                -3  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 16          [-1, -3]  1         0  models.common.Concat                    [1]
+ 17                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 18                -2  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 19                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 20                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 21                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 22                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 23  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]
+ 24                -1  1    263168  models.common.Conv                      [512, 512, 1, 1]
+ 25                -1  1         0  models.common.MP                        []
+ 26                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 27                -3  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 28                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 29          [-1, -3]  1         0  models.common.Concat                    [1]
+ 30                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 31                -2  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 32                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 33                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 34                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 35                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 36  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]
+ 37                -1  1   1050624  models.common.Conv                      [1024, 1024, 1, 1]
+ 38                -1  1         0  models.common.MP                        []
+ 39                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1]
+ 40                -3  1    525312  models.common.Conv                      [1024, 512, 1, 1]
+ 41                -1  1   2360320  models.common.Conv                      [512, 512, 3, 2]
+ 42          [-1, -3]  1         0  models.common.Concat                    [1]
+ 43                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1]
+ 44                -2  1    262656  models.common.Conv                      [1024, 256, 1, 1]
+ 45                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 46                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 47                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 48                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 49  [-1, -3, -5, -6]  1         0  models.common.Concat                    [1]
+ 50                -1  1   1050624  models.common.Conv                      [1024, 1024, 1, 1]
+ 51                -1  1   7609344  models.common.SPPCSPC                   [1024, 512, 1]
+ 52                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 53                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 54                37  1    262656  models.common.Conv                      [1024, 256, 1, 1]
+ 55          [-1, -2]  1         0  models.common.Concat                    [1]
+ 56                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 57                -2  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 58                -1  1    295168  models.common.Conv                      [256, 128, 3, 1]
+ 59                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 60                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 61                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 62[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]
+ 63                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1]
+ 64                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 65                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 66                24  1     65792  models.common.Conv                      [512, 128, 1, 1]
+ 67          [-1, -2]  1         0  models.common.Concat                    [1]
+ 68                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 69                -2  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 70                -1  1     73856  models.common.Conv                      [128, 64, 3, 1]
+ 71                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+ 72                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+ 73                -1  1     36992  models.common.Conv                      [64, 64, 3, 1]
+ 74[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]
+ 75                -1  1     65792  models.common.Conv                      [512, 128, 1, 1]
+ 76                -1  1         0  models.common.MP                        []
+ 77                -1  1     16640  models.common.Conv                      [128, 128, 1, 1]
+ 78                -3  1     16640  models.common.Conv                      [128, 128, 1, 1]
+ 79                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 80      [-1, -3, 63]  1         0  models.common.Concat                    [1]
+ 81                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 82                -2  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 83                -1  1    295168  models.common.Conv                      [256, 128, 3, 1]
+ 84                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 85                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 86                -1  1    147712  models.common.Conv                      [128, 128, 3, 1]
+ 87[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]
+ 88                -1  1    262656  models.common.Conv                      [1024, 256, 1, 1]
+ 89                -1  1         0  models.common.MP                        []
+ 90                -1  1     66048  models.common.Conv                      [256, 256, 1, 1]
+ 91                -3  1     66048  models.common.Conv                      [256, 256, 1, 1]
+ 92                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 93      [-1, -3, 51]  1         0  models.common.Concat                    [1]
+ 94                -1  1    525312  models.common.Conv                      [1024, 512, 1, 1]
+ 95                -2  1    525312  models.common.Conv                      [1024, 512, 1, 1]
+ 96                -1  1   1180160  models.common.Conv                      [512, 256, 3, 1]
+ 97                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 98                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+ 99                -1  1    590336  models.common.Conv                      [256, 256, 3, 1]
+100[-1, -2, -3, -4, -5, -6]  1         0  models.common.Concat                    [1]
+101                -1  1   1049600  models.common.Conv                      [2048, 512, 1, 1]
+102                75  1    328704  models.common.RepConv                   [128, 256, 3, 1]
+103                88  1   1312768  models.common.RepConv                   [256, 512, 3, 1]
+104               101  1   5246976  models.common.RepConv                   [512, 1024, 3, 1]
+105   [102, 103, 104]  1     39550  models.yolo.IDetect                     [2, [[12, 16, 19, 36, 40, 28], [36, 75, 76, 55, 72, 146], [142, 110, 192, 243, 459, 401]], [256, 512, 1024]]
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\myenv\lib\site-packages\torch\functional.py:513: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\aten\src\ATen\native\TensorShape.cpp:3610.)
+Scaled weight_decay = 0.0005
+Optimizer groups: 95 .bias, 95 conv.weight, 98 other
+train: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\train\labels' images and labels... 1470 found, 0 missing, 0 empty, 0 corrupted: 100%|█|
+train: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\train\labels.cache
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=cuda)
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: Scanning 'C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels' images and labels... 138 found, 0 missing, 0 empty, 0 corrupted: 100%|█| 138
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+val: New cache created: C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\data\valid\labels.cache
+
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+autoanchor: Analyzing anchors... anchors/target = 3.20, Best Possible Recall (BPR) = 0.9829
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=cuda)
+C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:299: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(enabled=cuda)
+  scaler = amp.GradScaler(enabled=cuda)
+Image sizes 640 train, 640 test
+Using 8 dataloader workers
+Logging results to runs\train\exp5
+Starting training for 300 epochs...
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+  0%|                                                                                                                                                                                | 0/92 [00:00<?, ?it/s]C:\DriveSync\Maestria\2. Segundo ciclo\MIA-203 Redes Neuronales y Aprendizaje Profundo\yolov7\train.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=cuda):
+     0/299     1.82G   0.07897   0.01168    0.0132    0.1038        82       640: 100%|█████████████████████████████████████████████████████████████████████████████████████| 92/92 [56:17<00:00, 36.71s/it]
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:17<00:00,  3.45s/it] 
+                 all         138         257      0.0281      0.0517     0.00808     0.00145
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     1/299     12.2G    0.0553  0.009137   0.01145   0.07588        85       640: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [29:21<00:00, 19.14s/it] 
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:39<00:00,  7.89s/it] 
+                 all         138         257       0.274       0.286       0.182      0.0585
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     2/299     14.7G   0.04686  0.008852   0.01061   0.06632        70       640: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 92/92 [34:17<00:00, 22.36s/it] 
+               Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:34<00:00,  7.00s/it] 
+                 all         138         257       0.448        0.56       0.457       0.146
+
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+     3/299     14.7G   0.03907  0.008039   0.00923   0.05633       102       640:  99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌ | 91/92 [44:46<00:21, 21.62s/it]
