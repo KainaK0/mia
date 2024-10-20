@@ -6,3 +6,7 @@ MIA-203_redes_neuronales/Trabajo01/Peru-Plate-Numbers-3/*
 MIA-203_redes_neuronales/trabajo01/datasets/*
 MIA-203_redes_neuronales/trabajo01/resultados/*
 MIA-203_redes_neuronales/trabajo01/runs/*
+MIA-203_redes_neuronales/opt/image-captioning-pytorch/models/*
+MIA-203_redes_neuronales/opt/image-captioning-pytorch/opt/*
+MIA-203_redes_neuronales/opt/image-captioning-pytorch/icpy/*
+MIA-203_redes_neuronales/opt/image-captioning-pytorch/.git/*
