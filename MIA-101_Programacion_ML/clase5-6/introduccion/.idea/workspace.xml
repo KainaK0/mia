@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="introduccion" targetName="programa1" />
+      <config projectName="introduccion" targetName="programa2" />
+      <config projectName="introduccion" targetName="introduccion" />
+      <config projectName="introduccion" targetName="programa3" />
+      <config projectName="introduccion" targetName="programa4" />
+      <config projectName="introduccion" targetName="programa5" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a005a8fe-d06f-4fa6-90a0-1a9efdb116b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/notebooks/Tutorial_1_Python - FIIS.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/notebooks/codigo_diapos.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/notebooks/ejercicio_calentamiento_final.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/notebooks/ejercicio_calentamiento_inicial.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/aliasing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/aliasing/aliasing1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/aliasing/cloning.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/aliasing/mutating.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/cadenas/Ejemplo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/cadenas/Ejemplo2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/cadenas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/cadenas/ejemplo3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/cadenas/ejemplo4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/1_obtener_nota.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/2_diccionario_vacio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/3_operaciones_diccionario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/4_operaciones_diccionario.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/5_contar_palabras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/6_todo_palabras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/7_fibonnaci_mejorado.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/diccionario/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/aserciones.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/exception1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/exception2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/exception3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/exception4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/exception5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/exceptions/exception6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/funcion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/funcion/funciones0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/funcion/funciones1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/funcion/funciones2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/funcion/funciones3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/funcion/funciones4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/generico/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/generico/generico.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/adicional.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/intro01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/intro02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/intro03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/intro04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/introduccion/intro05.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/1_iterativo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/2_multiplicacion_Recursiva.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/3_factorial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/4_factorial_iterativo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/4_torres_hanoi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/6_fibonacci.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/7_palindromo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/MultiplicacionRecursiva2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/recursividad/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/lista7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/tuplas1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/tuplas2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/tuplas3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase1-2/src/diapos/tuplas_lista_aliasing/tuples_lists.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/notebooks/codigo_diapos_sesion3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/aritmetica.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/cliente2Aritmetica.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/clienteAritmetica.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/clientePaquete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/clientePaquete2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto00.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto000.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/general/objeto7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/igualdad/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/igualdad/igualdad.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/igualdad/igualdad2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/matematicatest/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/matematicatest/aritmeticap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/matematicatest/geometriap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/de_diapos/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/de_diapos/objeto0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/de_diapos/objeto1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/de_diapos/objeto2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/de_diapos/objeto4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/diagramas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/diagramas/objeto5.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/diagramas/objeto5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/diagramas/objeto5Diagram.uml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/objeto7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/objetos_clases_herencia/static.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/polimorfismo/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/objetos/src/objetos/polimorfismo/polimorfismo1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/IMG01_SimpleColorSegmentatio.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/codigo_diapos_sesion4_1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/codigo_diapos_sesion4_2.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/codigo_diapos_sesion4_3.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/codigo_diapos_sesion4_4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/data.npz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/draft/Tutorial_2_Python_for_Data_Analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/ordenar/Tutorial_2_Python_for_Data_Analysis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/ordenar/codigo_diapos_sesion4.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/ordenar/data.npz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/notebooks/test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/TransformacionesBasadasEnpunto/11_aritmeticas_add_sustract.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/TransformacionesBasadasEnpunto/12_aritmeticas_invertir.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/TransformacionesBasadasEnpunto/13_aritmeticas_bajar_contraste.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/TransformacionesBasadasEnpunto/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/img/cepillo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/img/imagenRGB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/img/ninos.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/img/ninosgris.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/mostrarImagenes/1_lecturaImagenes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/mostrarImagenes/2_2_descomponer_img_canal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/mostrarImagenes/2_descomponer_imagen_canales.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/mostrarImagenes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/codigoInicio/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/numpypry/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/numpypry/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/numpypry/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/numpypry/vectorizacion/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../clase3-4/pycientifico/src/numpypry/vectorizacion/vectorizacion1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/clase5-6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/ejercicio0.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/ejercicio1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/ejercicio2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/ejercicio3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/ejercicio6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/ejercicio7.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../arreglos/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod10_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod10_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod2_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod2_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod3_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod3_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod4_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod4_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod5_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod5_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod7.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod9_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosDiapos/Ejemplod9_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosGenericos/Ejemplo01.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/ejemplosGenericos/Ejemplo1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cadenas/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejecucion/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ejecucion/main2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/ambito/Ejemplo1A.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/ambito/Ejemplo2A.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/estructuras/estructura1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/funciones/ejemplo0f.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/funciones/ejemplo1f.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/funciones/ejemplo2f.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/funciones/ejemplo3f.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/funciones/ejemplo4f.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/macros/macros1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/macros/macros2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/macros/macros3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/recursividad/ejemplo1r.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/valorReferencia/valorRef1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/valorReferencia/valorRef2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/valorReferencia/valorRef3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../funciones/valorReferencia/valorRef4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/estructuraControl/ejemploContinue.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/estructuraControl/ejemploFor.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/estructuraControl/ejemploIf.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/problemas/Ejemplo2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/problemas/Ejemplo4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/problemas/Ejemplo6.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/problemas/ejemplo1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/problemas/ejemplo3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../instruccionesControl/problemas/ejemplo5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programa1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programa2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programa3.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programa4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programa5.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registros/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registros/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registros/Ejemploc1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registros/Ejemplod1_1.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registros/Ejemplod1_2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../registros/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminario/seminario1/notebook/SeminarioMIA-inicio-bk.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminario/seminario1/notebook/SeminarioMIA-inicio.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminario/seminario1/notebook/SeminarioMIA.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../mtto_spare-parts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../mttoapp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../mttoappBackend" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../prueba03" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/AgenteAStar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/MapGraph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/compress_video2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/compress_video3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/compress_videos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/dfs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/dfs_imag.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/dfs_imag.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/grafo_con_identificadores_fondo_blanco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/archive/tree_folders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/aristas.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/c_code.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/c_code.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/1c440617029f700ec41d70e42cf2635958dd40c6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/2531ae050dacbd19c3fe458bf6a7a6d436c7d4a6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/37b6ec77c72fe6a7c40efaf3dca84fe998ea1d70.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/3daf12f39aba35d333bd93d7057e915ad43773dd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/46ec4f4de140cf94703483def3acdb5c0f3919c5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/4748edfc7e4c95f5e6ed8acd7a589e337898991a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/4d1c51915fc097075d5cf9fb91581450d502cb58.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/5a6fa3db00ab7df05ec34f0b7c5080d581360c88.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/5e6d131ef3fc34b0aa8a6e77a969aa56f80e5494.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/73687c69171dad9a15685dc66fb55d6cdf04be22.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/802a76c799eb2525e6b55229cef10c05e04b266c.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/80446df9f2283a9784e3f725b900e419db798acd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/83068bb0eb01619ca79becf9faa7f37bea83721b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/91d722e53fba7f803b73bdbf7fdc4ebebee7d25b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/9213ace87d542e40ddac0ec3a6bae49cb8963a85.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/929bb2751b8b384dbefa4e04dd66cf396a663fe0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/94bf77983e0f30e7e4b0b0cf8b4a8bc62f7a59e1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/97f7d33b55e891280f1e1fc48d3c2b619584eeac.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/a6207dd4aa98b864bc5728c9b764f1416b4de5c2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/b6a2202c0b700f1754539c59fba43d35c67d9ef3.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/bb24467b04ebd77dc224e101d9c2606ce5812997.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/bbd2af4487477f2fcaca7b49b5af8bcd7f1eb06a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/bc2b4759c1745418f28fb4f78fc04996fc201850.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/c24d3a7c05999dcf9dd44ebd7f3960771ae7d9f8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/ce95b7346b4f8d0b1d5ad4e8bdaa508d6868a7f8.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/d2c7842bba80122b317b08ccac55b4c820ef924a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/dc606a533d24e6d8a60eee7fc70316db6413bcf0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/eec52e2fcc36568dcb05f88e6529a8538facf4c6.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/cache/feb09ac8a00843583da76f0da76f49cb954d316f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/grafo_con_identificadores_fondo_blanco.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/identificadores_nodos.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/matriz_adyacencia.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/nodos.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/project_01.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../video_convert/pruebas.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="1.3" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2i4lDEsubwpm3gGK6B36qspfuws" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Application.introduccion.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.programa1.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.programa2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kainak0/Documents/gitProjects/MIA-101-2024-I-A-main/clase5-6/introduccion&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="CMake Application.programa1">
+    <configuration name="introduccion" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="introduccion" TARGET_NAME="introduccion" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="introduccion" RUN_TARGET_NAME="introduccion">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="programa1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="introduccion" TARGET_NAME="programa1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="introduccion" RUN_TARGET_NAME="programa1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="programa2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="introduccion" TARGET_NAME="programa2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="introduccion" RUN_TARGET_NAME="programa2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="programa3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="introduccion" TARGET_NAME="programa3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="introduccion" RUN_TARGET_NAME="programa3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="programa4" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="introduccion" TARGET_NAME="programa4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="introduccion" RUN_TARGET_NAME="programa4">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="programa5" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="introduccion" TARGET_NAME="programa5" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="introduccion" RUN_TARGET_NAME="programa5">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.introduccion" />
+      <item itemvalue="CMake Application.programa1" />
+      <item itemvalue="CMake Application.programa2" />
+      <item itemvalue="CMake Application.programa3" />
+      <item itemvalue="CMake Application.programa4" />
+      <item itemvalue="CMake Application.programa5" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a005a8fe-d06f-4fa6-90a0-1a9efdb116b5" name="Changes" comment="" />
+      <created>1718757608912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718757608912</updated>
+      <workItem from="1718757609936" duration="2433000" />
+      <workItem from="1720883848753" duration="2503000" />
+      <workItem from="1721915640395" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>
