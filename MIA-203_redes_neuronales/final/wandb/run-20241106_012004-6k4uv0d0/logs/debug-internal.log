@@ -1,0 +1,19 @@
+{"time":"2024-11-06T01:20:04.6154135-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T01:20:04.6154135-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_012004-6k4uv0d0\\logs\\debug-core.log"}
+{"time":"2024-11-06T01:20:04.8473504-05:00","level":"INFO","msg":"created new stream","id":"6k4uv0d0"}
+{"time":"2024-11-06T01:20:04.8473504-05:00","level":"INFO","msg":"stream: started","id":"6k4uv0d0"}
+{"time":"2024-11-06T01:20:04.8473504-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"6k4uv0d0"}}
+{"time":"2024-11-06T01:20:04.8473504-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"6k4uv0d0"}}
+{"time":"2024-11-06T01:20:04.8490326-05:00","level":"INFO","msg":"sender: started","stream_id":"6k4uv0d0"}
+{"time":"2024-11-06T01:20:05.3056912-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T01:20:13.3980951-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T01:20:17.5003545-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T01:20:17.5118297-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-06T01:20:17.5118297-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-06T01:20:18.5126148-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.7591457},{"desc":"uploading output.log","runtime_seconds":0.497546,"progress":"147B/147B"},{"desc":"uploading config.yaml","runtime_seconds":0.497546,"progress":"1.4KB/1.4KB"}],"total_operations":3}}
+{"time":"2024-11-06T01:20:21.383677-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-06T01:20:22.8005699-05:00","level":"INFO","msg":"stream: closing","id":"6k4uv0d0"}
+{"time":"2024-11-06T01:20:22.8005699-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"6k4uv0d0"}}
+{"time":"2024-11-06T01:20:22.8005699-05:00","level":"INFO","msg":"sender: closed","stream_id":"6k4uv0d0"}
+{"time":"2024-11-06T01:20:22.8005699-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"6k4uv0d0"}}
+{"time":"2024-11-06T01:20:22.8005699-05:00","level":"INFO","msg":"stream: closed","id":"6k4uv0d0"}

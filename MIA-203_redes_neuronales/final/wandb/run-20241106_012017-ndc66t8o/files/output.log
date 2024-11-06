@@ -1,0 +1,50 @@
+Using device: cuda
+Preloading model spanish-to-quechua_weights_qu_es\tmodel_qu_es25.pt
+Processing Epoch 26: 100%|██████████| 1670/1670 [06:43<00:00,  4.14it/s, loss=2.100]
+--------------------------------------------------------------------------------
+    SOURCE: Llumpay onqoyninmanta sanoyachispanmi ‘ aychanta rikurichirqa mozo kasqanpi hinataraq ’.
+    TARGET: Entre otras cosas, hizo que desapareciera su terrible enfermedad y que su carne se hiciera “más fresca que en la juventud ”.
+PREDICTED GREEDY: Entre otras cosas , hizo que desapareciera su terrible enfermedad y que su carne se hiciera “ más fresca que en la juventud ”.
+PREDICTED BEAM:   Entre otras cosas , hizo que desapareciera su terrible enfermedad y que su carne se hiciera “ más fresca que en la juventud ”. ¿ Qué significa ? ( Mire la nota ).
+--------------------------------------------------------------------------------
+    SOURCE: Arí, kunanmi kachkan tukuy nacionmanta humillakuqkuna, paykunam hanaq pachapaq otaq kay pachapaq suyakuyniyoq kaspankupas Jehová Diospa sutinpi amparakunku.
+    TARGET: En efecto, en la actualidad hay mansos de todas las naciones que, independientemente de que su esperanza sea celestial o terrenal, se refugian en el nombre de Jehová.
+PREDICTED GREEDY: En efecto , hoy es la verdadera paz de los demás , donde en realidad han sido ungidos o sea , sin importar el número de la resurrección que haya en el nombre de Jehová .
+PREDICTED BEAM:   Así es , en la actualidad hay gente de todas las naciones que , independientemente de que su esperanza sea celestial o terrenal , se refugian en el nombre de Jehová .
+--------------------------------------------------------------------------------
+Processing Epoch 27: 100%|██████████| 1670/1670 [07:42<00:00,  3.61it/s, loss=2.053]  
+--------------------------------------------------------------------------------
+    SOURCE: Iskay watamantañataqmi aparuwarqaku Zaragoza llaqtapi monjakunapa hatun wasinman, chaypiqa yuyaqkunatam uywaqku.
+    TARGET: Dos años después nos enviaron a un convento muy grande en Zaragoza, donde cuidaban a gente mayor.
+PREDICTED GREEDY: Dos años después nos enviaron a un convento muy grande en Zaragoza , donde cuidaban a gente mayor .
+PREDICTED BEAM:   Dos años más tarde nos enviaron a un convento muy grande en Zaragoza , donde cuidaban a gente con . * ( Lea la nota .)
+--------------------------------------------------------------------------------
+    SOURCE: TUVAM tarikun Rusiapi, Siberia hinaspa Mongolia nacionpa hichpallanpi.
+    TARGET: LA REPÚBLICA rusa de Tuva se encuentra en el extremo sur de Siberia, en la frontera con Mongolia.
+PREDICTED GREEDY: LA REPÚBLICA rusa de Tuva se encuentra en el extremo sur de Siberia , en la frontera con Mongolia .
+PREDICTED BEAM:   LA REPÚBLICA rusa de Tuva se encuentra en el extremo sur de Siberia , en la frontera con Mongolia de este sistema de navegación y la frontera entre los sur de Siberia , la frontera con Mongolia . * ( Versión del universo ).
+--------------------------------------------------------------------------------
+Processing Epoch 28: 100%|██████████| 1670/1670 [06:44<00:00,  4.12it/s, loss=2.036]
+--------------------------------------------------------------------------------
+    SOURCE: Paykunaqa manamá iñiqmasinkuna imatapas qoykunankutaqa suyaqkuchu, chaywanpas iñiqmasinkunaqa yanapaqkum.
+    TARGET: No esperaban recibir nada de los hermanos, pero muchas veces estos los ayudaban.
+PREDICTED GREEDY: No los hicieron caso de otros , pero los hermanos de otros hermanos no los ayudaban .
+PREDICTED BEAM:   No esperaban recibir nada de los hermanos , pero los hermanos de otros países los ayudaban mutuamente a ofrecer algún tipo de ayuda , incluso cuando los otros los hermanos lo estaban haciendo . ¿ Cómo lo han hecho ?
+--------------------------------------------------------------------------------
+    SOURCE: Chayna qellqasqa kasqanmi allinta yanapanman cheqaptapuni imanasqa iskayrayasqanmanta musyakunanpaq hinaspam kikin allichanman.
+    TARGET: Verlos escritos puede ayudarles a darse cuenta de la verdadera causa de sus dudas y a encontrar soluciones.
+PREDICTED GREEDY: Sin duda , puede ayudarlos a entender por qué se hace sabio y se le concedió el nombre de alguien que lo habla .
+PREDICTED BEAM:   Sin duda , este método puede ayudarlo a entender por qué se habla Dios de este asunto y se pone a prueba , tal y como se lo habla el profeta de Dios a quien se lo habla .
+--------------------------------------------------------------------------------
+Processing Epoch 29: 100%|██████████| 1670/1670 [06:41<00:00,  4.16it/s, loss=2.336]
+--------------------------------------------------------------------------------
+    SOURCE: Ichaqa, ¿imanasqam mana iskayrayawaqchu bibliaqa Diospa palabran kasqanmanta hinaspa mana cuentokunalla kasqanmanta?.
+    TARGET: Pero ¿cómo puede usted estar seguro de que este libro es de verdad “la palabra de Dios ” y no una recopilación de mitos y leyendas?.
+PREDICTED GREEDY: Pero ¿ por qué podría pensar que la Biblia dice que está basada en la Biblia y que no puede ?.
+PREDICTED BEAM:   Ahora bien , ¿ por qué no puedes pensar que la Biblia dice que la Biblia viene de Dios y que no le puede ?. ¿ Por qué puede llegar a ser demasiado inteligente ?
+--------------------------------------------------------------------------------
+    SOURCE: 6: 6 - 9). Jehova Diospa munayninqa haykapipas hina kaqllam, payqa munanmi ñawpaq tiempopi Israel runakuna hina ruwananchikta.
+    TARGET: Como Jehová nunca cambia su propósito, hoy él espera que sus siervos hagamos lo mismo que los israelitas.
+PREDICTED GREEDY: Como Jehová nunca cambia su propósito , él espera que sus siervos hagamos lo mismo .
+PREDICTED BEAM:   Como Jehová nunca cambia su propósito , él siempre espera que los israelitas hagamos lo mismo que a sus siervos de la antigüedad .
+--------------------------------------------------------------------------------

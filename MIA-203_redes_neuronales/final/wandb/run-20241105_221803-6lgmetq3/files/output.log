@@ -1,0 +1,315 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 1670/1670 [06:46<00:00,  4.11it/s, loss=5.375]
+--------------------------------------------------------------------------------
+    SOURCE: Jehova Diospa unanchasqankunapi yuyaymanaspam, musyakunchik anchata kuyawasqanchikmanta.
+    TARGET: Cuando vemos la creación, nos damos cuenta de que Jehová nos ama muchísimo.
+PREDICTED GREEDY: Jehová nos da a Jehová y nos da a Jehová .
+PREDICTED BEAM:   Jehová nos da la Biblia , y Jehová nos da a Jehová . org . org . org . org . org . org . org . org . org . org . org . org . org ”. org ”. org ”. org ”. org ”. org ” org ” org ” org ”. org ” org ” org ”. org ”. org ” org ”. org org org org org org org org org org org org org org ” org ” org org org org org org org org org org org org org org org org org ” org org org org org org org org org org org org org org org org org org org ” org ” org ” org org org org org org org org org org org org org org org org org org org ” org ” org org org org org org org ” org ” org ” org ” org ” org ” org org org org org org org ” org ” org ” org ”. org org org org org org org org org org org ” org ” org ” org ”.
+--------------------------------------------------------------------------------
+    SOURCE: Seguromá kachkanchik enteron pachapi runakunata rimayninkupi predicaptinchik uyariwananchikmanta.
+    TARGET: Estamos seguros de que muchas más personas de todo el mundo responderán al mensaje del Reino cuando lo escuchen en su propio idioma.
+PREDICTED GREEDY: En el mundo , los cristianos de la Biblia se ha sido un mundo .
+PREDICTED BEAM:   Por ejemplo , la Biblia ha hecho la Biblia , y la Biblia se ha dado a la Biblia . ” org . org . org . org . org . org . org . org . org . org . ” org . org . org ” org ” org ” org . org . org ” org . org . org . org . org . org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org ” org ” org org org org org org org org org org org org org org org org org org org org org ” org org org org org org org org org org org ” org ” org ” org ” org org org org org org org org org ” org . org . org ” org org org org org org org org org ” org ” org ” org org
+--------------------------------------------------------------------------------
+Processing Epoch 01: 100%|██████████| 1670/1670 [06:45<00:00,  4.12it/s, loss=4.819]
+--------------------------------------------------------------------------------
+    SOURCE: [10 kaq paginapi dibujo]
+    TARGET: [Ilustración de la página 10]
+PREDICTED GREEDY: [ Ilustración de la página 7 ]
+PREDICTED BEAM:   [ Ilustración de la página 7 ]
+--------------------------------------------------------------------------------
+    SOURCE: Israel naciontam wiñaypaq gobiernanqa, gobiernonqa manam tukunqachu ”, nispa.
+    TARGET: En efecto, meses antes de su nacimiento, el ángel Gabriel le dijo a María: “Jehová Dios le dará el trono de David su padre, y reinará sobre la casa de Jacob para siempre, y de su reino no habrá fin ”.
+PREDICTED GREEDY: El Dios que se ha sido “ el reino de Dios ”.
+PREDICTED BEAM:   El hombre de la muerte de Dios es la tierra , y la muerte de Dios . ” ( léase Mateo 6 : 6 , 6 , 6 , 6 , 6 , 6 , 6 , 6 , 6 - 6 , 6 , 6 , 6 - 6 - 6 - 6 - 6 - 6 , 6 , 6 ).
+--------------------------------------------------------------------------------
+Processing Epoch 02: 100%|██████████| 1670/1670 [06:38<00:00,  4.19it/s, loss=4.533]
+--------------------------------------------------------------------------------
+    SOURCE: Chayna kaspanchikmi mana piensasunchu ‘ llumpay yachayniyoq ’ kasqanchiktaqa.
+    TARGET: Pero esa humildad evitará que nos hagamos “discretos a [nuestros] propios ojos ”.
+PREDICTED GREEDY: Si queremos que “ no es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es el que es de Dios es el “ es el que es el que es el que es el que es el que es el Dios es el Dios es el que es de la palabra ”.
+PREDICTED BEAM:   Si somos imperfectos , no debemos ser leales a Dios , sino que “ no nos ” . ¿ Por qué no es decir , no es decir , es decir , no es decir , es decir , es decir , no decir , no decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , no decir , no decir , es decir , es decir , es decir , no decir , no decir , es decir , es decir , es decir , es decir , no decir , es decir , no decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , es decir , no decir , es decir , no decir , es decir , no decir , no decir , es decir , no decir , es decir , es decir , no decir , no decir , no decir , no decir , no decir , no decir ,
+--------------------------------------------------------------------------------
+    SOURCE: Kay pachapi gobiernaqkunaqa tukuy imayoqmi kanku runamasinku serviptinku, Jesusmi ichaqa runakunarayku wañurqa.
+    TARGET: A diferencia de los gobernantes de este mundo, que suelen disfrutar de muchos privilegios a costa de los ciudadanos, Jesús se sacrificó por toda la humanidad.
+PREDICTED GREEDY: En el cielo , Jesús no se ha dado a la gente de la Tierra , sino que se había sido fiel .
+PREDICTED BEAM:   En la actualidad , la mayoría de los seres humanos no se por el cielo , sino que Jesús no se ha dado a la humanidad .
+--------------------------------------------------------------------------------
+Processing Epoch 03: 100%|██████████| 1670/1670 [06:36<00:00,  4.22it/s, loss=4.469]
+--------------------------------------------------------------------------------
+    SOURCE: Willakuntaqmi manchapakuq Julien sutiyoq mozota imayna yanapasqanmanta, ninmi: “Payqa mana kaqpaq hina hapikusqanraykum, wakinpiqa hukkuna allinpaq hapinankuta munaspan imatapas llutanpi hina ruwaq.
+    TARGET: Entonces comenta lo siguiente sobre Julien, un joven más bien tímido: “Por su falta de seguridad en sí mismo, a veces quería hacerse notar y se comportaba de una manera poco natural.
+PREDICTED GREEDY: Un hermano que escribió : “ En vez de que no se , no se , sino que no se .
+PREDICTED BEAM:   Por ejemplo , una hermana llamada dice : “ En vez de tomar decisiones que no se , y a veces se les ha dado cuenta de lo que es bueno que no es malo . ” ¿ Por qué ? Por qué lo que lo que no es decir , no es lo que no es lo que no es que no es lo que no es decir , no es que no es fácil lo que no es fácil que es que no es decir , es decir , es fácil decir , lo que no es fácil decir , lo que es decir , lo que es que es que no es decir , lo que no es fácil decir , por qué lo que no es fácil decir , es decir , por qué es decir , es fácil es decir , es decir , lo que es decir , que lo que es más fácil que es fácil decir , es bueno que es más fácil decir , es más fácil que los demás decir , es bueno que los demás decir , que los demás que los demás decir , que
+--------------------------------------------------------------------------------
+    SOURCE: Manam ‘ chuya espirituwan Carneropa noviallanchu nin: Hamuy nispaqa ’, aswanqa uyariqkunapas ninmi: “Hamuy ”, nispa.
+    TARGET: No solo “el espíritu y la novia siguen diciendo: ‘ ¡Ven! ’ ”, sino que quienes los oyen también dicen:“ ¡Ven! ”.
+PREDICTED GREEDY: No hay duda de que “ el espíritu de Dios ” nos dará “ la palabra de Dios ” y “ el espíritu de Dios ”.
+PREDICTED BEAM:   No olvidemos que “ el espíritu de Dios ” se traduce “ conocimiento de la palabra y el espíritu de Dios ” y “ la palabra de Dios ” ( léase Revelación 21 : 15 ).
+--------------------------------------------------------------------------------
+Processing Epoch 04: 100%|██████████| 1670/1670 [06:35<00:00,  4.22it/s, loss=4.193]
+--------------------------------------------------------------------------------
+    SOURCE: Chay iskaynin rikchanachiypi runaqa, manaraq illachkaspanmi sirvientenkunaman qullqita saqirqa, hinaspam kamachirqa chay qullqinta mirachipunankupaq.
+    TARGET: Antes de que el hombre se vaya de viaje, les da dinero a sus esclavos y les manda a que ganen más dinero para él.
+PREDICTED GREEDY: El hombre que se quedó muy triste , y cuando su esposa se le había dado a su hijo , se le dio cuenta de que su esposa se había dado cuenta de que su esposa y su esposa .
+PREDICTED BEAM:   En ese caso , el hombre que tuvo que ir a la casa de su hermano , y su esposa se le había dado cuenta a su esposa y a su esposa , y a su esposa . ¿ Por qué lo que les había visto lo que su vida le había visto lo largo de su muerte le había visto lo largo de su vida le había hecho lo largo de su vida no lo había hecho lo había hecho a su vida lo largo hermano se había hecho ?
+--------------------------------------------------------------------------------
+    SOURCE: Diospa bendicionninmi apuyachiwanchik
+    TARGET: La bendición de Jehová nos enriquece
+PREDICTED GREEDY: La vida de Jehová
+PREDICTED BEAM:   La vida de Jehová es un Dios de amor
+--------------------------------------------------------------------------------
+Processing Epoch 05: 100%|██████████| 1670/1670 [06:39<00:00,  4.18it/s, loss=3.993]
+--------------------------------------------------------------------------------
+    SOURCE: Allin reqsinakuyninkuqa kuyakuyninkutam wiñachin hinaspapas casado vidankum allin takyasqa kanqa pantaq kaptinkupas.
+    TARGET: Y al conocerse mejor, su amor se profundiza y fortalece a pesar de las imperfecciones.
+PREDICTED GREEDY: Si lo hace , su esposa y su esposa se siente feliz , y su amor es un buen amigo .
+PREDICTED BEAM:   Para ser un buen amigo , el esposo y la esposa , la esposa , la esposa y el matrimonio .
+--------------------------------------------------------------------------------
+    SOURCE: Huñunakuspankum ancianomasinkunapa nisqankuta uyarinku hinaspa Bibliapa nisqantam qawanku iñiqmasinkunata imayna yanapanankupaq.
+    TARGET: Cuando se reúnen, escuchan las opiniones de todos y examinan las Escrituras con el objetivo de encontrar principios aplicables a las necesidades de su congregación.
+PREDICTED GREEDY: Los miembros de la congregación se de las enseñanzas de las personas , y los hermanos se sienten muy bien .
+PREDICTED BEAM:   Los miembros de la congregación se esfuerzan por ayudar a las personas a aceptar las verdades de la Palabra de Dios y les han ayudado a sus hermanos a entender lo que les enseñan a los principios bíblicos . ¿ Qué les enseña realmente ? Y en la Biblia . ¿ Qué significa ? Y y los principios bíblicos ? Y lo que les enseñan . ¿ Cómo les enseñan ? Y los principios bíblicos . ¿ Y los principios bíblicos . ¿ Qué enseña ? Y lo que se han aprendido . ¿ Qué enseña ?
+--------------------------------------------------------------------------------
+Processing Epoch 06: 100%|██████████| 1670/1670 [06:39<00:00,  4.19it/s, loss=3.922]
+--------------------------------------------------------------------------------
+    SOURCE: Yachanim Jehova Dios llakipayakuq hinaspa pampachakuq kasqanta, ichaqa kay mana allin munapayayta mana chiqnisqayraykum, yanapawananta mana saqikurqanichu.
+    TARGET: Sé que Jehová es misericordioso y nos perdona, pero me siento indigna de recibir su ayuda porque tengo este deseo malo y en el fondo de mi corazón no lo odio.
+PREDICTED GREEDY: No hay duda de que Jehová es compasivo y amoroso , pero no se hará tambalear hasta tiempo indefinido , sino que se hará más feliz para siempre .
+PREDICTED BEAM:   No hay duda de que Jehová es compasivo con los demás y sabe lo que es bueno para nosotros mismos , pues la muerte no será destruido , sino la paz y la violencia .
+--------------------------------------------------------------------------------
+    SOURCE: (GRAN BRETAÑAMANTA, DAWN.)
+    TARGET: ¿De qué maneras puedo mejorar mis habilidades de comunicación?
+PREDICTED GREEDY: ( , )
+PREDICTED BEAM:   ( de la ciudad de .)
+--------------------------------------------------------------------------------
+Processing Epoch 07: 100%|██████████| 1670/1670 [06:38<00:00,  4.19it/s, loss=4.040]
+--------------------------------------------------------------------------------
+    SOURCE: Chaymantapas cheqap cristianokunaqa manam onqoqkunata sanoyachisqankuwanchu reqsichikunku, aswanqa huk rurasqankuwanmi.
+    TARGET: Además, están convencidos de que lo que distingue a los verdaderos cristianos no son las curaciones por fe, sino algo mucho más sobresaliente.
+PREDICTED GREEDY: Además , los cristianos verdaderos no son capaces de , sino que los cristianos ungidos son sus propias manos .
+PREDICTED BEAM:   Además , los cristianos verdaderos no solo quieren , sino que los cristianos ungidos se esfuerzan por ser santos , sino por sus propios intereses por sus propios propios propios intereses . ¿ Por qué no ? ¿ Por qué es lo contrario , sino lo contrario .
+--------------------------------------------------------------------------------
+    SOURCE: Chayllaraq huñunakuyman hamuqkunatam kusikuywan chaskinku.
+    TARGET: Además, les dan la bienvenida a las personas que vienen al Salón del Reino.
+PREDICTED GREEDY: Los hermanos que sirven juntos a Dios siempre están predicando .
+PREDICTED BEAM:   Además , los miembros de la congregación se esfuerzan por ayudar a las personas a trabajar con él en la congregación cristiana . ¿ Por qué les encanta la predicación ?
+--------------------------------------------------------------------------------
+Processing Epoch 08: 100%|██████████| 1670/1670 [06:37<00:00,  4.20it/s, loss=3.438]
+--------------------------------------------------------------------------------
+    SOURCE: (1) ¿Imaynatam Jesusqa llakipayakuq kasqanta qawachirqa imayna tarikusqanwan?
+    TARGET: a) ¿Cómo demostró Jesús con sus sentimientos que era compasivo?
+PREDICTED GREEDY: a ) ¿ Cómo demostró Jesús que era compasivo con las cosas ?
+PREDICTED BEAM:   a ) ¿ Cómo demostró Jesús su compasión por las cualidades y las acciones de su Hijo ?
+--------------------------------------------------------------------------------
+    SOURCE: ¿Ima ninantaq entiendeq kayqa?
+    TARGET: ¿En qué consiste este atributo?
+PREDICTED GREEDY: ¿ Qué significa ser “ presto en cuanto a oír ”?
+PREDICTED BEAM:   ¿ Qué significa ser “ presto en cuanto a oír ”? ¿ Qué significa realmente ? ¿ Qué quiere decir ? ¿ Qué significa ? ¿ Qué significa ? 1 de qué debemos hacer ? 1 / 7
+--------------------------------------------------------------------------------
+Processing Epoch 09: 100%|██████████| 1670/1670 [06:38<00:00,  4.19it/s, loss=3.482]
+--------------------------------------------------------------------------------
+    SOURCE: ‘ Sapaq ovejakunapas ’ Jesus hinam kay Pachapi runakunapa ruwayninkupi mana chaqrukusqankurayku forastero hinalla tarikunku.
+    TARGET: Y las “otras ovejas ” de Cristo“ no son parte del mundo ”, así como él tampoco lo fue.
+PREDICTED GREEDY: Los “ otras ovejas ” han sido perseguidos por la mayoría de la gente , como las otras ovejas , han sido perseguidos por su voluntad .
+PREDICTED BEAM:   Los “ otras ovejas ” también son los miembros de la gran muchedumbre , que han sido perseguidos por causa de la religión falsa , han sido perseguidos por favor de sus seguidores . ¿ Por qué ? ¿ Por qué no ? ¿ Por qué ? ¿ Por qué ? ¿ , es así . ¿ ? ¿ Se han a los ?
+--------------------------------------------------------------------------------
+    SOURCE: Hinaptinqa, ¡allintam yachananchik hinaspa chaninchananchik paypa rurasqanta!
+    TARGET: ¡Qué importante es que entendamos bien y valoremos ese papel que él desempeña!
+PREDICTED GREEDY: ¡ Qué importante es que nos esforcemos por entender lo que Dios nos pide y nos pide !
+PREDICTED BEAM:   ¡ Qué importante es que nos esforcemos por obedecer las normas de Dios y obedecer sus mandamientos !
+--------------------------------------------------------------------------------
+Processing Epoch 10: 100%|██████████| 1670/1670 [06:36<00:00,  4.21it/s, loss=3.195]
+--------------------------------------------------------------------------------
+    SOURCE: Jesusqa yacharqam Taytanta kasukuspalla Paypa kuyakuyninpi takyanantaqa.
+    TARGET: Jesús sabía que si deseaba mantenerse cerca de su Padre, debía obedecer sus mandamientos.
+PREDICTED GREEDY: Él sabía que su Padre ama a su Padre , y por eso él lo hizo en el amor que él nos ha dado .
+PREDICTED BEAM:   Él sabía que su Padre ama a su Padre celestial , y por eso él lo hizo en el amor que nos ha hecho por nosotros .
+--------------------------------------------------------------------------------
+    SOURCE: Chaymi llumpay llakisqa tarikurqa Judas ‘ traicionaruptin ’.
+    TARGET: Por eso, tuvo que sentirse muy triste cuando uno de ellos, Judas, “se volvió traidor ”.
+PREDICTED GREEDY: Por eso se sintió tan triste cuando “ se acercó [ le ] hace sufrir ”.
+PREDICTED BEAM:   Por eso se sintió tan triste cuando Judas se sintió “ herido ” en el corazón de Judas Iscariote . ” ( Mire la nota .)
+--------------------------------------------------------------------------------
+Processing Epoch 11: 100%|██████████| 1670/1670 [06:40<00:00,  4.17it/s, loss=3.287]
+--------------------------------------------------------------------------------
+    SOURCE: Brasilmanta Robertom nin: “Warmakunaqa yachanankum Diospa contranpi mana kaptinqa wakinpiqa tanteasqanman hina imatapas ruwananpaq tayta - maman saqesqanta ”, nispa.
+    TARGET: “El adolescente debe poder ver que sus padres están dispuestos a ceder si no se viola ningún principio bíblico ”, comenta Roberto, un padre de Brasil. Obviamente, ningún padre es perfecto.
+PREDICTED GREEDY: “ La familia que se siente en la adoración de Dios no es una solución que esté a solas , pero cuando uno se siente por su cónyuge ”.
+PREDICTED BEAM:   “ Los niños que están casados no se sienten obligados a ceder a las necesidades de los padres , pero si la disciplina es tan grave como la madre que siente por Jehová . ” ( La crianza de sus padres , Japón , Japón , Japón , Japón , dice Carlos , dice Carlos , de mi padre , de sus padres , cuenta , de mi padre , de los padres , de los padres , de mi padre , de mi padre , de mi padre , de mi madre , de mi padre , de mi madre , de mi madre , de mi madre , de mi madre , de mi madre , cuenta de mi madre , de mi madre , de mi madre . “ familia . * de mi madre de mi madre , de mi madre de mi madre . “ familia de mi madre de mi madre de mi madre . “ familia de mi madre . * que se va . * que se va de mi madre que los hijos de mi madre , de mi esposa de mi esposa de mi madre de mi madre
+--------------------------------------------------------------------------------
+    SOURCE: ¿Yuyawaqchu imatapas qoykuspa kuyakuyniki qawachisqaykita?
+    TARGET: ¿Puede usted recordar ocasiones en las que haya demostrado su amor con acciones?
+PREDICTED GREEDY: ¿ Me preocupo por mis hermanos por mis hermanos que están en paz ?
+PREDICTED BEAM:   ¿ Me preocupo por mis hijos por mis hermanos que están pasando por el tiempo que sentimos por los demás ? ¿ Me gusta que nos trataran a él ?
+--------------------------------------------------------------------------------
+Processing Epoch 12: 100%|██████████| 1670/1670 [06:42<00:00,  4.15it/s, loss=3.152]
+--------------------------------------------------------------------------------
+    SOURCE: JESUSPA vidanmanta chaynataq Diosta servisqanmanta sumaqllataña punta qellqaq puriqmasin Mateom karqa payqariki ñawpaqpiqa impuesto cobraqmi karqa.
+    TARGET: LA PRIMERA persona que escribió un emocionante relato de la vida y el ministerio de Jesús fue uno de sus colaboradores más íntimos, Mateo, quien había sido recaudador de impuestos.
+PREDICTED GREEDY: JESÚS se bautizó y dedicó tiempo a orar y sus oraciones , mientras que el apóstol escribió un primer hombre , en una búsqueda de bienes materiales .
+PREDICTED BEAM:   JESÚS se bautizó y dedicó su tiempo a servir a Dios y se había casado con una mujer que vivía en una casa .
+--------------------------------------------------------------------------------
+    SOURCE: ¿Jesuspa ima rurasqanmi qawachin Mesias kasqanta?
+    TARGET: ¿Qué comisión identifica a Jesús como el Mesías?
+PREDICTED GREEDY: ¿ Qué sucesos sabemos sobre el Mesías ?
+PREDICTED BEAM:   Ahora bien , ¿ de qué manera demostró Jesús que era el Mesías prometido ? ¿ Cuál es el cumplimiento de la profecía ? ¿ Cuál fue el cumplimiento de la profecía ? ¿ Cuál es ?
+--------------------------------------------------------------------------------
+Processing Epoch 13: 100%|██████████| 1670/1670 [06:40<00:00,  4.17it/s, loss=2.806]
+--------------------------------------------------------------------------------
+    SOURCE: Bibliapim nin: “Noeymi lliwta rurarqa Diospa kamachisqanman hina ”, nispa (Genesis 6: 22).
+    TARGET: La Biblia responde: “Noé procedió a hacer conforme a todo lo que le había mandado Dios.
+PREDICTED GREEDY: La Biblia dice : “ Noé procedió a hacer conforme a todo lo que Dios le había mandado .
+PREDICTED BEAM:   La Biblia dice : “ Noé procedió a hacer conforme a todo lo que Dios le había hecho para que se le hicieran ”.
+--------------------------------------------------------------------------------
+    SOURCE: Runakunaqa imapas allin rurakunanta munasqanchikraykum imaynatapas kutichiyta munanchik.
+    TARGET: Y es que, por naturaleza, nuestro sentido del bien y del mal exige que se repare cualquier injusticia.
+PREDICTED GREEDY: A fin de cuentas , tenemos que decidir qué hacemos para que nos hagamos .
+PREDICTED BEAM:   A fin de cuentas , tenemos que tomar buenas decisiones que no nos gustan .
+--------------------------------------------------------------------------------
+Processing Epoch 14: 100%|██████████| 1670/1670 [06:40<00:00,  4.17it/s, loss=2.769]
+--------------------------------------------------------------------------------
+    SOURCE: Ichaqa paykunapas tanteanankum sichu Jehová Diospa kamachisqanta kasukunqakuchu icha manachu.
+    TARGET: Pero ellos también tienen en sus manos una decisión: ¿obedecerán las claras instrucciones de Jehová?
+PREDICTED GREEDY: Pero ustedes también pueden cumplir con la voluntad de Jehová que él acepte la adoración de Dios y que su voluntad .
+PREDICTED BEAM:   Sin embargo , si sus hijos la soberanía de Jehová , su derecho a agradarle más . * ( Lea la nota .)
+--------------------------------------------------------------------------------
+    SOURCE: ¿Imamantam qatiqninpi yachasun?
+    TARGET: ¿Qué lista de verificación vamos a examinar?
+PREDICTED GREEDY: ¿ Qué veremos en el próximo artículo ?
+PREDICTED BEAM:   ¿ Qué veremos en el próximo artículo ?
+--------------------------------------------------------------------------------
+Processing Epoch 15: 100%|██████████| 1670/1670 [06:41<00:00,  4.16it/s, loss=2.759]
+--------------------------------------------------------------------------------
+    SOURCE: Yaqapaschá Itaipa kayna nisqanqa Davidtaqa yuyarichirqa mamanpa abuelan Rutpa rimasqanta (Rut 1: 16, 17).
+    TARGET: Es posible que esta respuesta le haya hecho recordar a David las palabras de Rut, su bisabuela.
+PREDICTED GREEDY: También fue muy útil recordar la ocasión en que David le dijo a su hijo que le había hablado .
+PREDICTED BEAM:   Además , Ittai también le recordó lo que le había pedido a su amigo , de modo que le había hablado otro ángel de su hermana .
+--------------------------------------------------------------------------------
+    SOURCE: Punta kaq yachachikuypim qawasunchik, imaynam tiempopa risqanman hina mana sasachakuspalla entiendenapaq Jehova Dios yanapawasqanchikmanta.
+    TARGET: En el primer artículo veremos cómo Jehová nos ha ayudado a entender las enseñanzas bíblicas de forma cada vez más clara y sencilla.
+PREDICTED GREEDY: El primer artículo analiza cómo Jehová nos ayuda a entender las cosas buenas que hemos aprendido .
+PREDICTED BEAM:   En el primer artículo hablaremos de cómo Jehová nos ha ayudado a entender mejor las diversas facetas de la vida y a los siervos de Dios . ¿ Cómo nos ayuda a entender el ejemplo de estos artículos de la Biblia ?
+--------------------------------------------------------------------------------
+Processing Epoch 16: 100%|██████████| 1670/1670 [06:38<00:00,  4.19it/s, loss=2.644]
+--------------------------------------------------------------------------------
+    SOURCE: Puñusqanpim qaparirqa: “¡Suchuychik!
+    TARGET: Dormido, gritaba: “¡Cuidado!
+PREDICTED GREEDY: : “¡ , !
+PREDICTED BEAM:   gritó : “¡ Ay ! ¡ Una feroz feroz !
+--------------------------------------------------------------------------------
+    SOURCE: ¿Imaynatam Jesuspa qatiqninkuna yanapachikurqaku Diospa llaqtanpi punta apaqkunata kasukusqankuwan?
+    TARGET: ¿Qué pasó cuando las congregaciones del siglo primero siguieron las instrucciones del cuerpo gobernante?
+PREDICTED GREEDY: ¿ Cómo ha sido una muestra de la autoridad que los primeros cristianos del Cuerpo Gobernante ?
+PREDICTED BEAM:   ¿ Cómo se ha ido a formar parte del cuerpo espiritual de los discípulos del Cuerpo Gobernante en la organización de Dios ? * ( Vea la ilustración del principio ).
+--------------------------------------------------------------------------------
+Processing Epoch 17: 100%|██████████| 1670/1670 [06:38<00:00,  4.19it/s, loss=2.465]
+--------------------------------------------------------------------------------
+    SOURCE: ‘ Jesusmi [...] rirqa orqopa waqtanman hinaptinmi chaypi tiyaykuptin puriqmasinkuna asuykurqa. Hinaptinmi [...] yachachiyta qallaykurqa. ’
+    TARGET: “[Jesús] subió a la montaña; y [...] vinieron a él sus discípulos; y él [...] se puso a enseñarles. ”
+PREDICTED GREEDY: Cuando “ la montaña de la montaña [ Jesús ] se levanta , [...] la mano de su hermano se ha acercado ”.
+PREDICTED BEAM:   “ Si [ Jesús ] se ha acercado — a la montaña —, entonces la casa de su hermano se ha preparado para él , y entonces , para ello [ se ] a sus propias manos . ” ¿ Y a la obra ? ¡ Qué es decir , tras ella ?
+--------------------------------------------------------------------------------
+    SOURCE: ¿Imanasqataq mana facilchu runamasinchikpaq allinkunata rurayqa?
+    TARGET: ¿Por qué no siempre es fácil hacer el bien a los demás?
+PREDICTED GREEDY: a ) ¿ Por qué es fácil llevar una vida sencilla ?
+PREDICTED BEAM:   a ) ¿ Por qué es tan importante la importancia de la amistad ?
+--------------------------------------------------------------------------------
+Processing Epoch 18: 100%|██████████| 1670/1670 [06:42<00:00,  4.15it/s, loss=2.469]
+--------------------------------------------------------------------------------
+    SOURCE: ¿Pitaq ‘ leyta mana kasukuq runaqa ’ hinaspa imaynatataq chinkanqa?
+    TARGET: ¿Quién es “el hombre del desafuero ”, y cómo será eliminado?
+PREDICTED GREEDY: ¿ Quién es el “ examinador de los corazones ” y lo serán haciendo ?
+PREDICTED BEAM:   ¿ Quién es el “ examinador de nuestros corazones ” y lo llevará a eliminar sus efectos ?
+--------------------------------------------------------------------------------
+    SOURCE: Piensariy kaypi, pipas llakikuymanta waqaptinqa, chayllam musyanchik ñakarisqanmanta.
+    TARGET: Por ejemplo, difícilmente podemos ignorar las lágrimas de tristeza, pues nos dicen que alguien está sufriendo.
+PREDICTED GREEDY: Cuando la muerte sale a ver el dolor que produce el Diablo , la Biblia se asegura de que pronto se llegará a su lado .
+PREDICTED BEAM:   Cuando el Diablo muere , la Biblia pierde parte de su poder , se pierde el poder que se ha quedado dentro de su propia vida . * ( Lea la nota .)
+--------------------------------------------------------------------------------
+Processing Epoch 19: 100%|██████████| 1670/1670 [06:41<00:00,  4.16it/s, loss=2.450]
+--------------------------------------------------------------------------------
+    SOURCE: “Angelkunaqa Dios serviq espiritukunam ”
+    TARGET: Los ángeles: “espíritus para servicio público ”
+PREDICTED GREEDY: Los ángeles : “ espíritus para servicio público ”
+PREDICTED BEAM:   Los ángeles : “ espíritus para servicio público ” deben recibir aliento en fe ” ( folleto ? 1 / 12
+--------------------------------------------------------------------------------
+    SOURCE: Chay madrugawmi buquekunapa sayananman carrokuna pasaptin, llamkaqkuna apakurqaku 7 librokunata, 69 folletokunata hinaspa 479 revistakunatapas.
+    TARGET: Esa mañana, cuando partieron los autobuses hacia el puerto, los trabajadores habían aceptado 7 libros, 69 folletos y 479 revistas.
+PREDICTED GREEDY: Las mañanas atravesábamos lugares económicos , en la costa de los más fríos , Europa y Europa se han producido más de siete millones de muertes .
+PREDICTED BEAM:   Las mañanas atravesábamos las tierras monetarias a la costa , entre ellos se obtuvieron en más de siete Salones del Reino , y la industria de la Universidad de California .
+--------------------------------------------------------------------------------
+Processing Epoch 20: 100%|██████████| 1670/1670 [06:41<00:00,  4.15it/s, loss=2.307]
+--------------------------------------------------------------------------------
+    SOURCE: ¿Imaynanpitaq qusayki maqasurqanki?.
+    TARGET: ¿En qué circunstancias le pegó su esposo?.
+PREDICTED GREEDY: ¿ Por qué le ha pegado ?.
+PREDICTED BEAM:   ¿ Por qué le ha pegado él ?. * ( le ha pegado ?. * ( ?.
+--------------------------------------------------------------------------------
+    SOURCE: Chaymantam qanchis wata muchuy chayaramurqa hinaptinmi Joseypa familianpaqqa manaña mikunanku karqañachu.
+    TARGET: Pasado el tiempo, llegaron los siete años de malas cosechas, y la familia de José fue quedándose sin alimento.
+PREDICTED GREEDY: Unos siete años llegó a existir el hambre de los dos días de José . El hambre no tenía hambre .
+PREDICTED BEAM:   Unos siete años llegó a existir el hambre de la familia de José . El hambre no tuvo lugar para nada de los presentes . * ( Lea la nota .)
+--------------------------------------------------------------------------------
+Processing Epoch 21: 100%|██████████| 1670/1670 [06:42<00:00,  4.15it/s, loss=2.158]
+--------------------------------------------------------------------------------
+    SOURCE: Jesusmi nirqa: ‘ kanqam muchuykuna ’, nispa. 2005 watapim revista Science nirqa: “854 millon runakunam eqoyachkanku mikuymanta ”, nispa.
+    TARGET: En 2005, la revista Science declaró: “El 14% de la población mundial (854 millones de personas) padece desnutrición crónica o aguda ”.
+PREDICTED GREEDY: “ En el mundo hay unos ciento veinte años de servicio , la capital de 1974 se halla en la calle ”, señala Jesús .
+PREDICTED BEAM:   Jesús dijo : “ En el mundo hay unos ocho millones de habitantes de 1974 se hallan bajo mucha sangre ”.
+--------------------------------------------------------------------------------
+    SOURCE: ¿Pitam imamantapas astawanqa kuyananchik?
+    TARGET: ¿A quién debemos amar por encima de todo?
+PREDICTED GREEDY: ¿ A qué razones tenemos que amar a nuestro prójimo ?
+PREDICTED BEAM:   ¿ Qué razones tenemos para amar a nuestro prójimo ?
+--------------------------------------------------------------------------------
+Processing Epoch 22: 100%|██████████| 1670/1670 [06:40<00:00,  4.17it/s, loss=2.163]
+--------------------------------------------------------------------------------
+    SOURCE: Huk kutipipas kaynatam nirqa: “Yaw Diospa ñakasqankuna, qamkunaqa pasawaychik diablopaqwan angelninkunapaq alistasqa wiña - wiñaypaq rupaymanyá ”, nispa.
+    TARGET: En otra ocasión, habló de un período de juicio durante el cual les diría a los malvados: “Apártense de mí, malditos, vayan al fuego que no se apaga, preparado para el diablo y sus ángeles ”.
+PREDICTED GREEDY: En otra ocasión dijo : “ , oh Dios , para que me conozcan , para ustedes son los que esperan , para declarar las buenas nuevas del reino ”.
+PREDICTED BEAM:   En otra ocasión les dijo : “ , oh Dios , para que me vaya a declarar las buenas nuevas del reino preparado para ustedes , para declarar las buenas nuevas las buenas nuevas hasta las buenas nuevas ”. ¡ Miren !
+--------------------------------------------------------------------------------
+    SOURCE: Yaqachusmi Pabloqa, yuyaymanayta munarqa Diospa palabranpa nisqanman hina Jesucristo prometesqa Mesias kasqanmanta.
+    TARGET: Al parecer, Pablo quería reflexionar sobre los pasajes de las Escrituras que demostraban que Jesús era el Mesías prometido.
+PREDICTED GREEDY: Es probable que Pablo le pusiera a entender lo que dice la Palabra de Dios sobre la Descendencia prometida .
+PREDICTED BEAM:   Es muy probable que Pablo le ayudara a entender lo que dice la Palabra de Dios sobre la Descendencia prometida , y que , según se le llama la Descendencia prometida , . ¿ Por qué obtuvo la profecía ?
+--------------------------------------------------------------------------------
+Processing Epoch 23: 100%|██████████| 1670/1670 [06:42<00:00,  4.14it/s, loss=2.240]
+--------------------------------------------------------------------------------
+    SOURCE: ¡Imapiñataq rikukuni!
+    TARGET: ¡Hombre desdichado que soy!
+PREDICTED GREEDY: ¡ Hombre desdichado que soy !
+PREDICTED BEAM:   ¡ Hombre desdichado que soy !
+--------------------------------------------------------------------------------
+    SOURCE: Angelninkunawanmi Jehová Diosqa kay tiempopi predicacionta yanapachkan.
+    TARGET: Jehová utiliza a sus ángeles para dirigir esta labor singular.
+PREDICTED GREEDY: A los que se ha realizado la predicación en este mundo .
+PREDICTED BEAM:   El Dios nos ha encomendado la obra de predicar a los ha resultado en la obra de predicar en el mundo . ” ¿ Y cuál es la obra de los testigos de Jehová ?
+--------------------------------------------------------------------------------
+Processing Epoch 24: 100%|██████████| 1670/1670 [06:40<00:00,  4.17it/s, loss=2.116]
+--------------------------------------------------------------------------------
+    SOURCE: Umayta taqsakunaypaq champunniyta llumpayta lloqsirachispayqa, kaqllam puchuqnintaqa kutiykachini ”, nispa.
+    TARGET: Si al apretar el bote de champú sale más del necesario, vuelvo a meter el poquito que sobra ”.
+PREDICTED GREEDY: Como teníamos que caminar de casa , con la ayuda exterior , pues evitan estar trabajando en contacto físico ”.
+PREDICTED BEAM:   A medida que los iba creciendo se sus propias manos , pasan noches sin dormir . ” La única opción es seguir siendo sin darse cuenta , como si ya no hubieran sentido juntos . [ Comentario de la vida ] ”.
+--------------------------------------------------------------------------------
+    SOURCE: Wakinqa piensanku “Diosta mañakusqankuqa wasipa techonkamallam chayan ”.
+    TARGET: Hay quienes dicen que las oraciones “no pasan del techo ”.
+PREDICTED GREEDY: Algunas personas piensan que “ las cosas de la casa [ ] las oraciones de las más importantes ”.
+PREDICTED BEAM:   A algunos les cuesta responder “ todas las oraciones de la devoción [ de Dios ] desde el punto de vista de las oraciones ”.
+--------------------------------------------------------------------------------
+Processing Epoch 25: 100%|██████████| 1670/1670 [06:40<00:00,  4.16it/s, loss=2.047]
+--------------------------------------------------------------------------------
+    SOURCE: ¡Kikin Jehová Diospunim tapurqa!
+    TARGET: ¡Lo había interrogado el propio Altísimo!
+PREDICTED GREEDY: ¡ Qué propio Jehová !
+PREDICTED BEAM:   Él mismo le preguntó : “¿ Me ayudará a pedir lo que estaba pidiendo ?
+--------------------------------------------------------------------------------
+    SOURCE: ¿Imaynatam punta cristianokunamanta wakinku Diosta servirqaku?
+    TARGET: ¿De qué maneras servían a Jehová algunos cristianos del siglo primero?
+PREDICTED GREEDY: ¿ Cómo reaccionaron los cristianos ante la persecución ?
+PREDICTED BEAM:   ¿ Cómo reaccionaron los cristianos del siglo I a la adoración de Dios ? ¿ Qué actitud positiva ?
+--------------------------------------------------------------------------------
+Processing Epoch 26:  94%|█████████▍| 1573/1670 [06:21<00:23,  4.12it/s, loss=2.030]

@@ -1,0 +1,9 @@
+{"time":"2024-11-06T02:30:34.7364515-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T02:30:34.7364515-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_023034-erbpcaxg\\logs\\debug-core.log"}
+{"time":"2024-11-06T02:30:34.8716053-05:00","level":"INFO","msg":"created new stream","id":"erbpcaxg"}
+{"time":"2024-11-06T02:30:34.8716053-05:00","level":"INFO","msg":"stream: started","id":"erbpcaxg"}
+{"time":"2024-11-06T02:30:34.8716053-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"erbpcaxg"}}
+{"time":"2024-11-06T02:30:34.8726316-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"erbpcaxg"}}
+{"time":"2024-11-06T02:30:34.8732104-05:00","level":"INFO","msg":"sender: started","stream_id":"erbpcaxg"}
+{"time":"2024-11-06T02:30:35.7515604-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T02:31:06.4287178-05:00","level":"INFO","msg":"Pausing system monitor"}

@@ -60,4 +60,111 @@ PREDICTED BEAM:   Dorcas sutiyoq cristianam “ achka allinkunata ruraq chaynata
 PREDICTED GREEDY: Yacharqataqmi Diospa llaqtan hina sapa kuti mana kaptinpas , wakinpiqa una - unay watakunam kasqantapas .
 PREDICTED BEAM:   Yacharqataqmi Diospa llaqtan sapa kuti , ichaqa mana haykapipas huñunakuyman . ¿ Imamantam yacharqa mana ancha kusisqa kasqankumanta ? ”, nispa ( 1 Rey . 18 : 10 ; Santiago 4 : 1 - 10 ; Sal . 18 : 10 ; 1 , 10 ; 1 , 7 , 7 ; 1 , 10 ; 1 , 10 ; 1 , 7 ; 1 , 10 ; 1 , 7 ; 1 , 7 , 10 ; 40 ; 40 , 10 ; 40 ; 40 , 10 ; 40 ; 40 , 10 ; 40 , 10 ; 1 , 10 ; 40 , 10 ; 40 , 10 ; 40 : 10 ; 48 : 10 ; 40 : 10 ; 40 , 10 ; 40 , 10 ; 40 ; 48 : 18 , 10 ; 1 , 10 ; 1 , 10 ; 40 , 10 ; 48 : 10 ; 45 ; 48 ; Isa : 18 ; 48 - 10 ; 48 : 10 ; 84 ; 48 - 10 ; 48 : 18 ; 48 : 18 ; 48 : 18 : 18 ; 48 : 18 ).
 --------------------------------------------------------------------------------
-Processing Epoch 21:  41%|████      | 684/1670 [02:59<04:14,  3.88it/s, loss=2.079]
+Processing Epoch 21: 100%|██████████| 1670/1670 [07:12<00:00,  3.87it/s, loss=2.325]
+--------------------------------------------------------------------------------
+    SOURCE: Como consecuencia de todas estas cosas que Dios hace por ellos, los cristianos ungidos no tienen la esperanza de vivir para siempre en la Tierra.
+    TARGET: Chaykunata Dios paykunapaq rurasqanraykum ungidokunaqa kay Pachapi wiñaypaq kawsakuytaqa manaña suyankuchu.
+PREDICTED GREEDY: Chaymi paypa tukuy ima unanchasqa kaqkunaqa , hanaq pachapaq cristianokunawan kuska kay pachapi kawsanankupaq suyakuyniyuq kayta mana atinkuchu .
+PREDICTED BEAM:   Qawasqanchikman hinaqa , kay Pachapi kawsanankupaq suyakuyniyuq cristianokunaqa manam kay pachapi wiñaypaq atinqakuchu . ¿ Imanasqam chaynata hanaq pachapi wiñaypaq kawsakuyta ?
+--------------------------------------------------------------------------------
+    SOURCE: Afortunadamente, la mayoría de las alergias a alimentos no son tan serias.
+    TARGET: Kay watakunapim achka runakunaña mikuy mana armaptin ñakarillanku.
+PREDICTED GREEDY: Chaymi achka runakuna manaña imatapas mikuy allichayta atinkuchu .
+PREDICTED BEAM:   Chaymi achka warmachakuna mikuy mana allichayta piensaspanku , mana . ¿ Imanasqa ?
+--------------------------------------------------------------------------------
+Processing Epoch 22: 100%|██████████| 1670/1670 [07:08<00:00,  3.90it/s, loss=2.084]
+--------------------------------------------------------------------------------
+    SOURCE: Ahora no tiene un minuto libre.
+    TARGET: Ichapas samarinaykipaqqa tiempoyki manaña kanchu.
+PREDICTED GREEDY: Ichaqa manam chayllachu karqa .
+PREDICTED BEAM:   Ichaqa manam chayllachu karqa . ¿ Imataq chaypaq yanaparqa ? ¿ Imatapunim Bibliaqa yachachin .
+--------------------------------------------------------------------------------
+    SOURCE: ¿Cuál fue? La Biblia responde: “Jehová resultó estar con José ”.
+    TARGET: Ninmi: “Joseyta [Jehova] Dios yanapaptinmi favorecesqa karqa ”, nispa (Genesis 39: 2).
+PREDICTED GREEDY: Bibliam nin : “ Diosmi Joseywan Mariaqa manaña ”, nispa ( Genesis 39 : 7 ).
+PREDICTED BEAM:   Bibliam nin : “ Tayta Diosmi karqa Joseywan ”, nispa . ¿ Imatam Joseyqa nirqa : ‘ Tayta Diosqa karqa ’, nispa ( Genesis 39 : 7 ).
+--------------------------------------------------------------------------------
+Processing Epoch 23: 100%|██████████| 1670/1670 [07:03<00:00,  3.95it/s, loss=1.994]
+--------------------------------------------------------------------------------
+    SOURCE: La Biblia predijo que en nuestros días las personas desearían escuchar “las palabras de Jehová ”.
+    TARGET: Diosmi nirqa kunan tiempopipas usya tiempopi hina runakuna iñiyninkupi kanankumanta (Amos 8: 11).
+PREDICTED GREEDY: Bibliam nirqaña kunan tiempopi runakunaqa ‘ Diospa hina ’.
+PREDICTED BEAM:   Bibliam nirqaña kunan tiempopi Diosman sonqo runakunaqa ‘ llulla kasqankuta ’.
+--------------------------------------------------------------------------------
+    SOURCE: • ¿Qué nos ayudará a no abandonar el mejor camino que existe?
+    TARGET: • ¿Imataq yanapawasun aswan allin ñanta mana saqenanchikpaq?
+PREDICTED GREEDY: • ¿ Imataq yanapawasun aswan allin ruray munasqanchikmanta mana chaninchanapaq ?
+PREDICTED BEAM:   • ¿ Imataq yanapawasun Jehová Diosta aswan allin rurasqanta mana ruranapaq ?
+--------------------------------------------------------------------------------
+Processing Epoch 24: 100%|██████████| 1670/1670 [07:03<00:00,  3.95it/s, loss=2.029]
+--------------------------------------------------------------------------------
+    SOURCE: El arquero dispone de poco tiempo para dirigir sus flechas, pues si quiere dar en el blanco, debe soltarlas muy rápido.
+    TARGET: Flechaqpaqqa pisillam tiempon flechanwan apuntananpaq, hapichiyta munaspaqa apurawtam flechanan.
+PREDICTED GREEDY: Flechankuna rinanpaqmi runaqa qepanpi purukunata , chaywanmi chaylla .
+PREDICTED BEAM:   Flechankuna rinanpaqmi runaqa qepanpi purukunata , chaywanmi chaylla llumpay . nispa . ¿ Imamantam ? ¿ Imamantam chaylla tukuruq kachkan ?
+--------------------------------------------------------------------------------
+    SOURCE: Ahora bien, ¿qué cualidades se necesitan para hacer discípulos?
+    TARGET: Hinaptinqa, runakuna Jesuspa qatiqnin kanankupaq, ¿ima sumaq kayniyoq kaspanchikmi yanapasunchik?
+PREDICTED GREEDY: ¿ Imayna kaytam yanapasunchik Jesuspa qatiqninkuna kanankupaq ?
+PREDICTED BEAM:   ¿ Ima sumaq kayniyoq kanapaqmi Jesuspa qatiqnin kanankupaq runakunata yanapananchik ? ¿ Ima sumaq kayniyoq kanankupaqmi qatiqnin kanankupaq yachasunchik ?
+--------------------------------------------------------------------------------
+Processing Epoch 25: 100%|██████████| 1670/1670 [07:01<00:00,  3.96it/s, loss=1.933]
+--------------------------------------------------------------------------------
+    SOURCE: Estas donaciones desgravan en el impuesto sobre la renta del año en que se realizan.
+    TARGET: Kayna qosqanchikmi wata tukuypi impuesto pagananchikta menosyachin. Testamento hinaspa acuerdota ruraspa qonamanta.
+PREDICTED GREEDY: Kayna qosqanchikmi wata tukuypi impuesto menosyachin .
+PREDICTED BEAM:   Kayna qosqanchikmi wata tukuypi impuesto menosyachin . ¿ Imaynatam tukuypi ? [ 1 kaq paginapi suti reqsiylla karqa . ” nispa . ¿ ? ¿ ? ¿ ? [ . ¿ ? [ 2 kaq paginapi yachachikuyta ). [ 17 kaq paginapi willakuyta hinaspa qillqay 3 kaq willakuyta Jesucristo ). [ 1 kaq willakuyta .)
+--------------------------------------------------------------------------------
+    SOURCE: ¿Será egoísta preguntarse lo mismo sobre la oración?
+    TARGET: ¿Allinchu kanman Dios mañakuyninchikmantapas chayna piensayninchik?
+PREDICTED GREEDY: ¿ Allinchu kanman Diosta mañakuyqa chayna mana allin piensaykunata ?
+PREDICTED BEAM:   ¿ Allinchu kanman Diosta mañakuyqa chayna mana allin piensaykunata ?
+--------------------------------------------------------------------------------
+Processing Epoch 26: 100%|██████████| 1670/1670 [07:03<00:00,  3.95it/s, loss=1.939]
+--------------------------------------------------------------------------------
+    SOURCE: Esto hizo que Ana aprendiera a confiar en Jehová. Usted puede hacer lo mismo al orar con sus hijos.
+    TARGET: Warmaykikunawan kuska Jehova Diosta mañakuspaykiqa imapipas yanapaykusunaykipaq mañakuy.
+PREDICTED GREEDY: Kay iñiqmasinchikqa allintam yacharqa warmanku Jehova Diosta mañakunanpaq .
+PREDICTED BEAM:   26 : 5 ). Kaymantam Anaqa astawanraq yacharqa Jehova Diosta mañakunanpaq ( Prov . 30 : 16 , 17 ; Sal . 41 : 9 - 23 ; Efes . 4 : 23 ).
+--------------------------------------------------------------------------------
+    SOURCE: Por ejemplo, las biografías que aparecen en nuestras publicaciones la consuelan en momentos de desaliento.
+    TARGET: Ejemplopaq, qellqanchikkunapi rikuriq experienciakunam hukmanyasqa kaptin anchata kallpanchan.
+PREDICTED GREEDY: Ejemplopaq , qellqanchikkunapi achka sasachakuykunapim tarikuq huk willakuykunam .
+PREDICTED BEAM:   Ejemplopaq , ñawpa vidanmanta willakuykunam hukmanyasqa kachkan hukmanyasqa kasqan , wakinpiqa hukmanyasqa kachkan .
+--------------------------------------------------------------------------------
+Processing Epoch 27: 100%|██████████| 1670/1670 [07:07<00:00,  3.91it/s, loss=1.904]
+--------------------------------------------------------------------------------
+    SOURCE: En la antigüedad, se hizo referencia a la Tierra Prometida como el lugar santo de habitación de Dios.
+    TARGET: Ñawpaq tiempopiqa Diospa Prometesqan Allpatam nirqaku Diospa yachanan chuya wasi nispa.
+PREDICTED GREEDY: Ñawpaq tiempopim , Prometesqa Allpaman israelitakunata nirqaku Diospa yachanan wasi hina kananmanta .
+PREDICTED BEAM:   Ñawpaq tiempopim , Prometesqa Allpaman israelitakunata nirqaku Diospa yachanan wasi hina kasqanta . ¿ Imanasqa ? ¿ Maypitaq karqa Diospa sutinta apaq kasqanta ? ( Joel 2 : 1 , 2 - 3 ; Neh .
+--------------------------------------------------------------------------------
+    SOURCE: ¿Por qué dice la Biblia que la creación está “declarando la gloria de Dios ”?
+    TARGET: Hinaspa, ¿imanasqataq Jesusqa wañunan karqa Jehova Diospa munaynin ruwakunanpaq?
+PREDICTED GREEDY: ¿ Imanasqataq Bibliaqa nin Diospa “ ” kasqanta ?
+PREDICTED BEAM:   ¿ Imanasqataq Bibliaqa nin “ Diospa yachachikuynin ” kasqanta ?
+--------------------------------------------------------------------------------
+Processing Epoch 28: 100%|██████████| 1670/1670 [07:03<00:00,  3.94it/s, loss=1.819]
+--------------------------------------------------------------------------------
+    SOURCE: Cuando llegamos al territorio, el hermano me dio unos folletos que hablaban del Reino de Dios.
+    TARGET: Hinaptinmi wakin qillqanchikkunata quwaspan niwarqa: “Chinpa - chinpayá willakusun ”, nispa.
+PREDICTED GREEDY: Diosmanta yachaysapa iñiqmasinchikmi nin : “ Diospa Gobiernonmanta qillqatam .
+PREDICTED BEAM:   Chay iñiqmasinchikmi Diosmanta willakuq nin : “ Anchatam kusikurqani Diospa Gobiernonmanta astawan . ¿ Imataq ? ¿ Imataq . ¿ Imataq ? ¿ Imanasqa ? ¿ Imataq ? Qawasunchikyá . ¿ Imanasqa ? ¿ Imataq 8 - S ima pipa Gobiernonmanta qillqapi . ¿ imanasqa ? ¿ Imataq kanaypaq ? ¿ Imataq kanaypaq ? ¿ Imataq kanaypaq ? ¿ Imataq kanaypaq ? [ 8 kaq yachachikuyta tarikun ? ¿ Imataq . ¿ Imataq kanaypaq . ¿ Imataq kanaypaq ? [
+--------------------------------------------------------------------------------
+    SOURCE: ¿Es la capacidad de la piel del diablo espinoso para obtener agua resultado de la evolución, o del diseño?
+    TARGET: Kichka qara lagartochaqa, ¿kikillanmantachu rikurirqa icha unanchasqachu karqa?
+PREDICTED GREEDY: ¿ yakuta nisqanman hinachu ruwan icha unanchasqachu karqa ?
+PREDICTED BEAM:   Kichka qara ¿ kikillanmantachu rikurirqa icha unanchasqachu karqa ?
+--------------------------------------------------------------------------------
+Processing Epoch 29: 100%|██████████| 1670/1670 [07:01<00:00,  3.96it/s, loss=1.847]
+--------------------------------------------------------------------------------
+    SOURCE: Al hacerlo, nos daremos cuenta de que Sara hizo bien al confiar en Jehová, porque él es fiel y cumple siempre todas sus promesas, a veces incluso haciéndonos reír de asombro o incredulidad.
+    TARGET: Chayta ruwaspaqa cuentatam qukusun, nisqanta ruwaq Jehova Diospi Saraqa hapipakusqanmanta.
+PREDICTED GREEDY: Chayta ruwaspaqa , Jehova Diospi yuyaymanaymi yanapawasun , hinaspa imapas kaqta ruwananpaq Jehova Dios ( 1 Rey . 19 : 20 ).
+PREDICTED BEAM:   Chayta ruwasqaymi hinaspa ruwasqanwanmi kallpanchawan Jehova Diospi hapipakunanpaq ( Genesis 23 : 20 - 24 ; 2 : 5 ).
+--------------------------------------------------------------------------------
+    SOURCE: Veamos el caso de un hermano llamado Peter.
+    TARGET: Rimarisun Piter sutiyuq iñiqmasinchikmanta.
+PREDICTED GREEDY: Piterqa Paul iñiqmasinchiktam chayta ruwananpaq yachachirqa .
+PREDICTED BEAM:   Piterqa Paul iñiqmasinchiktam chayta ruwananpaq ruwasqan yachachirqa . ¿ Imatawanmi iñiqmasinchik iñiqmasinchik ruwarqa ? nispa . ¿ Imatawanmi chaymanta niyta ruwarqa ? ”, nispa . ¿ Imatawanmi chaymanta ruwananpaq .
+--------------------------------------------------------------------------------

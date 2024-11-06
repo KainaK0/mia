@@ -26,3 +26,17 @@ config: {'batch_size': 48, 'num_epochs': 30, 'lr': 0.0001, 'seq_len': 200, 'd_mo
 2024-11-05 20:25:26,033 INFO    MainThread:27152 [wandb_run.py:_redirect():2376] Wrapping output streams.
 2024-11-05 20:25:26,033 INFO    MainThread:27152 [wandb_run.py:_redirect():2401] Redirects installed.
 2024-11-05 20:25:26,035 INFO    MainThread:27152 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-05 22:05:49,822 INFO    MainThread:27152 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-05 22:05:49,823 INFO    MainThread:27152 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-05 22:05:49,853 INFO    MainThread:27152 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-05 22:05:49,866 INFO    MainThread:27152 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-05 22:05:49,866 INFO    MainThread:27152 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-05 22:05:49,873 INFO    MainThread:27152 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-05 22:05:49,875 INFO    MainThread:27152 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-05 22:05:49,875 INFO    MainThread:27152 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-05 22:05:49,882 INFO    MainThread:27152 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-05 22:05:49,884 INFO    MainThread:27152 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-05 22:05:49,884 INFO    MainThread:27152 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-05 22:05:49,890 INFO    MainThread:27152 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-05 22:05:49,893 INFO    MainThread:27152 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-05 22:05:49,894 INFO    MainThread:27152 [wandb_init.py:_pause_backend():445] pausing backend

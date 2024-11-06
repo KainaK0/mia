@@ -1,0 +1,4 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00:   0%|          | 0/1 [00:00<?, ?it/s]
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

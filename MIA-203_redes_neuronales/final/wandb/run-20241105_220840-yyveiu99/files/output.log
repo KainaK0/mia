@@ -1,0 +1,15 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 1670/1670 [06:47<00:00,  4.09it/s, loss=5.495]
+--------------------------------------------------------------------------------
+    SOURCE: Wakchapas, apupas utaq ima castamanta kaspankupas yacharunkum Dios kuyayta hinaspa kamachikuyninkuna kasukuyta, kuyanakuyta hinaspa huk ayllu hinallaña kawsakuytapas.
+    TARGET: Aunque son de todas las razas y provienen de todos los niveles sociales, han aprendido a amar y temer a Dios.
+PREDICTED GREEDY: Por eso , no nos ayudará a ser muy importante y que nos ha hecho .
+PREDICTED BEAM:   Por eso , no nos ayudará a hacer la Biblia , pero no nos ayudará a hacer la Biblia . Pero no nos ha dado la Biblia . Pero no nos ayudará a los demás . org . 000 que nos ayudará a los demás .
+--------------------------------------------------------------------------------
+    SOURCE: Amistadniki otaq familiayki maypipas warmachaykita atiendenanpaq nisuptikiqa yanapachikuy.
+    TARGET: Si un amigo cercano o un familiar se ofrecen para sentarse con su hijo en alguna reunión social o de congregación, acepte el ofrecimiento.
+PREDICTED GREEDY: Por eso , no es que los demás , pero no no se .
+PREDICTED BEAM:   Por eso , no es que no se en la Biblia , pero no es que no no se en la Biblia .
+--------------------------------------------------------------------------------
+Processing Epoch 01:  25%|██▍       | 411/1670 [01:39<05:04,  4.14it/s, loss=5.143]

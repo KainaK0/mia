@@ -1,0 +1,25 @@
+{"time":"2024-11-06T01:11:57.8122408-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T01:11:57.8122408-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_011157-tafa1r7a\\logs\\debug-core.log"}
+{"time":"2024-11-06T01:11:57.9421709-05:00","level":"INFO","msg":"created new stream","id":"tafa1r7a"}
+{"time":"2024-11-06T01:11:57.9421709-05:00","level":"INFO","msg":"stream: started","id":"tafa1r7a"}
+{"time":"2024-11-06T01:11:57.9421709-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"tafa1r7a"}}
+{"time":"2024-11-06T01:11:57.9421709-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"tafa1r7a"}}
+{"time":"2024-11-06T01:11:57.943227-05:00","level":"INFO","msg":"sender: started","stream_id":"tafa1r7a"}
+{"time":"2024-11-06T01:11:58.4449267-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T01:12:00.7550612-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T01:13:47.4976525-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T01:13:47.4985799-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T01:13:47.8264887-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T01:13:47.8281299-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T01:13:48.1700613-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T01:13:48.1710457-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T01:13:48.5928545-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T01:13:48.6016862-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-06T01:13:48.602257-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-06T01:13:49.6086421-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.2175217},{"desc":"updating run config","runtime_seconds":0.2154806}],"total_operations":2}}
+{"time":"2024-11-06T01:13:53.2264479-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-06T01:13:54.5930121-05:00","level":"INFO","msg":"stream: closing","id":"tafa1r7a"}
+{"time":"2024-11-06T01:13:54.5930121-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"tafa1r7a"}}
+{"time":"2024-11-06T01:13:54.5930121-05:00","level":"INFO","msg":"sender: closed","stream_id":"tafa1r7a"}
+{"time":"2024-11-06T01:13:54.5930121-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"tafa1r7a"}}
+{"time":"2024-11-06T01:13:54.5930121-05:00","level":"INFO","msg":"stream: closed","id":"tafa1r7a"}

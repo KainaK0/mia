@@ -6,3 +6,12 @@
 {"time":"2024-11-05T20:25:25.5230482-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"khox56az"}}
 {"time":"2024-11-05T20:25:25.5246165-05:00","level":"INFO","msg":"sender: started","stream_id":"khox56az"}
 {"time":"2024-11-05T20:25:25.9578488-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-05T22:05:49.8250142-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T22:05:49.8543687-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:05:49.8673863-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T22:05:49.8734818-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:05:49.8765379-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T22:05:49.8824178-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:05:49.8852206-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-05T22:05:49.8918083-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-05T22:05:49.8944954-05:00","level":"INFO","msg":"Pausing system monitor"}

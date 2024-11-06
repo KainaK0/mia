@@ -1,0 +1,40 @@
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Configure stats pid to 36316
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Loading settings from C:\Users\kainak0\.config\wandb\settings
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Loading settings from c:\Users\kainak0\Documents\gitProjects\mia\MIA-203_redes_neuronales\final\wandb\settings
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_init.py:_log_setup():534] Logging user logs to c:\Users\kainak0\Documents\gitProjects\mia\MIA-203_redes_neuronales\final\wandb\run-20241106_010626-ek3xko4r\logs\debug.log
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_init.py:_log_setup():535] Logging internal logs to c:\Users\kainak0\Documents\gitProjects\mia\MIA-203_redes_neuronales\final\wandb\run-20241106_010626-ek3xko4r\logs\debug-internal.log
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_init.py:init():621] calling init triggers
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {'batch_size': 48, 'num_epochs': 10, 'lr': 0.0001, 'seq_len': 200, 'd_model': 512, 'N_layers': 2, 'heads': 8, 'dropout': 0.1, 'ffn_hidden': 2048, 'datasource': 'spanish-to-quechua', 'version': '002', 'lang_src': 'es', 'lang_tgt': 'qu', 'model_folder': 'weights_es_qu{0}', 'model_basename': 'tmodel_es_qu{0}', 'preload': 'latest', 'tokenizer_file': 'tokenizer_es_qu_{0}{1}.json', 'experiment_name': 'runs/tmodel_es_qu{0}'}
+2024-11-06 01:06:26,607 INFO    MainThread:36316 [wandb_init.py:init():646] re-initializing run, found existing run on stack: o4d2gxo0
+2024-11-06 01:06:26,609 INFO    MainThread:36316 [wandb_run.py:_finish():2158] finishing run salcantaratnaist/pytorch-transformer_es_qu/o4d2gxo0
+2024-11-06 01:06:26,611 ERROR   MainThread:36316 [jupyter.py:save_history():451] Run pip install nbformat to save notebook history
+2024-11-06 01:06:26,611 INFO    MainThread:36316 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 01:06:26,611 INFO    MainThread:36316 [wandb_init.py:_jupyter_teardown():462] cleaning up jupyter logic
+2024-11-06 01:06:26,611 INFO    MainThread:36316 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2024-11-06 01:06:26,611 INFO    MainThread:36316 [wandb_run.py:_restore():2408] restore
+2024-11-06 01:06:26,611 INFO    MainThread:36316 [wandb_run.py:_restore():2414] restore done
+2024-11-06 01:06:32,204 INFO    MainThread:36316 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2024-11-06 01:06:32,204 INFO    MainThread:36316 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2024-11-06 01:06:32,208 INFO    MainThread:36316 [wandb_run.py:_footer_sync_info():3934] logging synced files
+2024-11-06 01:06:32,211 INFO    MainThread:36316 [wandb_init.py:init():671] starting backend
+2024-11-06 01:06:32,211 INFO    MainThread:36316 [wandb_init.py:init():675] sending inform_init request
+2024-11-06 01:06:32,213 INFO    MainThread:36316 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2024-11-06 01:06:32,213 INFO    MainThread:36316 [wandb_init.py:init():688] backend started and connected
+2024-11-06 01:06:32,216 INFO    MainThread:36316 [wandb_run.py:_label_probe_notebook():1342] probe notebook
+2024-11-06 01:06:32,218 INFO    MainThread:36316 [wandb_init.py:init():783] updated telemetry
+2024-11-06 01:06:32,252 INFO    MainThread:36316 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-11-06 01:06:32,799 INFO    MainThread:36316 [wandb_init.py:init():867] starting run threads in backend
+2024-11-06 01:06:32,887 INFO    MainThread:36316 [wandb_run.py:_console_start():2463] atexit reg
+2024-11-06 01:06:32,887 INFO    MainThread:36316 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-11-06 01:06:32,887 INFO    MainThread:36316 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-11-06 01:06:32,887 INFO    MainThread:36316 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-11-06 01:06:32,887 INFO    MainThread:36316 [wandb_init.py:init():911] run started, returning control to user process
