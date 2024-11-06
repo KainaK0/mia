@@ -1,0 +1,63 @@
+Using device: cuda
+Preloading model spanish-to-quechua_weights_es_qu\tmodel_es_qu15.pt
+Processing Epoch 16: 100%|██████████| 1670/1670 [07:09<00:00,  3.89it/s, loss=2.498]
+--------------------------------------------------------------------------------
+    SOURCE: Para ello, concentró su ataque en el decreto que más fácilmente podía frustrar: el que exigía que los seres humanos fueran obedientes.
+    TARGET: Satanasqa anchatamá munarqa runakunapas Diosta qepanchanankuta, chaymi Evata tentarqa allin kaqta hinaspa mana allin kaqta yachanapaq sachapa rurunta mikurunanpaq (Gen.
+PREDICTED GREEDY: Satanasqa manamá iskayrayarqachu runakunata Jehova Dios , chaymi Evata nirqa : ‘ Yachanim ñuqa allin ruwaq runakunata ’, nispa ( Gen .
+PREDICTED BEAM:   Satanasqa manamá iskayrayarqachu runakunata Jehova Dios chinkachinanmanta , chaynapi kasukuq runakunata ( Genesis 3 : 15 ).
+--------------------------------------------------------------------------------
+    SOURCE: Era como si el pecado estuviera escondido “a la entrada ”, esperando para atraparlo.
+    TARGET: Chay huchaqa wichiykachinanpaqmi punkullapiña hina kachkarqa.
+PREDICTED GREEDY: Imaynam hina karqa .
+PREDICTED BEAM:   Chay huchaqa punkullapiña hina kachkarqa . ( Genesis 23 : 1 ).
+--------------------------------------------------------------------------------
+Processing Epoch 17: 100%|██████████| 1670/1670 [07:08<00:00,  3.90it/s, loss=2.549]
+--------------------------------------------------------------------------------
+    SOURCE: Pero la Biblia enseña que en realidad la expulsión es una muestra de amor.
+    TARGET: Ichaqa bibliam yachachiwanchik chayqa Diospa kuyakuyninta qawachisqanmanta.
+PREDICTED GREEDY: Ichaqa bibliapim yachachiwanchik Diospa llaqtanmanta .
+PREDICTED BEAM:   Ichaqa bibliapim yachachiwanchik Diospa llaqtanmanta .
+--------------------------------------------------------------------------------
+    SOURCE: Más o menos lo mismo puede decirse de la gente de nuestro territorio.
+    TARGET: Yaqapaschá ñoqanchikmantapas chaynata ninku predicasqanchik lawpi runakunaqa.
+PREDICTED GREEDY: Yaqa chaynam pasan predicasqanchik lawpi runakuna .
+PREDICTED BEAM:   Yaqa chaynam pasan predicasqanchik lawpi runakuna chaypi kasqankumanta . ¿ Imaynatam predicasqanchik lawpi runakunaqa chaynata ninku ? ( Isa .
+--------------------------------------------------------------------------------
+Processing Epoch 18: 100%|██████████| 1670/1670 [07:15<00:00,  3.83it/s, loss=2.372]
+--------------------------------------------------------------------------------
+    SOURCE: Es bondad, pues nos lleva a interesarnos por los demás y a ayudarlos con acciones y palabras consideradas.
+    TARGET: Sumaq sonqo kasqantam qawachin, hukkunapi interesakuspan rimasqanwan hinaspa rurasqanwan yanapaspan.
+PREDICTED GREEDY: Llakipayakuq kayqa yanapawanchiktaqmi hukkunata yanapanapaq , allinmi kikinchikpaq hinaspa rimasqanwan mana .
+PREDICTED BEAM:   Llakipayakuq kayqa allinpunim , runamasinchikta yanapaspa hinaspa imayna kawsanankupaq piensanankupaq , hina ruway atiqta Dios qowanchik hinaspa runamasinchikta allinta yanapanapaq . ¿ Imataq kallpanchawanchik ? ( Proverbios 11 : 17 ).
+--------------------------------------------------------------------------------
+    SOURCE: No es tiempo de buscar las cosas que ofrece el mundo de Satanás.
+    TARGET: Manam tiempoñachu satanaspa tukuy imapas munachiwasqanchikta maskanapaqqa.
+PREDICTED GREEDY: Manam kay pachapi imapas pasawananchikmanta Satanaspa munaychakusqanta .
+PREDICTED BEAM:   Manam kay pachapi tukuy imapas imapas pasawananchikmanta Satanaspa munaychakusqan imakuna kananmanta ( Ecl . 11 : 5 ).
+--------------------------------------------------------------------------------
+Processing Epoch 19: 100%|██████████| 1670/1670 [07:20<00:00,  3.79it/s, loss=2.252]
+--------------------------------------------------------------------------------
+    SOURCE: Por lo visto también tendría ventanas a lo largo de la parte superior y un techo elevado por el centro con una ligera pendiente hacia los lados para que el agua escurriera.
+    TARGET: Karqataqmi qatanpa uranpi ventanakunapas, qatanñataqmi wasipa kaqlla sapa lawman para sutunanpaq hina karqa (Genesis 6: 14 - 16).
+PREDICTED GREEDY: Yaqachusmi , karu - karuta llaqta hina kaqlla yaku huntarurqa hinaspam yakuta tomananpaq ( Genesis 24 : 30 , 42 ).
+PREDICTED BEAM:   Yaqachusmi , karu - karuta llaqta hina kaqlla buqueta rurananpaq ( Genesis 6 : 10 - 14 , 23 , 24 ; Mateo 24 : 15 - 16 ; 42 : 3 , 16 , 21 - 43 - 44 ; 42 ; 42 ; 42 ; 42 : 28 ; 42 : 28 ; 42 , 35 , 42 : 28 ; 42 , 21 , 21 , 21 , 21 , 21 , 21 , 21 , 21 - 35 , 21 , 25 , 25 , 25 - 35 , 25 , 25 , 25 - 35 , 28 ; 42 , 25 , 25 , 36 ; 42 , 36 ; 42 , 36 ; 42 , 36 ; 42 ; 42 ). - 35 ). - 35 ). wasipa wasipa 42 ). - 35 ). - 35 ). wasipa 35 ).
+--------------------------------------------------------------------------------
+    SOURCE: Los solteros pueden hacer más en el servicio a Dios al no tener las preocupaciones de los casados.
+    TARGET: Davidmanta rimarisunchik, payqa sapallanraqmi.
+PREDICTED GREEDY: Soltero kaqkunaqa Diosta casado kachkaspa .
+PREDICTED BEAM:   Soltero kaqkunaqa atinmankum Diosta astawan , casado mana . [ 22 kaq paginapi suti rikuylla kaq willakuy ]
+--------------------------------------------------------------------------------
+Processing Epoch 20: 100%|██████████| 1670/1670 [07:10<00:00,  3.88it/s, loss=2.383]
+--------------------------------------------------------------------------------
+    SOURCE: Dorcas “abundaba en buenos hechos y en dádivas de misericordia ”.
+    TARGET: ‘ Payqa achka allinkunatam rurarqa hinaspa wakchakunatapas yanaparqam ’.
+PREDICTED GREEDY: Dorcas sutiyoq cristianam “ achka allinkunata ruraq chaynataq wakchakunata ”.
+PREDICTED BEAM:   Dorcas sutiyoq cristianam “ achka allinkunata ruraq chaynataq wakchakunata ” ( ).
+--------------------------------------------------------------------------------
+    SOURCE: También sabía que cuenta con una organización muy amorosa, aunque aún no había asistido a ninguna reunión.
+    TARGET: Yacharqanitaqmi llaqtanqa kuyakuq kasqanmanta, ichaqa manam haykapipas huñunakurqanichu paykunawanqa.
+PREDICTED GREEDY: Yacharqataqmi Diospa llaqtan hina sapa kuti mana kaptinpas , wakinpiqa una - unay watakunam kasqantapas .
+PREDICTED BEAM:   Yacharqataqmi Diospa llaqtan sapa kuti , ichaqa mana haykapipas huñunakuyman . ¿ Imamantam yacharqa mana ancha kusisqa kasqankumanta ? ”, nispa ( 1 Rey . 18 : 10 ; Santiago 4 : 1 - 10 ; Sal . 18 : 10 ; 1 , 10 ; 1 , 7 , 7 ; 1 , 10 ; 1 , 10 ; 1 , 7 ; 1 , 10 ; 1 , 7 ; 1 , 7 , 10 ; 40 ; 40 , 10 ; 40 ; 40 , 10 ; 40 ; 40 , 10 ; 40 , 10 ; 1 , 10 ; 40 , 10 ; 40 , 10 ; 40 : 10 ; 48 : 10 ; 40 : 10 ; 40 , 10 ; 40 , 10 ; 40 ; 48 : 18 , 10 ; 1 , 10 ; 1 , 10 ; 40 , 10 ; 48 : 10 ; 45 ; 48 ; Isa : 18 ; 48 - 10 ; 48 : 10 ; 84 ; 48 - 10 ; 48 : 18 ; 48 : 18 ; 48 : 18 : 18 ; 48 : 18 ).
+--------------------------------------------------------------------------------
+Processing Epoch 21:  41%|████      | 684/1670 [02:59<04:14,  3.88it/s, loss=2.079]

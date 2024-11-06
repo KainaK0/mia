@@ -132,4 +132,64 @@ PREDICTED BEAM: Kay Willakuq qillqam yachachichkan imaynata Diosqa sapakamata sa
 PREDICTED GREEDY: Chay llaqtaqa karqa , karqa .
 PREDICTED BEAM: Chay llaqtaqa karqa , karqa . ¿ karqa karqa ? ( - , - , - . ( - - karqa , karqa - . 2 , - - - - - - - - karqa , - - - - - - - karqa . - . . karqa .
 --------------------------------------------------------------------------------
-Processing Epoch 11:  56%|█████▋    | 940/1670 [04:01<03:06,  3.92it/s, loss=2.969]
+Processing Epoch 11: 100%|██████████| 1670/1670 [07:06<00:00,  3.92it/s, loss=3.001]
+--------------------------------------------------------------------------------
+    SOURCE: Usted puede guiarlos para que sirvan a Jehová y ayudarles a sentirse como el salmista que escribió: “En hacer tu voluntad, oh Dios mío, me he deleitado, y tu ley está dentro de mis entrañas ”.
+    TARGET: Qamqa atiwaqmi Jehova Diosta servinankupaq churi - wawaykikunata yanapaytaqa. Atiwaqtaqmi Salmo qellqaq hina warmaykikuna kaynata ninankupaq: “Diosnilláy, munachkanim munallasqaykiman hina rurallayta.
+PREDICTED GREEDY: paykunata Jehová Diosta hinaspa kaynata qellqarqa : “ Diosnilláy , munachkanim munallasqaykiman hina rurallayta .
+PREDICTED BEAM: Qampas Jehova Diosta yupaychanankupaq hinaspa tukuy sunquykiwan , Salmos qellqaqmi nirqa : “ Diosnilláy , munachkanim munallasqaykiman hina rurallayta ”, nispa ( Sal . 18 : 13 ).
+--------------------------------------------------------------------------------
+    SOURCE: Expreso mi creatividad pintando, cosiendo, bordando, confeccionando edredones y haciendo objetos de cerámica.
+    TARGET: Imapas ruray atisqaytam qawachini dibujaspay, siraspay, bordaspay, colchakunata ruraspay hinaspa mitumanta imachakunatapas ruraspay.
+PREDICTED GREEDY: mana , Diospa .
+PREDICTED BEAM: mana allintam , chaynapim Diospa . ( Pro . 3 : 6 ; Heb . 6 : 8 ).
+--------------------------------------------------------------------------------
+Processing Epoch 12: 100%|██████████| 1670/1670 [07:06<00:00,  3.92it/s, loss=2.843]
+--------------------------------------------------------------------------------
+    SOURCE: Durante la semana, unos días podemos hacer la lectura semanal de la Escuela del Ministerio Teocrático y dedicar un tiempo a pensar en lo que leemos.
+    TARGET: Chay semanapaq tupaq textokunatam iskay utaq kimsa punchaw ñawinchachwan hinaspam tiempochakuspa chaykunapi yuyaymanachwan.
+PREDICTED GREEDY: Sapa semanam Diosmanta Yachachinapaq Escuelawan hinaspa Diosmanta yachachinapaq allinta Bibliata sapa semana estudiaspa .
+PREDICTED BEAM: Sapa semanam Diosmanta Yachachinapaq Escuelawan hinaspa Bibliamanta qellqakunata estudiay allin kasqanmanta sapa semana estudiay allin kasqanta yachanaykipaq . ¿ Imaynatam Bibliata estudiananchik bibliata estudianapaq ?, nispa ( Prov . 3 : 1 - 3 ; 1 Tim .
+--------------------------------------------------------------------------------
+    SOURCE: “¡Cuánto me ha bendecido Jehová! ”, dice Janice, que acabó llevando las revistas regularmente a 11 personas en su lugar de trabajo.
+    TARGET: Chaymantapas huk llamkaqmi revistakuna mañakuyta qallaykurqa. Janiceqa 11 runakunamanmi sapa kuti revistakunata apan.
+PREDICTED GREEDY: Paymi nin : “ Anchatam agradecekuni Diosmanta willakuq , chaymi llapallan runakunaman predicanaypaq ”, nispa .
+PREDICTED BEAM: Paymi nin : “ Anchatam Jehova Diosqa agradecekuni qellqakunata , chaymi sapa kuti predicanaykupaq ”, nispa . ¿ Ima llamkaytapas karqa ? ( 1 Reyes 11 : 11 - 9 ; 11 : 11 ).
+--------------------------------------------------------------------------------
+Processing Epoch 13: 100%|██████████| 1670/1670 [07:01<00:00,  3.96it/s, loss=2.739]
+--------------------------------------------------------------------------------
+    SOURCE: La verdad es que no podían negarlos.
+    TARGET: Manam negayta atirqakuchu.
+PREDICTED GREEDY: Arí , manam yanqa karqa .
+PREDICTED BEAM: Arí , paykunaqa manamá yanqa karqaku . ¿ Imanasqa karqa ? ( 1 Reyes 19 : 1 - 6 ).
+--------------------------------------------------------------------------------
+    SOURCE: De joven me incliné por el ateísmo y acepté la teoría de la evolución como un hecho.
+    TARGET: Mozo kaspaymi Diospi mana creespay allinpaq hapirqani imapas kikillanmanta rikurimun niq yachachikuyta.
+PREDICTED GREEDY: Mozo - sipas mana allinkuna , chaymi tukuy imapas kikillanmanta rikurisqanta yanapawarqa .
+PREDICTED BEAM: Mozollaraq kaspaymi Diospi mana creeq estudiayta munarqani hinaspa chay ruwasqan animalkunamanta niq kani , chaymi tukuy imapas kikillanmanta rikurisqanta yanapawarqa . ( 1 Rey . 2 : 1 , 2 , 2 , 2 , 2 ; 2 : 7 ).
+--------------------------------------------------------------------------------
+Processing Epoch 14: 100%|██████████| 1670/1670 [06:56<00:00,  4.01it/s, loss=2.462]
+--------------------------------------------------------------------------------
+    SOURCE: Otros informes muestran que en 1916 más de 809.000 personas asistieron a las reuniones en Estados Unidos. Y en 1918 asistieron casi 950.000 personas.
+    TARGET: Chaymi 1916 kaq watapi Estados Unidos nacionpi 809 waranqa masnin runakuna huñunakuykunaman riqku hinaspa 1918 kaq watapiñataq yaqa 950 waranqa runakuna riqku.
+PREDICTED GREEDY: Chay nisqa 8 . 000 masnin runakuna rirqaku hinaspapas Estados Unidos nacionpi runakuna wañururqaku .
+PREDICTED BEAM: Chay nisqa 8 . 000 millon masnin runakuna rirqaku hinaspapas Estados Unidos nacionpi 1 . 900 . 000 runakuna rirqaku .
+--------------------------------------------------------------------------------
+    SOURCE: En esta ocasión no buscó el apoyo de Egipto ni de naciones vecinas — una solución que no hubiera estado en sintonía con la voluntad de Jehová⁠ — ni tampoco se apoyó en su experiencia personal.
+    TARGET: Payqa manam Egipto nacionpa chaynataq huk nacionkunapa yanapakuynintaqa maskarqachu nitaq kikillanpa yachasqallanpichu hapipakurqa, aswanmi Diospa munasqanman hina rurarqa.
+PREDICTED GREEDY: Chay kutipim Egipto nacionpi mana , payqa imayna kasqanmanta hinaspam Diospa kamachisqanta imayna munarqa .
+PREDICTED BEAM: Chay kutipim Egipto nacionpi achka nacionkuna yanaparqa , paykunam nirqaku Dios imayna piensasqanta , chaytaqa manam yacharqachu ( Deuteronomio 6 : 1 - 6 ; 6 : 1 - 6 ).
+--------------------------------------------------------------------------------
+Processing Epoch 15: 100%|██████████| 1670/1670 [06:58<00:00,  3.99it/s, loss=2.405]
+--------------------------------------------------------------------------------
+    SOURCE: ¿Cómo fue Jehová “una verdadera morada ” para Jacob, y qué aprendemos de ello?
+    TARGET: ¿Imaynanpim Jehova Diosqa Jacobpaq amparakuna ‘ wasi hina ’ karqa, hinaspa imatam yachachiwanchik?
+PREDICTED GREEDY: ¿ Imaynatam Jehova Diosqa Abrahampaq , hinaspa imatam chayqa yachachiwanchik ?
+PREDICTED BEAM: ¿ Imaynanpim Jehova Diosqa amparakuna ‘ wasi hina ’ Abrahampaq karqa , hinaspa imatam chayqa yachachiwanchik ? ( 2 Cron . 31 : 1 - 3 , hinaspa imatam chayqa yachachiwanchik ? ( Gen .
+--------------------------------------------------------------------------------
+    SOURCE: JESUCRISTO estaba desempeñando sus funciones de Gran Maestro y Formador de Discípulos cuando dio este mandato a quienes lo seguían: “Presten atención a cómo escuchan ”.
+    TARGET: JESUCRISTOM qawachirqa Allin Yachachiq hinaspa Allin Yanapaq kasqanta qatiqninkunata kaynata kamachispan: “Sumaqtayá uyariychik ”, nispa.
+PREDICTED GREEDY: JESUCRISTOQA allin Yachachiq hinaspa ‘ ’ nirqa : “ Sumaqtayá uyariychik ”, nispa .
+PREDICTED BEAM: JESUCRISTOQA allin Yachachiq sutichasqa nirqa : “ Sumaqtayá uyariychik ” ( Is . 43 : 9 ).
+--------------------------------------------------------------------------------
+Processing Epoch 16:  60%|█████▉    | 999/1670 [04:12<02:48,  3.97it/s, loss=2.247]
