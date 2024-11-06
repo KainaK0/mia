@@ -1,0 +1,135 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 1670/1670 [07:05<00:00,  3.92it/s, loss=5.664]
+--------------------------------------------------------------------------------
+    SOURCE: Antes de recibir la invitación para ir al cielo, él tenía la esperanza de vivir para siempre en la Tierra.
+    TARGET: Manaraq akllasqa kachkaspanqa kay pachapi wiñaypaq kawsakuytam munarqa.
+PREDICTED GREEDY: Chaymi Jesusqa ‘ ’ .
+PREDICTED BEAM: Ichaqa , ‘ ’ ( Sal . 3 : 1 ).
+--------------------------------------------------------------------------------
+    SOURCE: Ejemplos de fe: “Aunque murió, todavía habla ” 12
+    TARGET: Iñiyninkuta qatipakunapaq: “Wañusqaña kaspanpas ” iñiyninwanmi kallpanchawanchik 12
+PREDICTED GREEDY:
+PREDICTED BEAM: “ ” ( leey 1 : 3 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 15 - 4 - 4 - 4 - 15 ). ” org ). ” ( 1 - 15 - 15 - 15 - 15 - 4 - 10 ). ” ” ” ” org ). ” ” ” ” ” org 3 - 15 ). org 3 - 15 - 4
+--------------------------------------------------------------------------------
+Processing Epoch 01: 100%|██████████| 1670/1670 [07:15<00:00,  3.83it/s, loss=5.080]
+--------------------------------------------------------------------------------
+    SOURCE: Que Jesús es Miguel el arcángel.
+    TARGET: Jesucristoqa angelkunata kamachiq Miguelmi.
+PREDICTED GREEDY: Jesusqa .
+PREDICTED BEAM: Jesusmi nirqa : “ ”, nispa . ” nispa ( Sal . 3 : 1 ; 2 : 1 ; 2 : 1 ; 2 : 1 ; 2 : 2 : 1 ; 2 : 2 : 1 : 1 ; 2 : 6 : 1 ; 2 : 6 : 1 ; 2 : 1 ; 1 ; 2 : 2 : 1 ; 1 ; 2 : 6 : 1 ; 2 : 1 ; 2 : 1 ; 1 ; 2 : 6 : 1 ; 2 : 1 ; 1 ; 2 : 1 ; 1 ; 1 ; 1 ; 1 ; 1 ; 1 ; 2 : 6 : 6 : 6 : 1 ; 2 : 1 ; 1 ; 2 ; 1 ; 2 : 6 : 6 : 6 : 1 ; 2 : 9 : 1 ; 1 ; 1 ; 1 ; 2 : 6 : 6 : 6 : 6 : 1 ; 2 : 1 ; 1 ; 2 : 1 ; 2 ; 1 1 1 1 1 1 1 1 1 1 1 1 ; 2 : 1 ; 2 ).
+--------------------------------------------------------------------------------
+    SOURCE: Si ve a su pareja como un compañero de equipo y no como un contrincante, será menos probable que se sienta ofendido, que discuta y que deje de hablarle.
+    TARGET: Qosaykita otaq señoraykita yanapasuqnikita hina qaway ama enemigoykita hinachu, chaynapim mana piñanakunkichikchu nitaq mana rimanakuspaqa kankichikchu.
+PREDICTED GREEDY: , .
+PREDICTED BEAM: Mana allin , . ”, nispa ( Pro . 3 : 1 ).
+--------------------------------------------------------------------------------
+Processing Epoch 02: 100%|██████████| 1670/1670 [07:04<00:00,  3.94it/s, loss=4.881]
+--------------------------------------------------------------------------------
+    SOURCE: Cada vez que recibimos una carta de Brasil, nos vienen a la mente entrañables recuerdos de aquella hermosa época.
+    TARGET: Wakinpim Brasilmanta cartakunata chaskispayku chay tiempokunapi kusisqa kasqaykuta yuyariniku.
+PREDICTED GREEDY: Chay .
+PREDICTED BEAM: Sapa punchawmi . ¿ Imanasqa ? ”, nispa . org nisqanman hinaqa . ¿ Imanasqa ? ( 1 Sam . 1 : 1 - 9 ; 1 Sam . 1 : 1 - 9 ).
+--------------------------------------------------------------------------------
+    SOURCE: Que cada uno de nosotros siga buscando conocimiento, entendimiento y sabiduría.
+    TARGET: Llapallanchikyá kallpanchakusun yachayniyoq, entiendeq hinaspa yuyayniyoq kanapaq.
+PREDICTED GREEDY: , hinaspa .
+PREDICTED BEAM: , hinaspa . ” ( Proverbios 4 : 4 ; 1 Sam . 1 : 7 ; 1 Sam . 4 : 9 ; 1 Sam . 1 : 4 ). 3 ; 2 : 1 ; 1 ; 1 ; 1 ) 4 : 4 : 4 : 4 : 4 ; 1 - 4 ; 1 ; 1 ; 1 - 4 ; 1 - 4 : 7 ).
+--------------------------------------------------------------------------------
+Processing Epoch 03: 100%|██████████| 1670/1670 [07:05<00:00,  3.92it/s, loss=4.557]
+--------------------------------------------------------------------------------
+    SOURCE: El apóstol Pablo felicitó a los hermanos de Corinto por obedecer las instrucciones que les había dado el superintendente Tito.
+    TARGET: Apostol Pablom Corinto llaqtapi iñiqkunata alabarqa congregacionkuna watukuq Titopa nisqanta kasukusqankumanta.
+PREDICTED GREEDY: Apostol Pablom iñiqmasinkunata nirqa : “ ”, nispa .
+PREDICTED BEAM: Apostol Pablom iñiqmasinkunata nirqa : ‘ ’, nispa . ¿ Imanasqa ? ¿ Imanasqa ? ¿ Imanasqa ? ¿ Imanasqa ? ”, nispa ( Prov . 1 : 1 - 17 ).
+--------------------------------------------------------------------------------
+    SOURCE: Además, cuando un ungido conoce a otros por primera vez, no les dice que es ungido.
+    TARGET: Pitapas chayllaraq riqsispankuqa manam willakunkuchu hanaq pachaman rinankupaq akllasqa kasqankumantaqa.
+PREDICTED GREEDY: Chaymantapas , hanaq pachapaq akllasqa cristianokunaqa manam hanaq pachapaq .
+PREDICTED BEAM: Chaymantapas , hanaq pachaman rinankupaq suyakuyniyoq cristianokunaqa manam hanaq pachaman . ¿ Imanasqataq hanaq pachapaq iñiqmasinchikkunaqa mana ? ( 1 Rey . 1 : 1 - 6 ).
+--------------------------------------------------------------------------------
+Processing Epoch 04: 100%|██████████| 1670/1670 [07:03<00:00,  3.95it/s, loss=4.443]
+--------------------------------------------------------------------------------
+    SOURCE: Sin embargo, estamos seguros de que Dios cumplirá su promesa de bendecir nuestros esfuerzos.
+    TARGET: Ichaqa segurom kanchik kallpanchakusqanchikta Dios bendecinanmanta.
+PREDICTED GREEDY: Ichaqa manam iskayrayanchikchu Diospa munayninta mana .
+PREDICTED BEAM: Chayna kaptinpas , Jehova Diosqa manam ( 1 Rey . 3 : 9 - 10 ).
+--------------------------------------------------------------------------------
+    SOURCE: Porque es el único que entiende por completo nuestra situación, nuestros sentimientos y nuestro pasado.
+    TARGET: Payqa allintapunim yachan imayna tarikusqanchikta hinaspa imayna kasqanchiktapas.
+PREDICTED GREEDY: Imayna kaptinpas , imayna .
+PREDICTED BEAM: Imayna kaptinpas , imayna hinaspa imayna . ( 2 Sam . 3 : 4 ).
+--------------------------------------------------------------------------------
+Processing Epoch 05: 100%|██████████| 1670/1670 [07:02<00:00,  3.95it/s, loss=4.247]
+--------------------------------------------------------------------------------
+    SOURCE: Al enviar a Elías a la casa de la viuda, Jehová demostró que se fija en las personas de buen corazón que aún no le sirven.
+    TARGET: Jehova Diosmi Eliasta kamachirqa viudapa wasinman rinanpaq, kaymi qawachin runakunapa sonqonta Dios qawasqanta.
+PREDICTED GREEDY: Eliasqa Jehová Dios imayna , payqa anchatam yacharqa tukuy sonqonkuwan Diosta yupaychanankupaq .
+PREDICTED BEAM: Jehová Diosqa munarqam huk law llaqtayuq runakunata imayna yanapasqanmanta , chaymi qawachirqa mana allin sonqoyoq runakunata Dios yanapasqanta . ( 1 Rey . 1 : 1 - 7 ).
+--------------------------------------------------------------------------------
+    SOURCE: Éramos cuatro hermanos — tres chicos y una chica —, de los cuales yo era el segundo; así que en casa no había un instante de aburrimiento.
+    TARGET: Ñoqaykuqa karqaniku kimsa qari hinaspa huk warmim, ñoqañataqmi mayorniykupa qatiqnin karqani.
+PREDICTED GREEDY: kimsa kimsa , kimsa .
+PREDICTED BEAM: kimsa wata , kimsa , hinaptinmi iskay mana . ¿ Imanasqa ?, nispa . 2 : 1 - 3 ; 2 Sam . 3 : 4 ).
+--------------------------------------------------------------------------------
+Processing Epoch 06: 100%|██████████| 1670/1670 [07:04<00:00,  3.93it/s, loss=3.858]
+--------------------------------------------------------------------------------
+    SOURCE: Dios envió a su Hijo con buenas noticias para los pobres.
+    TARGET: Paymi aceitewan talliwaspan sapaqchawarqa.
+PREDICTED GREEDY: Diosmi Churinta sumaq noticiamanta sumaq noticiamanta kachamurqa .
+PREDICTED BEAM: Diosmi Churinta sumaq noticiamanta sumaq suyakuyta qorqa .
+--------------------------------------------------------------------------------
+    SOURCE: Seleccionando bien los textos bíblicos que vamos a leerles a quienes nos escuchen con el objetivo de llegarles al corazón.
+    TARGET: Kasukuchwanmi uyariwaqninchikkunapa sonqonman chayanapaq textokunata allinta akllaspa.
+PREDICTED GREEDY: Chaypaqmi yanapasunki Bibliamanta yachay munaqkunata , chaynapi Diosta kasukunankupaq .
+PREDICTED BEAM: Chaypaqmi yanapasunki Bibliamanta yachay munaqkunata , chaynapi Diospa kamachisqanta kasukunankupaq ( Sal . 40 : 1 - 3 ; Sant . 3 : 1 - 3 ; Sant . 3 : 1 - 4 ; Sant . 3 : 4 : 4 ; Sant . 3 : 4 : 4 : 4 : 4 : 4 : 3 - 4 : 4 : 4 : 4 : 4 - 4 : 4 : 3 ).
+--------------------------------------------------------------------------------
+Processing Epoch 07: 100%|██████████| 1670/1670 [07:04<00:00,  3.93it/s, loss=3.693]
+--------------------------------------------------------------------------------
+    SOURCE: Así que no importa dónde sirvamos en su organización. Jehová no nos compara con otros ni nos rechaza cuando cometemos errores.
+    TARGET: Chaynaqa Diospa llaqtanpi ima ruwayniyuqña kaptinchikpas, Jehova Diosqa manam piwanpas tupachiwanchikchu nitaq qipanchawanchikchu pantaptinchikqa.
+PREDICTED GREEDY: Chaynaqa , Jehová Diosqa manam nitaq .
+PREDICTED BEAM: Chaynaqa , Jehová Diospa llaqtanpa manam , nitaq ( Sal . 103 : 5 ; Sal . 1 : 5 ).
+--------------------------------------------------------------------------------
+    SOURCE: Nos gusta porque lo más importante para él era ser leal a Dios.
+    TARGET: Jonatanpaqqa Jehova Diosman sunqu kayninmi imamantapas aswan allinqa karqa.
+PREDICTED GREEDY: Arí , payqa Diosman sunqu kasqanraykum .
+PREDICTED BEAM: Arí , ancha allinmi karqa Jehova Diosman sunqu kayqa . ( 1 Sam . 2 : 5 ).
+--------------------------------------------------------------------------------
+Processing Epoch 08: 100%|██████████| 1670/1670 [07:05<00:00,  3.92it/s, loss=3.620]
+--------------------------------------------------------------------------------
+    SOURCE: Tener energía, ser sensitivo.
+    TARGET: Kallpayuq kay, musyakuq kay.
+PREDICTED GREEDY: .
+PREDICTED BEAM: Allin .
+--------------------------------------------------------------------------------
+    SOURCE: Mi trabajo era principalmente administrativo, pero sí di clases sobre decretos del Concilio Vaticano II.
+    TARGET: Curakuna kananpaq wasipipas cuentallikuqmi karqani, chaynataq iglesiapa leyninkunamanta yachachiqpas.
+PREDICTED GREEDY: Chay tiempopi runakunaqa manam ñawpaqpi hinañachu yacharqaku , ichaqa chay tiempopi cosecha tiempopi qallaykurqaku .
+PREDICTED BEAM: Chay pantay yachachikuypa qallariyninpi qawamusqanchikman hinam , ichaqa chay sasachakuy tiempopim chay tiempopi yachaq runakunaqa nirqaku ima pasasqanmanta . ¿ Imanasqa ? ( Dan . 3 : 1 - 3 ; 2 Cor . 1 Cor . 1 : 1 : 3 ).
+--------------------------------------------------------------------------------
+Processing Epoch 09: 100%|██████████| 1670/1670 [07:04<00:00,  3.93it/s, loss=3.394]
+--------------------------------------------------------------------------------
+    SOURCE: Además, allí empezaron a tratarlo como alguien especial.
+    TARGET: Chaypiqa Jehova Diosta mana yupaychaq runakunawanmi yacharqa.
+PREDICTED GREEDY: Chaymantapas , chay hinam karqa .
+PREDICTED BEAM: Chaymantapas , huk kaqnin hinam karqa . ( 1 Sam . 1 : 1 - 3 ).
+--------------------------------------------------------------------------------
+    SOURCE: Sin embargo, la Biblia afirma que Jehová es quien hizo todas las cosas.
+    TARGET: Ichaqa Bibliam willawanchik tukuy imata Jehova Dios unanchasqanmanta.
+PREDICTED GREEDY: Bibliam ichaqa niwanchik tukuy ima Unanchaq Jehova Dios kasqanta .
+PREDICTED BEAM: Bibliam ichaqa niwanchik tukuy ima Unanchaq Jehova Dios kasqanta ( Salmo 55 : 9 ).
+--------------------------------------------------------------------------------
+Processing Epoch 10: 100%|██████████| 1670/1670 [07:03<00:00,  3.94it/s, loss=3.027]
+--------------------------------------------------------------------------------
+    SOURCE: Este número de La Atalaya explica cómo Dios nos da a cada uno el consuelo que necesitamos.
+    TARGET: Kay Willakuq qillqam yachachichkan Dios imaynata sapakamata yanapawasqanchikmanta.
+PREDICTED GREEDY: Kay Willakuq qillqam nin : “ Sapa punchaw Diosmanyá qoykuy imapi yanapawasqanchikmanta .
+PREDICTED BEAM: Kay Willakuq qillqam yachachichkan imaynata Diosqa sapakamata sapakamata sapakamata sapakamata unanchawasqanchikmanta ( Prov . 3 : 13 , NM ; 1 Cron . 1 : 13 ). ( Sal . 1 : 13 , NM ; Is . 1 : 1 )
+--------------------------------------------------------------------------------
+    SOURCE: En ciudades grandes los carros ruedan como hormigas.
+    TARGET: Hatun llaqtakunapiqa, sisi hinañam karukuna muyunku.
+PREDICTED GREEDY: Chay llaqtaqa karqa , karqa .
+PREDICTED BEAM: Chay llaqtaqa karqa , karqa . ¿ karqa karqa ? ( - , - , - . ( - - karqa , karqa - . 2 , - - - - - - - - karqa , - - - - - - - karqa . - . . karqa .
+--------------------------------------------------------------------------------
+Processing Epoch 11:  56%|█████▋    | 940/1670 [04:01<03:06,  3.92it/s, loss=2.969]
