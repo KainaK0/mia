@@ -1,0 +1,15 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 17275/17275 [35:53<00:00,  8.02it/s, loss=6.643]
+--------------------------------------------------------------------------------
+    SOURCE: ¿Usted presionó para que se declarara
+    TARGET: ñifpacaillachircan ^ paiquiquiti
+PREDICTED GREEDY: ¿ Ima mana allin kasqanta ?
+PREDICTED BEAM:   ¿ Imaynatam kay pachapi mana allin kasqanmanta ? - nispa . / 2 . 000 . 000 . / s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . s . .
+--------------------------------------------------------------------------------
+    SOURCE: Tags: Venezuela, Mesa de la Unidad Democrática
+    TARGET: Llaqta qayanqillqa: Unity Freedom Justice
+PREDICTED GREEDY: Rurana antacha Yapasqa : s : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu
+PREDICTED BEAM:   Rurana antacha Yapasqa : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu : qu ) qu : qu - qu ) qu : qu : qu : qu : qu : qu : qu : qu : qu : qu ) qu : qu : qu : qu : qu : qu : qu : qu : qu ) qu ) qu ) qu ) qu : qu ) qu ) qu ) qu : qu : qu ) qu - qu ) qu - qu )
+--------------------------------------------------------------------------------
+Processing Epoch 01:  41%|████      | 7118/17275 [14:36<20:50,  8.12it/s, loss=6.294]

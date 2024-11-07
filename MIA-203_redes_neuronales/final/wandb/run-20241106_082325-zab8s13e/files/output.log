@@ -1,0 +1,29 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 11517/11517 [36:27<00:00,  5.27it/s, loss=5.847]
+--------------------------------------------------------------------------------
+    SOURCE: El estado de la casa en Link Pa...
+    TARGET: Runaway Linkin Pa...
+PREDICTED GREEDY: Hatun llaqtakunapipas chay hinallataqmi .
+PREDICTED BEAM:   Hatun llaqtakunapipas chay hinallataqmi . - man kutimuy . - man kutimuy . ( Mat . . - 1 - 1 - 1 ) - 000 - man kutimuy . - man kutimuy . - man - man kutimuy . - man - man - man . - man . - manta kutimuy . - man - man - man kutimuy . - man kutimuy . - man kutimuy . - man kutimuy . - man - man kutimuy . - man kutimuy - man - man kutimuy . - man - man kutimuy - man kutimuy . - man kutimuy . - man . - man man man man . - man man . - man - man man manta man - man - man - man - man - man - man - man kutimuy .
+--------------------------------------------------------------------------------
+    SOURCE: 19- ¿Qué es la Iglesia de Cristo?
+    TARGET: 10:00 ¿Imataq Cristupa leynin?
+PREDICTED GREEDY: ¿ Pitaq Diospa sutinta ?
+PREDICTED BEAM:   b ) ¿ Ima ninantaq Diospa sutinta ? ( 2 ) ¿ Imataq Diospa sutin ?
+--------------------------------------------------------------------------------
+Processing Epoch 01: 100%|██████████| 11517/11517 [36:45<00:00,  5.22it/s, loss=5.421]
+--------------------------------------------------------------------------------
+    SOURCE: Diez años después en 1990,
+    TARGET: Ajinallatataq 1990 chunka watapiqa,
+PREDICTED GREEDY: " Wañusqa 2000 " sutiyuq katiguriyapi qillqakuna
+PREDICTED BEAM:   10 ñiqin qhulla puquy killapi 191 ##0 watapi , watapi , watapi , watapi , watapi , watapi , watapi , nispa . * * * * * ##- nisqa . * * * * * * * * * * * * * * * * * * * * * * * * * * * ( ##[[ ##[[ ##[[ s . * ##, ##[[ 1 [[ 1 [[ 1 [[ 1 [[ 1 .
+--------------------------------------------------------------------------------
+    SOURCE: Tú que te encuentras más allá del bien y del mal, concede nuestro favor.
+    TARGET: Jinamanmi tantiayächin juc ali rurag runawan nätan juc lutan rurag runawan.
+PREDICTED GREEDY: Sichus mana allin kanman chayqa , allin kanman chayqa , allin kanman , allin kaqta ##n ruwan .
+PREDICTED BEAM:   Sichus mana allin kanman chayqa , allin kanman chayqa , mana allin kanman chayqa , allin sonqoyoq ##mi kanki , nispa ( Mat . * ( Mat . * 3 : 11 ).
+--------------------------------------------------------------------------------
+Processing Epoch 02:  23%|██▎       | 2640/11517 [08:09<27:27,  5.39it/s, loss=5.069]
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Repo card metadata block was not found. Setting CardData to empty.

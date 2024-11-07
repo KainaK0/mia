@@ -27,3 +27,24 @@ config: {'batch_size': 48, 'num_epochs': 10, 'lr': 0.0001, 'seq_len': 140, 'd_mo
 2024-11-06 02:59:39,699 INFO    MainThread:7768 [wandb_run.py:_redirect():2376] Wrapping output streams.
 2024-11-06 02:59:39,699 INFO    MainThread:7768 [wandb_run.py:_redirect():2401] Redirects installed.
 2024-11-06 02:59:39,701 INFO    MainThread:7768 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-06 03:30:08,792 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,792 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:08,802 INFO    MainThread:7768 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 03:30:08,816 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,816 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:08,825 INFO    MainThread:7768 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 03:30:08,837 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,837 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:08,849 INFO    MainThread:7768 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 03:30:08,854 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,854 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:08,865 INFO    MainThread:7768 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 03:30:08,873 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,873 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:08,882 INFO    MainThread:7768 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 03:30:08,890 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,890 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:08,900 INFO    MainThread:7768 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 03:30:08,908 INFO    MainThread:7768 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 03:30:08,908 INFO    MainThread:7768 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 03:30:37,397 WARNING MsgRouterThr:7768 [router.py:message_loop():77] message_loop has been closed

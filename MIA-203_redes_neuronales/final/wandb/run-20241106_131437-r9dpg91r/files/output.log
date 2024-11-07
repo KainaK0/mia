@@ -1,0 +1,6 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00:   7%|▋         | 1155/17275 [02:42<37:49,  7.10it/s, loss=7.574, lr=0.00040354] 
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Repo card metadata block was not found. Setting CardData to empty.
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.

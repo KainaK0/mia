@@ -1,0 +1,3 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00:  65%|██████▍   | 7482/11517 [26:49<14:27,  4.65it/s, loss=7.812, lr=0.000459518] 

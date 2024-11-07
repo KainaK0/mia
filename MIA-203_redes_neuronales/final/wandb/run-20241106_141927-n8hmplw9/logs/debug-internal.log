@@ -1,0 +1,9 @@
+{"time":"2024-11-06T14:19:27.5829761-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T14:19:27.5829761-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_141927-n8hmplw9\\logs\\debug-core.log"}
+{"time":"2024-11-06T14:19:27.7081393-05:00","level":"INFO","msg":"created new stream","id":"n8hmplw9"}
+{"time":"2024-11-06T14:19:27.7081393-05:00","level":"INFO","msg":"stream: started","id":"n8hmplw9"}
+{"time":"2024-11-06T14:19:27.7086571-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"n8hmplw9"}}
+{"time":"2024-11-06T14:19:27.7086571-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"n8hmplw9"}}
+{"time":"2024-11-06T14:19:27.7086571-05:00","level":"INFO","msg":"sender: started","stream_id":"n8hmplw9"}
+{"time":"2024-11-06T14:19:28.1322249-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T14:19:35.1571345-05:00","level":"INFO","msg":"Pausing system monitor"}

@@ -1,0 +1,15 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 13146/13146 [27:25<00:00,  7.99it/s, loss=7.280, lr=0.000772135]
+--------------------------------------------------------------------------------
+    SOURCE: Sin embargo, los Sith recurrieron al odio que lo hizo fuerte, y se las arregló para sobrevivir.
+    TARGET: Pallkunaqam Tituta ancha munarqanllampa kamachiyta, chay siñalta kwirpumbi ruranambaq.
+PREDICTED GREEDY:
+PREDICTED BEAM:
+--------------------------------------------------------------------------------
+    SOURCE: Si la educación no pudiera hacer nada, tampoco tendría mucho sentido hablar de sus limitaciones."
+    TARGET: 9 Piru kwirpullkita mana atichpa sujitaytaqa, kasarayllampa, ama uchata ruranallkillampa, nichpa.
+PREDICTED GREEDY:
+PREDICTED BEAM:
+--------------------------------------------------------------------------------
+Processing Epoch 01:  31%|███▏      | 4126/13146 [08:22<18:18,  8.21it/s, loss=6.050, lr=0.000673446]

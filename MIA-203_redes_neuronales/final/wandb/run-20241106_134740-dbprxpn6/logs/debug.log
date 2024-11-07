@@ -1,0 +1,51 @@
+2024-11-06 13:47:40,275 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Current SDK version is 0.18.5
+2024-11-06 13:47:40,275 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Configure stats pid to 37724
+2024-11-06 13:47:40,275 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Loading settings from C:\Users\kainak0\.config\wandb\settings
+2024-11-06 13:47:40,275 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Loading settings from c:\Users\kainak0\Documents\gitProjects\mia\MIA-203_redes_neuronales\final\wandb\settings
+2024-11-06 13:47:40,275 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Loading settings from environment variables: {}
+2024-11-06 13:47:40,275 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Applying login settings: {'api_key': '***REDACTED***'}
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_setup.py:_flush():79] Applying login settings: {}
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_init.py:_log_setup():534] Logging user logs to c:\Users\kainak0\Documents\gitProjects\mia\MIA-203_redes_neuronales\final\wandb\run-20241106_134740-dbprxpn6\logs\debug.log
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_init.py:_log_setup():535] Logging internal logs to c:\Users\kainak0\Documents\gitProjects\mia\MIA-203_redes_neuronales\final\wandb\run-20241106_134740-dbprxpn6\logs\debug-internal.log
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_init.py:_jupyter_setup():480] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001890BE5C990>
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_init.py:init():621] calling init triggers
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_init.py:init():628] wandb.init called with sweep_config: {}
+config: {'batch_size': 48, 'num_epochs': 10, 'lr': 6.176323555016366e-08, 'seq_len': 140, 'd_model': 512, 'N_layers': 2, 'heads': 8, 'dropout': 0.1, 'ffn_hidden': 2048, 'warmup_steps': 8000, 'datasource': 'spanish-to-quechua', 'version': '007', 'lang_src': 'es', 'lang_tgt': 'qu', 'model_folder': 'weights_es_qu{0}', 'model_basename': 'tmodel_es_qu{0}', 'preload': 'latest', 'tokenizer_file': 'tokenizer_es_qu_{0}{1}.json', 'experiment_name': 'runs/tmodel_es_qu{0}'}
+2024-11-06 13:47:40,276 INFO    MainThread:37724 [wandb_init.py:init():646] re-initializing run, found existing run on stack: 1eu05uy0
+2024-11-06 13:47:40,277 INFO    MainThread:37724 [wandb_run.py:_finish():2158] finishing run salcantaratnaist/pytorch-transformer_es_qu007/1eu05uy0
+2024-11-06 13:47:40,278 INFO    MainThread:37724 [wandb_run.py:_atexit_cleanup():2426] got exitcode: 0
+2024-11-06 13:47:40,278 INFO    MainThread:37724 [wandb_run.py:_restore():2408] restore
+2024-11-06 13:47:40,278 INFO    MainThread:37724 [wandb_run.py:_restore():2414] restore done
+2024-11-06 13:47:43,011 INFO    MainThread:37724 [wandb_run.py:_footer_history_summary_info():3975] rendering history
+2024-11-06 13:47:43,011 INFO    MainThread:37724 [wandb_run.py:_footer_history_summary_info():4007] rendering summary
+2024-11-06 13:47:43,016 INFO    MainThread:37724 [wandb_run.py:_footer_sync_info():3934] logging synced files
+2024-11-06 13:47:43,019 INFO    MainThread:37724 [wandb_init.py:init():671] starting backend
+2024-11-06 13:47:43,019 INFO    MainThread:37724 [wandb_init.py:init():675] sending inform_init request
+2024-11-06 13:47:43,020 INFO    MainThread:37724 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2024-11-06 13:47:43,020 INFO    MainThread:37724 [wandb_init.py:init():688] backend started and connected
+2024-11-06 13:47:43,023 INFO    MainThread:37724 [wandb_run.py:_label_probe_notebook():1342] probe notebook
+2024-11-06 13:47:43,023 INFO    MainThread:37724 [wandb_run.py:_label_probe_notebook():1352] Unable to probe notebook: 'charmap' codec can't decode byte 0x81 in position 89234: character maps to <undefined>
+2024-11-06 13:47:43,023 INFO    MainThread:37724 [wandb_init.py:init():783] updated telemetry
+2024-11-06 13:47:43,064 INFO    MainThread:37724 [wandb_init.py:init():816] communicating run to backend with 90.0 second timeout
+2024-11-06 13:47:43,652 INFO    MainThread:37724 [wandb_init.py:init():867] starting run threads in backend
+2024-11-06 13:47:43,732 INFO    MainThread:37724 [wandb_run.py:_console_start():2463] atexit reg
+2024-11-06 13:47:43,732 INFO    MainThread:37724 [wandb_run.py:_redirect():2311] redirect: wrap_raw
+2024-11-06 13:47:43,733 INFO    MainThread:37724 [wandb_run.py:_redirect():2376] Wrapping output streams.
+2024-11-06 13:47:43,733 INFO    MainThread:37724 [wandb_run.py:_redirect():2401] Redirects installed.
+2024-11-06 13:47:43,733 INFO    MainThread:37724 [wandb_init.py:init():911] run started, returning control to user process
+2024-11-06 14:14:33,694 INFO    MainThread:37724 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 14:14:33,695 INFO    MainThread:37724 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 14:14:33,699 INFO    MainThread:37724 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 14:14:33,704 INFO    MainThread:37724 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 14:14:33,704 INFO    MainThread:37724 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 14:14:33,715 INFO    MainThread:37724 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 14:14:33,721 INFO    MainThread:37724 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 14:14:33,721 INFO    MainThread:37724 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 14:14:33,727 INFO    MainThread:37724 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 14:14:33,730 INFO    MainThread:37724 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 14:14:33,731 INFO    MainThread:37724 [wandb_init.py:_pause_backend():445] pausing backend
+2024-11-06 14:14:33,737 INFO    MainThread:37724 [wandb_init.py:_resume_backend():450] resuming backend
+2024-11-06 14:14:33,740 INFO    MainThread:37724 [jupyter.py:save_ipynb():387] not saving jupyter notebook
+2024-11-06 14:14:33,740 INFO    MainThread:37724 [wandb_init.py:_pause_backend():445] pausing backend

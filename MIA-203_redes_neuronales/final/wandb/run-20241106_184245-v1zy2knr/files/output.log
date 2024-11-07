@@ -1,0 +1,15 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 2348/2348 [04:02<00:00,  9.70it/s, loss=8.364, lr=0.000284605]
+--------------------------------------------------------------------------------
+    SOURCE: • ¿Cuál fue el eje central de las enseñanzas de Jesús?
+    TARGET: • Imamantapas puntataqa, ¿imamantam Jesusqa yachachirqa?
+PREDICTED GREEDY:
+PREDICTED BEAM:   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+--------------------------------------------------------------------------------
+    SOURCE: Su magistral discurso finalizó con una declaración que debió de impactar a sus oyentes paganos.
+    TARGET: Yachaywan sumaq discurso qosqanqa admirachirqachá taytacha - mamacha yupaychaq runakunataqa.
+PREDICTED GREEDY:
+PREDICTED BEAM:   . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+--------------------------------------------------------------------------------
+Processing Epoch 01:  38%|███▊      | 883/2348 [01:30<02:30,  9.72it/s, loss=8.037, lr=0.000396767]

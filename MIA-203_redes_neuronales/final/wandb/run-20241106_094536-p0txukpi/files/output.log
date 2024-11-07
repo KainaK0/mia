@@ -1,0 +1,51 @@
+Using device: cuda
+Preloading model spanish-to-quechua_weights_es_qu005\tmodel_es_qu00501.pt
+Processing Epoch 02: 100%|██████████| 5759/5759 [32:38<00:00,  2.94it/s, loss=5.735]
+--------------------------------------------------------------------------------
+    SOURCE: Ni Salomón en toda su gloria se vistió como uno de ellos."
+    TARGET: Salomonpish yallitaj charij cashcahuan, manataj cai sisacuna shina sumajtaca churarircachu.
+PREDICTED GREEDY: Salomonqa manam lliw ##chu karqa , aswanqa manam lliw ##chu karqa .
+PREDICTED BEAM:   Salomonqa manam lliw runakunachu karqa , aswanqa tukuy ima unanchasqan ##kunam karqa . * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+--------------------------------------------------------------------------------
+    SOURCE: ¿Es este el próximo?
+    TARGET: Kachu ka kachu?
+PREDICTED GREEDY: ¿ Kay p ' unchaw ##taq kay ?
+PREDICTED BEAM:   ¿ Hayka qellqasqa librokuna hinam kanman ADN nisqapi ##rí ? nispa . * . * * ¿ Imataq chaypi kachkan ? * ¿ Imataq kanqa ?
+--------------------------------------------------------------------------------
+Processing Epoch 03: 100%|██████████| 5759/5759 [32:27<00:00,  2.96it/s, loss=4.803]
+--------------------------------------------------------------------------------
+    SOURCE: Tú estás aquí: Inicio / Rumor / Rumor - S.T.A.L.K.E.R. 2 sigue vivo y en manos de Bethesda
+    TARGET: Día 2: Quiswarniyoc / Abra Salkantay / Wayracmachay / Challway
+PREDICTED GREEDY: Katiguriya : Ruwaq : b - 1 sutiyuq p ' anqaman t ' inkimuqkuna - Wikipidiya
+PREDICTED BEAM:   pika - chu | Piika > pika - pika - pi - ka - chu - pi - ka - chu - pi - ka - chu - pi - ka - chu - pi - ka - chu - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - pika - chu pi - chu pi - chu pi - pika - pika - pika - pika - pika - pika - chu pi - pika - chu pi - chu - pika - pika - chu - chu - chu - pika - chu pi - pika - pika - pi - pi - pi - pi - chu
+--------------------------------------------------------------------------------
+    SOURCE: Si hubiera estado en estado vegetativo, como se ha dicho, la probabilidad de que se recuperara 35 años después son casi inexistentes.
+    TARGET: 33Saynölami say nishgä nacaycuna chämuptin gamcunapis musyayanquipä cutimunäpäna caycashgäta.
+PREDICTED GREEDY: 35 Piru chay mana baliq kusas ##kunata rurachpa ##qam , chay mana baliq kusas ##kunata rurachpa , ancha kuchim ##kuchpa , ancha kuchim ##kuchpa , chay uchayuq ##qa .
+PREDICTED BEAM:   33 Piru suq runa chamuchpa , pay munachqandalla yach ' achichumptinqam , das das kasungillampa . * * ##) ##) ##. * ##. * ##. * ##. * ##. ##. . * ##. ##. . * ##. ##" ##. ##" ##. . . * ##. . . * ##. . . . . . . . . . . . . ( ##. . ( ##. . ( ##. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+--------------------------------------------------------------------------------
+Processing Epoch 04: 100%|██████████| 5759/5759 [33:29<00:00,  2.87it/s, loss=4.837]
+--------------------------------------------------------------------------------
+    SOURCE: Sus propios ojos ven, al igual que los ojos de mi hermano Benjamín, que soy yo, su hermano, quien les está hablando.
+    TARGET: 12Kayqa qhawashawankichismi, qan wawqéy Benjaminpas qhawashawankin Josepuni rimasqayta.
+PREDICTED GREEDY: 32 Wawqe ##yki ##q wawqen ##kunan ichaqa wawqey ##kuna hina , wawqen ##kunapas paypa kunkanta uyarin ##kichis .
+PREDICTED BEAM:   32 Wawqe ##yki ##q wawqen ##kuna , wawqen ##kuna envidi ##akusqa ##n ##kurayku ##n , wawqen ##kuna envidi ##akunki , nispa ( Luc 6 : 1 - 5 , 20 - 25 , 20 - 25 ). * * * Chay hinata . * Chay hinaqa . * Chay hina uyarir ##ankichis ##mi . * Chay hinaqa . * - nispa . * wawqen ##kuna .
+--------------------------------------------------------------------------------
+    SOURCE: Wild cards 4. el viaje de los ases
+    TARGET: Quaqtaq Travel Tools
+PREDICTED GREEDY: 4 . 4 . 4 . 1 . 4 . 2 . 1 . 2 . 2 . 1 . 2 . 2 . 2 . 1 . 2 . 1 . 2 . 2 . 2 . 1 . 1 . 1 . 1 . 2 . 2 . 2 . 1 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2 . 2
+PREDICTED BEAM:   400 0 _ ‡ a Ph ##ran ##sya mama llaqta parki
+--------------------------------------------------------------------------------
+Processing Epoch 05: 100%|██████████| 5759/5759 [32:46<00:00,  2.93it/s, loss=4.539]
+--------------------------------------------------------------------------------
+    SOURCE: Fortaleza frente a las tentaciones de Satanás . . . . . . . . . . . . .
+    TARGET: Tinkunaku - [Jallpa Taki ] 04 Supay
+PREDICTED GREEDY: Satanaspa munaychakusqan runakunaqa hinallam kachkanku .
+PREDICTED BEAM:   Satanaspa contranpi churaku ##q ##kunam . ( h ).
+--------------------------------------------------------------------------------
+    SOURCE: La gente va a la Iglesia todo el tiempo, pero ellos no conocen al Señor.
+    TARGET: Victor sutiyoq runam sapa semana riq iglesiaman, ichaqa Diospa sutinmantaqa manam imatapas yacharqachu.
+PREDICTED GREEDY: Chay tiempopi runakunaqa iñiq t ' aqa ##kunapin mana entiender ##ankuchu Jehová Dios serviyta .
+PREDICTED BEAM:   Chay tiempopi runakunaqa iñiq t ' aqapi ##n kashanku , ichaqa manan yachankuchu Jehová Diosta reqsina ##n ##kuta . * * * * * * * ##. * ##. . * * * * ##. * ##. * ##. * ##. . * ##. . * ##. * ##. * * * * * * * * * * * * * * * Chay tiempopi . * * * * * * * * * * * * Chay tiempopi . * Chay tiempopi . * * * * * * * * Chay tiempopi . * * Jesuspa llapallan runakuna Jesuspa tukuy tiempo Jesuspa tukuy tiempo Jesuspa tukuy tiempo Jesuspa llapallan runakuna Jesuspa llapallan runakuna Jesuspa kamachisqanta . * Jesuspa tukuynin llapallan runakuna Jesuspa kamachisqanta . * Jesuspa tukuy tiempo Jesuspa kamachisqanta . * Jesuspa llapallan runakuna
+--------------------------------------------------------------------------------
+Processing Epoch 06:   5%|▍         | 273/5759 [01:30<30:24,  3.01it/s, loss=4.487]

@@ -1,0 +1,42 @@
+{"time":"2024-11-06T08:23:25.0612001-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T08:23:25.0612001-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_082325-zab8s13e\\logs\\debug-core.log"}
+{"time":"2024-11-06T08:23:25.2010947-05:00","level":"INFO","msg":"created new stream","id":"zab8s13e"}
+{"time":"2024-11-06T08:23:25.2010947-05:00","level":"INFO","msg":"stream: started","id":"zab8s13e"}
+{"time":"2024-11-06T08:23:25.2010947-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"zab8s13e"}}
+{"time":"2024-11-06T08:23:25.201768-05:00","level":"INFO","msg":"sender: started","stream_id":"zab8s13e"}
+{"time":"2024-11-06T08:23:25.201768-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"zab8s13e"}}
+{"time":"2024-11-06T08:23:25.6486783-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T09:44:55.7973901-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3058341-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.306889-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.312262-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3140172-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3209625-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3228919-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3280841-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3285885-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3346098-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3356543-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3422256-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3446733-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3510601-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3521044-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3578323-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3583371-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3637972-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.364302-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3706798-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3718583-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.379727-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.380988-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3881591-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3899639-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.3977598-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.3993871-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.4097818-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.4122638-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.4177797-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:12.4210077-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:12.426319-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T09:45:14.2708081-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T09:45:14.2759176-05:00","level":"INFO","msg":"Resuming system monitor"}

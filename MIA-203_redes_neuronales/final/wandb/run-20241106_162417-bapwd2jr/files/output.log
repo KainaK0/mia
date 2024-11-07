@@ -1,0 +1,5 @@
+Using device: cuda
+Preloading model allenai\nllb_weights_es_qu008\tmodel_es_qu00800.pt
+Processing Epoch 01:  51%|█████     | 5369/10517 [21:21<20:28,  4.19it/s, loss=4.309, lr=0.00054423] 
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Repo card metadata block was not found. Setting CardData to empty.

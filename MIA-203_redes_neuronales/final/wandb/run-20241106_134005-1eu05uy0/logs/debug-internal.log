@@ -1,0 +1,17 @@
+{"time":"2024-11-06T13:40:12.2669224-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T13:40:12.2669224-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_134005-1eu05uy0\\logs\\debug-core.log"}
+{"time":"2024-11-06T13:40:12.3898067-05:00","level":"INFO","msg":"created new stream","id":"1eu05uy0"}
+{"time":"2024-11-06T13:40:12.39031-05:00","level":"INFO","msg":"stream: started","id":"1eu05uy0"}
+{"time":"2024-11-06T13:40:12.39031-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"1eu05uy0"}}
+{"time":"2024-11-06T13:40:12.39031-05:00","level":"INFO","msg":"sender: started","stream_id":"1eu05uy0"}
+{"time":"2024-11-06T13:40:12.39031-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"1eu05uy0"}}
+{"time":"2024-11-06T13:40:12.8013005-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T13:47:40.2794574-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-06T13:47:40.2794574-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-06T13:47:41.2941719-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"saving job artifact","runtime_seconds":0.528348},{"desc":"uploading config.yaml","runtime_seconds":0.2789671,"progress":"1.6KB/1.6KB"},{"desc":"uploading output.log","runtime_seconds":0.2789671,"progress":"456B/456B"}],"total_operations":3}}
+{"time":"2024-11-06T13:47:41.6401708-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-06T13:47:43.0185842-05:00","level":"INFO","msg":"stream: closing","id":"1eu05uy0"}
+{"time":"2024-11-06T13:47:43.0185842-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"1eu05uy0"}}
+{"time":"2024-11-06T13:47:43.0185842-05:00","level":"INFO","msg":"sender: closed","stream_id":"1eu05uy0"}
+{"time":"2024-11-06T13:47:43.0185842-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"1eu05uy0"}}
+{"time":"2024-11-06T13:47:43.0185842-05:00","level":"INFO","msg":"stream: closed","id":"1eu05uy0"}

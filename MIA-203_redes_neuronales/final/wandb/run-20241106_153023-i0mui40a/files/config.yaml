@@ -1,0 +1,89 @@
+_wandb:
+    value:
+        cli_version: 0.18.5
+        m:
+            - "1": global_step
+              "6":
+                - 3
+              "7": []
+            - "1": train/loss
+              "5": 1
+              "6":
+                - 1
+                - 3
+              "7": []
+        python_version: 3.11.8
+        t:
+            "1":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 55
+            "2":
+                - 1
+                - 11
+                - 49
+                - 51
+                - 55
+            "3":
+                - 2
+                - 7
+                - 16
+                - 23
+                - 55
+            "4": 3.11.8
+            "5": 0.18.5
+            "6": 4.46.1
+            "8":
+                - 1
+                - 3
+                - 5
+            "12": 0.18.5
+            "13": windows-amd64
+N_layers:
+    value: 2
+batch_size:
+    value: 32
+d_model:
+    value: 512
+datasource:
+    value: allenai/nllb
+dropout:
+    value: 0.1
+experiment_name:
+    value: runs/tmodel_es_qu{0}
+ffn_hidden:
+    value: 2048
+heads:
+    value: 8
+lang_src:
+    value: es
+lang_tgt:
+    value: qu
+lr:
+    value: 1.2352647110032733e-07
+max_sentence_len:
+    value: 200
+min_sentence_len:
+    value: 40
+model_basename:
+    value: tmodel_es_qu{0}
+model_folder:
+    value: weights_es_qu{0}
+num_epochs:
+    value: 10
+preload:
+    value: latest
+seq_len:
+    value: 200
+tokenizer:
+    value: tokenizers.models.WordLevel
+tokenizer_file:
+    value: tokenizer_es_qu_{0}{1}.json
+tokenizer_trainer:
+    value: tokenizers.trainers.WordLevelTrainer
+version:
+    value: "008"
+warmup_steps:
+    value: 8000

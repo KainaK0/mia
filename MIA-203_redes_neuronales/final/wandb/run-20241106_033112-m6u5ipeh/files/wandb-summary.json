@@ -1,0 +1,1 @@
+{"validation_greedy/BLEU":0,"train/loss":7.757187366485596,"validation_beam/cer":21.797101974487305,"_timestamp":1.7308990554849083e+09,"_step":54783,"validation_greedy/cer":21.797101974487305,"_runtime":17182.7315781,"global_step":54759,"validation_greedy/wer":34.75,"validation_beam/wer":21.797101974487305,"_wandb":{"runtime":17196},"validation_beam/BLEU":21.797101974487305}

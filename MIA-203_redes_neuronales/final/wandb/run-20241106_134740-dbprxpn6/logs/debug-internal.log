@@ -1,0 +1,17 @@
+{"time":"2024-11-06T13:47:43.0209759-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T13:47:43.0209759-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_134740-dbprxpn6\\logs\\debug-core.log"}
+{"time":"2024-11-06T13:47:43.1454639-05:00","level":"INFO","msg":"created new stream","id":"dbprxpn6"}
+{"time":"2024-11-06T13:47:43.1454639-05:00","level":"INFO","msg":"stream: started","id":"dbprxpn6"}
+{"time":"2024-11-06T13:47:43.1454639-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"dbprxpn6"}}
+{"time":"2024-11-06T13:47:43.1454639-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"dbprxpn6"}}
+{"time":"2024-11-06T13:47:43.1454639-05:00","level":"INFO","msg":"sender: started","stream_id":"dbprxpn6"}
+{"time":"2024-11-06T13:47:43.6550038-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T14:14:33.695012-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T14:14:33.6999011-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T14:14:33.7051665-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T14:14:33.716187-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T14:14:33.7228393-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T14:14:33.7281232-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T14:14:33.7318769-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T14:14:33.738304-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T14:14:33.741328-05:00","level":"INFO","msg":"Pausing system monitor"}

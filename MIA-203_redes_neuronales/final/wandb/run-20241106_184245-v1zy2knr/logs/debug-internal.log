@@ -1,0 +1,19 @@
+{"time":"2024-11-06T18:42:45.6380827-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T18:42:45.6380827-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_184245-v1zy2knr\\logs\\debug-core.log"}
+{"time":"2024-11-06T18:42:45.8682983-05:00","level":"INFO","msg":"created new stream","id":"v1zy2knr"}
+{"time":"2024-11-06T18:42:45.8688004-05:00","level":"INFO","msg":"stream: started","id":"v1zy2knr"}
+{"time":"2024-11-06T18:42:45.8688004-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"v1zy2knr"}}
+{"time":"2024-11-06T18:42:45.8688004-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"v1zy2knr"}}
+{"time":"2024-11-06T18:42:45.8693184-05:00","level":"INFO","msg":"sender: started","stream_id":"v1zy2knr"}
+{"time":"2024-11-06T18:42:46.2612865-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T18:48:28.1790149-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T18:48:28.1828767-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T18:48:28.1858675-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T18:48:28.1919407-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T18:48:28.1955952-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T18:48:29.79092-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T18:48:29.8027514-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T18:48:36.125684-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T18:48:36.1327905-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T18:48:37.4701785-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T18:48:37.471855-05:00","level":"INFO","msg":"Pausing system monitor"}

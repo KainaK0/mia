@@ -1,0 +1,18 @@
+{"time":"2024-11-06T13:12:22.1756321-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T13:12:22.1756321-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_131216-cv6soejk\\logs\\debug-core.log"}
+{"time":"2024-11-06T13:12:22.2963638-05:00","level":"INFO","msg":"created new stream","id":"cv6soejk"}
+{"time":"2024-11-06T13:12:22.2963638-05:00","level":"INFO","msg":"stream: started","id":"cv6soejk"}
+{"time":"2024-11-06T13:12:22.2963638-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"cv6soejk"}}
+{"time":"2024-11-06T13:12:22.2963638-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"cv6soejk"}}
+{"time":"2024-11-06T13:12:22.2963638-05:00","level":"INFO","msg":"sender: started","stream_id":"cv6soejk"}
+{"time":"2024-11-06T13:12:52.299348-05:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2024-11-06T13:12:55.4782912-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T13:14:37.8525454-05:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-11-06T13:14:37.8525454-05:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-11-06T13:14:38.8638219-05:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"updating run config","runtime_seconds":0.7399165}],"total_operations":1}}
+{"time":"2024-11-06T13:14:41.6112649-05:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-11-06T13:14:42.9846714-05:00","level":"INFO","msg":"stream: closing","id":"cv6soejk"}
+{"time":"2024-11-06T13:14:42.9846714-05:00","level":"INFO","msg":"handler: closed","stream_id":{"value":"cv6soejk"}}
+{"time":"2024-11-06T13:14:42.9846714-05:00","level":"INFO","msg":"sender: closed","stream_id":"cv6soejk"}
+{"time":"2024-11-06T13:14:42.9846714-05:00","level":"INFO","msg":"writer: Close: closed","stream_id":{"value":"cv6soejk"}}
+{"time":"2024-11-06T13:14:42.9846714-05:00","level":"INFO","msg":"stream: closed","id":"cv6soejk"}

@@ -1,0 +1,3 @@
+Using device: cuda
+Preloading model allenai\nllb_weights_es_qu008\tmodel_es_qu00800.pt
+Processing Epoch 01:  51%|█████     | 10741/21033 [22:18<21:22,  8.02it/s, loss=4.717, lr=0.000495899]

@@ -1,0 +1,13 @@
+{"time":"2024-11-06T14:20:06.1245661-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T14:20:06.1245661-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_142006-xrco829m\\logs\\debug-core.log"}
+{"time":"2024-11-06T14:20:06.2517881-05:00","level":"INFO","msg":"created new stream","id":"xrco829m"}
+{"time":"2024-11-06T14:20:06.2517881-05:00","level":"INFO","msg":"stream: started","id":"xrco829m"}
+{"time":"2024-11-06T14:20:06.2517881-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"xrco829m"}}
+{"time":"2024-11-06T14:20:06.2517881-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"xrco829m"}}
+{"time":"2024-11-06T14:20:06.2528301-05:00","level":"INFO","msg":"sender: started","stream_id":"xrco829m"}
+{"time":"2024-11-06T14:20:06.7094576-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T14:59:35.1944329-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T14:59:35.1994477-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T14:59:35.2027301-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T14:59:35.2091724-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T14:59:35.2118333-05:00","level":"INFO","msg":"Pausing system monitor"}

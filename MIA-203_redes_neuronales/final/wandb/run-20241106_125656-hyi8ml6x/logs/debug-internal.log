@@ -1,0 +1,23 @@
+{"time":"2024-11-06T12:56:56.5507558-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T12:56:56.5507558-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_125656-hyi8ml6x\\logs\\debug-core.log"}
+{"time":"2024-11-06T12:56:56.6794684-05:00","level":"INFO","msg":"created new stream","id":"hyi8ml6x"}
+{"time":"2024-11-06T12:56:56.6794684-05:00","level":"INFO","msg":"stream: started","id":"hyi8ml6x"}
+{"time":"2024-11-06T12:56:56.6794684-05:00","level":"INFO","msg":"sender: started","stream_id":"hyi8ml6x"}
+{"time":"2024-11-06T12:56:56.6794684-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"hyi8ml6x"}}
+{"time":"2024-11-06T12:56:56.6794684-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"hyi8ml6x"}}
+{"time":"2024-11-06T12:56:57.278291-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T13:05:17.9556288-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:17.9603267-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:17.9633415-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:17.9698472-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:17.9723549-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:17.9791269-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:17.9842034-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:18.0033291-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:18.0089187-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:18.0364496-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:18.0403772-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:18.0466137-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:18.0507495-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T13:05:18.0606559-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T13:05:18.0636707-05:00","level":"INFO","msg":"Pausing system monitor"}

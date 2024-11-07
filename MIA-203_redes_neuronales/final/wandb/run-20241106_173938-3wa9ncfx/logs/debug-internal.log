@@ -1,0 +1,10 @@
+{"time":"2024-11-06T17:39:38.2166596-05:00","level":"INFO","msg":"using version","core version":"0.18.5"}
+{"time":"2024-11-06T17:39:38.2171829-05:00","level":"INFO","msg":"created symlink","path":"c:\\Users\\kainak0\\Documents\\gitProjects\\mia\\MIA-203_redes_neuronales\\final\\wandb\\run-20241106_173938-3wa9ncfx\\logs\\debug-core.log"}
+{"time":"2024-11-06T17:39:38.3405367-05:00","level":"INFO","msg":"created new stream","id":"3wa9ncfx"}
+{"time":"2024-11-06T17:39:38.3405367-05:00","level":"INFO","msg":"stream: started","id":"3wa9ncfx"}
+{"time":"2024-11-06T17:39:38.3405367-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"3wa9ncfx"}}
+{"time":"2024-11-06T17:39:38.3405367-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"3wa9ncfx"}}
+{"time":"2024-11-06T17:39:38.341615-05:00","level":"INFO","msg":"sender: started","stream_id":"3wa9ncfx"}
+{"time":"2024-11-06T17:39:38.7864103-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T18:11:33.8667387-05:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/salcantaratnaist/pytorch-transformer_es_qu('009',)/3wa9ncfx/file_stream"}
+{"time":"2024-11-06T18:15:36.5373752-05:00","level":"INFO","msg":"Pausing system monitor"}

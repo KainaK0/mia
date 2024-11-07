@@ -1,0 +1,15 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 10517/10517 [34:31<00:00,  5.08it/s, loss=6.539, lr=0.000431373]
+--------------------------------------------------------------------------------
+    SOURCE: El puerto seco de Laguna está en el corazón de las actividades de fabricación, estamos trayendo la pasarela comercial a las puertas de las zonas económicas ."
+    TARGET: We xloq' lal apan ri patanib'al pa apachike amaq' chik, are taqal utaqanik ri jun amaq ri'.
+PREDICTED GREEDY: Commons nisqaqa multimidya kapuyninkunayuqmi kay hawa : Kay hawa : " Kay hawa : " Kay hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun hatun
+PREDICTED BEAM:   Commons nisqaqa multimidya kapuyninkunayuqmi kay kapuyninkunayuqmi kay hawa : Commons ( kastilla simipi : Commons ) nisqaqa multimidya kapuyninkunayuqmi kay multimidya kapuyninkunayuqmi kay qatiq kay hawa :
+--------------------------------------------------------------------------------
+    SOURCE: Es lo que la gente sobreentiende de ti, sin necesidad de que tú lo digas explícitamente.
+    TARGET: Aska runakuna, rimasqaykita yurariktikuqa, ratullan castellanu simima t'ikrarinku: Chayqa nisunki manan kaymantachu kanki.
+PREDICTED GREEDY: Mana allin allin allin allin allin kasqanta , mana allin allin kasqanta .
+PREDICTED BEAM:   Chay p ' anqamanqa kay qatiq p ' anqamanqa kay qatiq p ' anqakunam t ' anqakunam t ' inkimun kay qatiq p ' inkimun kay qatiq p ' anqakunam t ' anqakunam t ' anqakunam t ' anqakunam t ' inkimun : ##ui ##chu . ##ui .
+--------------------------------------------------------------------------------
+Processing Epoch 01:  14%|█▍        | 1497/10517 [04:52<29:20,  5.12it/s, loss=6.906, lr=0.000403621]

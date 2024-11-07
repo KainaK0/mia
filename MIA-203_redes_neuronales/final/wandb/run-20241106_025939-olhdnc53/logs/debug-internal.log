@@ -6,3 +6,16 @@
 {"time":"2024-11-06T02:59:39.1956139-05:00","level":"INFO","msg":"handler: started","stream_id":{"value":"olhdnc53"}}
 {"time":"2024-11-06T02:59:39.1966482-05:00","level":"INFO","msg":"writer: Do: started","stream_id":{"value":"olhdnc53"}}
 {"time":"2024-11-06T02:59:39.6171336-05:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-11-06T03:30:08.7934506-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T03:30:08.8049558-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T03:30:08.8193317-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T03:30:08.8281843-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T03:30:08.8386767-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T03:30:08.8503894-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T03:30:08.8555856-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T03:30:08.8662592-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T03:30:08.8757738-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T03:30:08.8833557-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T03:30:08.8921079-05:00","level":"INFO","msg":"Pausing system monitor"}
+{"time":"2024-11-06T03:30:08.9036608-05:00","level":"INFO","msg":"Resuming system monitor"}
+{"time":"2024-11-06T03:30:08.9094531-05:00","level":"INFO","msg":"Pausing system monitor"}

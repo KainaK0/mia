@@ -1,0 +1,20 @@
+Using device: cuda
+No model to preload, starting from scratch
+Processing Epoch 00: 100%|██████████| 21033/21033 [38:13<00:00,  9.17it/s, loss=5.868, lr=0.000609589]
+--------------------------------------------------------------------------------
+    SOURCE: Luego dijo: "Yo soy el Dios de tu padre, el Dios de Abraham, el Dios de Isaac y el Dios de Jacob."
+    TARGET: 6Chantá nillarqataj: Noqa ñawpa tatasniykej Diosnin kani, Abrahampata, Isaacpata, Jacobpatawan, nispa.
+PREDICTED GREEDY: Nirqam : " Diosmi quwarqa tukuy atiyta hanaq pachapipas , kay pachapipas .
+PREDICTED BEAM:   Nirqam : ' Diosmi quwarqa tukuy atiyta hanaq pachapipas , kay pachapipas , kay pachapipas , kay pachapipas ," nispa ( Juan 6 : 1 - 28 - NM - NM - NM - NM - NM - NM - NM ).
+--------------------------------------------------------------------------------
+    SOURCE: Todo lo que ella pedía se le daba, para venir ataviada con ello desde la casa de las mujeres hasta la casa del rey.
+    TARGET: 13Tukuy ima munasqanta mañakusqanmi qosqa karqan, chaykunawan churaykukuspataq warmikunaq wasinmanta reypa wasinman rirqanku.
+PREDICTED GREEDY:
+PREDICTED BEAM:
+--------------------------------------------------------------------------------
+Processing Epoch 01:   2%|▏         | 460/21033 [00:53<40:09,  8.54it/s, loss=5.077, lr=0.00060307]   
+[34m[1mwandb[0m: [33mWARNING[0m Calling wandb.login() after wandb.init() has no effect.
+Repo card metadata block was not found. Setting CardData to empty.
+97th percentile length quechua: 167.0
+97th percentile length spanish: 158.0
+Filter: 100%|██████████| 748091/748091 [00:01<00:00, 426260.10 examples/s]
