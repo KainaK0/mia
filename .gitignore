@@ -22,3 +22,5 @@ MIA-203_redes_neuronales/final/models/*
 MIA-203_redes_neuronales/final/translatepy/*
 MIA-203_redes_neuronales/final/spanish-to-quechua_weights*
 MIA-203_redes_neuronales/final/__pycache__/*
+mia_302_pnl/.venv/*
+mia_302_pnl/s4/nlp_sesion4_1_FastText_Intro/cc.es.300.bin.gz.part
