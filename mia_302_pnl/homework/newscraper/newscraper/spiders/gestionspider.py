@@ -8,27 +8,44 @@ class GestionspiderSpider(scrapy.Spider):
 
 
     def parse(self, response):
-        articles = response.css('.story-item')
-
+        articles = response.css('.story-item__title')
         for new in articles:
-            yield{
-                'title': new.css('h2 a::text').get(),
-                'category': new.css('.story-item__section::text').get(),
-                'summit': new.css('.story-item__section').attrib['href'],
-                'date': new.css('.story-item__date-time::text').get(),
-                'url': new.css('.story-item__section').attrib['href'],
-            }
+            relative_url = new.attrib['href']
 
-            # in_page_url = 'https://gestion.pe/' + new.css('.story-item__section').attrib['href']
+            if relative_url is not None:
+                new_url = 'https://gestion.pe/' + relative_url
 
-            
-            
-
-            # 'summit': new.css('.entradilla-teaser-2col p::text').get(),
-
+                yield response.follow(new_url, callback = self.parse_new_page)
 
         next_page = response.css('.pagination-date a').attrib['href']
 
-        if (next_page is not None) and (next_page != '/archivo/todas/2025-04-01/'):
+        if (next_page is not None) and (next_page != '/archivo/todas/2025-05-28/'):
             next_page_url = 'https://gestion.pe/' + next_page
             yield response.follow(next_page_url, callback = self.parse)
+
+            # yield{
+            #     'title': new.css('h2 a::text').get(),
+            #     'category': new.css('.story-item__section::text').get(),
+            #     'summit': new.css('.story-item__section').attrib['href'],
+            #     'date': new.css('.story-item__date-time::text').get(),
+            #     'url': new.css('.story-item__section').attrib['href'],
+            # }
+
+    def parse_new_page(self,response):
+
+        content = response.css('.story-contents__font-paragraph')
+        description_list = []
+
+        for paragraph in content:
+            description_list.append(''.join(paragraph.css('::text').getall()))
+
+        description = ''.join(description_list)
+
+        yield{
+            'title': response.css('.sht__title::text').get(),
+            'category' :  response.css('.sht__title__section a::text').get(),
+            'summit' : response.css('.sht__summary::text').get(),
+            'description': description,
+            'date': response.css('.s-aut__time time::attr(datetime)').get(),
+            'url': response.url
+        }
