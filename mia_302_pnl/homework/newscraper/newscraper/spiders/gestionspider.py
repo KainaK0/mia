@@ -19,7 +19,7 @@ class GestionspiderSpider(scrapy.Spider):
 
         next_page = response.css('.pagination-date a').attrib['href']
 
-        if (next_page is not None) and (next_page != '/archivo/todas/2025-05-28/'):
+        if (next_page is not None) and (next_page != '/archivo/todas/2025-04-01/'):
             next_page_url = 'https://gestion.pe/' + next_page
             yield response.follow(next_page_url, callback = self.parse)
 
@@ -39,7 +39,11 @@ class GestionspiderSpider(scrapy.Spider):
         for paragraph in content:
             description_list.append(''.join(paragraph.css('::text').getall()))
 
-        description = ''.join(description_list)
+        description = '\n'.join(description_list)
+
+        tags = response.css('.st-tags__box h4 a::text').getall()
+
+        tags = [tag for tag in tags if tag.strip() != ""]
 
         yield{
             'title': response.css('.sht__title::text').get(),
@@ -47,5 +51,7 @@ class GestionspiderSpider(scrapy.Spider):
             'summit' : response.css('.sht__summary::text').get(),
             'description': description,
             'date': response.css('.s-aut__time time::attr(datetime)').get(),
-            'url': response.url
+            'autor': response.css('.s-aut__n-row a::text').get(),
+            'tags': str(tags),
+            'url': response.url,
         }
