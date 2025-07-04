@@ -26,3 +26,5 @@ mia_302_pnl/.venv/*
 mia_302_pnl/s4/nlp_sesion4_1_FastText_Intro/cc.es.300.bin.gz.part
 mia-303_vision/.venv/*
 mia-303_vision/video.mp4
+mia-303_vision/img_align_celeba/.venv/*
+Gentleman.Dots/*
