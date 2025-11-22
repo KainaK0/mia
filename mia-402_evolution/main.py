@@ -135,8 +135,6 @@ def generar_datos_masivos(num_actividades=50):
 
 # --- 2. CLASES Y FUNCIONES DEL ALGORITMO ---
 
-
-
 class Individuo:
     def __init__(self, num_tareas):
         self.genes = [random.random() for _ in range(num_tareas)]
@@ -288,7 +286,7 @@ def algoritmo_memetico_rcpsp(generaciones=1000, poblacion_size=30, datos_manteni
 
 # --- EJECUCIÓN ---
 if __name__ == "__main__":
-    datos_mantenimiento = generar_datos_masivos(1000)
+    datos_mantenimiento = generar_datos_masivos(200)
     solucion = algoritmo_memetico_rcpsp(datos_mantenimiento = datos_mantenimiento)
     
     print("\n" + "="*60)
