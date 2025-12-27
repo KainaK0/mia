@@ -5,12 +5,12 @@ import copy
 
 # Diccionario de capacidades maximas por recurso
 CAPACIDAD_RECURSOS = {
-    'mechanical': 200,
-    'electrical': 110,
-    'welder': 70,
+    'mechanical': 500,
+    'electrical': 120,
+    'welder': 200,
     'grua_220': 4,
     'grua_250': 3,  # Recurso crítico
-    'camion_grua': 8
+    'camion_grua': 3
 }
 
 # Definición de actividades (Data ampliada)
@@ -47,19 +47,19 @@ datos_mantenimiento = {
 
 # --- 1. CONFIGURACIÓN MASIVA DE RECURSOS ---
 CAPACIDAD_RECURSOS = {
-    'mechanical': 150,
-    'welder': 60,
-    'electrician': 60,
-    'instrumentation': 20, # Recurso muy escaso
-    'safety_insp': 10,     # Cuello de botella administrativo
-    'scaffolder': 30,      # Necesario para iniciar trabajos en altura
-    'crane_300t': 1,       # Recurso CRITICO único
+    'mechanical': 750,
+    'welder': 260,
+    'electrician': 110,
+    'instrumentation': 60, # Recurso muy escaso
+    'safety_insp': 20,     # Cuello de botella administrativo
+    'scaffolder': 90,      # Necesario para iniciar trabajos en altura
+    'crane_300t': 4,       # Recurso CRITICO único
     'crane_50t': 4,
     'forklift': 10
 }
 
 # --- 2. GENERADOR DE ESCENARIOS (DATA FACTORY) ---
-def generar_datos_masivos(num_actividades=50):
+def generar_datos_masivos(num_actividades=1500):
     """
     Genera un proyecto realista con fases lógicas para evitar
     grafos aleatorios sin sentido.
@@ -286,7 +286,7 @@ def algoritmo_memetico_rcpsp(generaciones=1000, poblacion_size=30, datos_manteni
 
 # --- EJECUCIÓN ---
 if __name__ == "__main__":
-    datos_mantenimiento = generar_datos_masivos(200)
+    datos_mantenimiento = generar_datos_masivos(100)
     solucion = algoritmo_memetico_rcpsp(datos_mantenimiento = datos_mantenimiento)
     
     print("\n" + "="*60)
@@ -307,3 +307,5 @@ if __name__ == "__main__":
         if len(recs_str) > 30: recs_str = recs_str[:27] + "..."
         
         print(f"{tid:<3} | {dat['nombre']:<20} | {inicio:<6} | {fin:<6} | {recs_str}")
+
+        

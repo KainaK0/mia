@@ -1,0 +1,17 @@
+[info]
+title = "Sistema de Consultas Multimodal basado en RAG para Manuales de Mantenimiento en Plantas Concentradoras de Cobre"
+degree = "MAESTRO EN CIENCIAS CON MENCIÓN EN INTELIGENCIA ARTIFICIAL"
+student = "JOHAN MANUEL CALLOMAMANI BUENDIA"
+advisor = "DR. GLEN DARIO RODRIGUEZ RAFAEL"
+location = "LIMA, PERU"
+year = "2025"
+
+[institution]
+name = "UNIVERSIDAD NACIONAL DE INGENIERÍA"
+faculty = "UNIDAD DE POSTGRADO FACULTAD DE INGENIERIA INDUSTRIAL Y DE SISTEMAS"
+
+[project]
+area = "UNIDAD DE POSGRADO FIIS"
+place = "LABORATORIO DE FIIS - UNI"
+duration = "6 MESES (Enero 2026 - Julio 2026)"
+has_logo = true   # <--- AGREGA ESTA LÍNEA

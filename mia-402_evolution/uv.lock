@@ -798,12 +798,14 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "jupyterlab" },
+    { name = "numpy" },
     { name = "pandas" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "jupyterlab", specifier = ">=4.5.0" },
+    { name = "numpy", specifier = ">=2.3.5" },
     { name = "pandas", specifier = ">=2.3.3" },
 ]
 
