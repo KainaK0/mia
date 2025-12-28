@@ -9,6 +9,7 @@
 // Importamos las secciones en orden
 // #include "sections/1-general.typ"
 // #pagebreak()
+#include "sections/1-general.typ"
 #include "sections/2-problema.typ"
 #include "sections/3-marco.typ"
 #include "sections/4-metodologia.typ"

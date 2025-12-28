@@ -26,7 +26,7 @@ Esta limitación tecnológica deriva en una baja precisión y retrabajo  en las 
 === Formulación del Problema
 
 ==== Formulación del Problema General
-¿Puede la implementación de un Sistema de Consultas Multimodal basada en Arquitectura Rag y fine tuning (LoRA) reducir el tiempo de busqueda de información técnica de manuales de de mantenimiento de equipos críticos de una planta concentradora de cobre?
+¿Puede la implementación de un Sistema de Consultas Multimodal basada en Arquitectura Rag y fine tuning (LoRA) reducir el tiempo de busqueda de información técnica de manuales de de mantenimiento de equipos críticos de una planta concentradora de cobre?\
 ¿De qué manera la implementación de un Sistema de Consultas Multimodal basado en Arquitectura RAG (Retrieval-Augmented Generation) reduce el tiempo de busqueda de información técnica en los manuales de mantenimiento de plantas concentradoras de cobre, en comparación con los métodos de búsqueda tradicionales?
 
 ==== Formulación de los Problemas Específicos
