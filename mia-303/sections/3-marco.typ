@@ -1,59 +1,16 @@
 = Marco Teórico y Estado del Arte
-
 == Bases Teóricas
-+ *Taxonomía de Datos de Confiabilidad (ISO 14224)*
-  Para que un Modelo de Lenguaje Grande (LLM) pueda razonar eficazmente sobre mantenimiento, debe "entender" la estructura jerárquica de los equipos industriales. La norma ISO 14224 proporciona el estándar de facto para la recolección e intercambio de datos de confiabilidad y mantenimiento. Aunque originada en la industria del petróleo y gas, su adopción en la minería es generalizada para estructurar los sistemas ERP (como SAP PM) y CMMS.   
-  
-  La norma establece una jerarquía taxonómica que permite descomponer un activo complejo en unidades manejables. Esta estructura es vital para el diseño de la base de datos vectorial del sistema RAG, ya que permite la creación de metadatos precisos para el filtrado de búsquedas (Metadata Filtering).
-  
-  #table(
-    columns: (1.5fr, 2fr, 2fr),
-    inset: 10pt,
-    align: horizon,
-    stroke: 0.5pt + gray,
-    fill: (col, row) => if row == 0 { rgb("#2d5a27").lighten(90%) }, // Color suave para el encabezado
-    
-    [*Nivel Taxonómico (ISO 14224)*], 
-    [*Ejemplo en Planta Concentradora*], 
-    [*Aplicación en Sistema RAG*],
-  
-    [Nivel 3: Instalación], 
-    [Planta Concentradora de Cobre], 
-    [Contexto global del sistema.],
-  
-    [Nivel 4: Sistema], 
-    [Circuito de Molienda SAG], 
-    [Delimitación del alcance de la consulta.],
-  
-    [Nivel 5: Sub-sistema], 
-    [Sistema de Lubricación de Chumaceras], 
-    [Agrupación funcional de documentos.],
-  
-    [Nivel 6: Equipo (Unit)], 
-    [Unidad de Bombeo de Alta Presión], 
-    [Entidad principal de consulta (Subject).],
-  
-    [Nivel 7: Sub-unidad], 
-    [Bomba de desplazamiento positivo], 
-    [Componente específico de falla.],
-  
-    [Nivel 8: Pieza (Part)], 
-    [Sello Mecánico / Empaquetadura], 
-    [Objeto de la instrucción de recambio.],
-  
-    [Nivel 9: Ítem Mantenible], 
-    [Anillo tórico (O-ring)], 
-    [Detalle granular para repuestos.],
-  )
+=== Fundamentos de IA:
+El desarrollo de LLMs en el mundo de creación de sistemas capaces de razonar y responder consultas ha ido en constante desarrollo, actualmente se tiene fundamentos donde se desarrollaron la capacidad de incrementar la información de LLMs con el fin de adaptar los estos a nuevos contextos en especifico y con el fin de este proyecto responder a consultas sobre docuemntos técnicos de mantenimiento para ellos surgen conceptos claves como son los siguientes:  
 
-+ *Procesos Críticos y Equipos Principales*
-  La comprensión del dominio minero es esencial para evaluar la relevancia de las respuestas generadas. Los manuales técnicos en este sector cubren procesos con físicas y modos de falla distintos:
+// + *Procesos de planta concentradoras*
+//   La comprensión del dominio minero es esencial para evaluar la relevancia de las respuestas generadas. Los manuales técnicos en este sector cubren procesos con físicas y modos de falla distintos:
   
-  Conminución (Chancado y Molienda): Es la etapa más intensiva en energía. Los manuales de Chancadores Giratorios y Cónicos (ej. Metso MP, FLSmidth) contienen procedimientos críticos de ajuste del setting (CSS) y cambio de revestimientos (mantles/bowls), tareas que involucran manipulación de componentes de varias toneladas. Los Molinos SAG y de Bolas requieren mantenimiento especializado en sus sistemas de transmisión (coronas, piñones) y lubricación hidrostática, donde un error en la interpretación de las tolerancias de presión de aceite puede fundir una chumacera.   
+//   Conminución (Chancado y Molienda): Es la etapa más intensiva en energía. Los manuales de Chancadores Giratorios y Cónicos (ej. Metso MP, FLSmidth) contienen procedimientos críticos de ajuste del setting (CSS) y cambio de revestimientos (mantles/bowls), tareas que involucran manipulación de componentes de varias toneladas. Los Molinos SAG y de Bolas requieren mantenimiento especializado en sus sistemas de transmisión (coronas, piñones) y lubricación hidrostática, donde un error en la interpretación de las tolerancias de presión de aceite puede fundir una chumacera.   
   
-  Flotación: Involucra Celdas de Flotación (mecánicas, neumáticas, columnas) donde el mantenimiento se centra en los mecanismos de agitación (rotores, estatores) y sistemas de instrumentación. La documentación técnica aquí es rica en diagramas de lazos de control y esquemas de distribución de aire.   
+//   Flotación: Involucra Celdas de Flotación (mecánicas, neumáticas, columnas) donde el mantenimiento se centra en los mecanismos de agitación (rotores, estatores) y sistemas de instrumentación. La documentación técnica aquí es rica en diagramas de lazos de control y esquemas de distribución de aire.   
   
-  Gestión de Fluidos y Relaves: Los Espesadores y Bombas de Relaves son críticos para la continuidad hídrica. Los manuales detallan el mantenimiento de rastras hidráulicas y sistemas de accionamiento (drives) con altos torques. La interpretación correcta de las curvas de operación de las bombas es vital para evitar cavitación o arenamiento de líneas.
+//   Gestión de Fluidos y Relaves: Los Espesadores y Bombas de Relaves son críticos para la continuidad hídrica. Los manuales detallan el mantenimiento de rastras hidráulicas y sistemas de accionamiento (drives) con altos torques. La interpretación correcta de las curvas de operación de las bombas es vital para evitar cavitación o arenamiento de líneas.
 
 + *Grandes Modelos de Lenguaje (LLMs) y sus Limitaciones*
   Los LLMs, fundamentados en la arquitectura Transformer, han revolucionado el Procesamiento de Lenguaje Natural (NLP). Modelos como la serie GPT, Llama, o bLLossom (utilizado por Nam et al. en el estudio base) poseen una capacidad semántica profunda. Sin embargo, en el dominio de mantenimiento industrial, presentan limitaciones estructurales conocidas como la "tríada de la inviabilidad":   
@@ -118,6 +75,51 @@
   Validación realizada por expertos del dominio (técnicos/ingenieros) mediante escalas Likert para medir satisfacción, claridad y utilidad.
 - Principios de validación experimental y métricas clave.
 - Marco normativo (leyes, normas técnicas, reglamentos)
+
++ *Taxonomía de Datos de Confiabilidad (ISO 14224)*
+  Para que un Modelo de Lenguaje Grande (LLM) pueda razonar eficazmente sobre mantenimiento, debe "entender" la estructura jerárquica de los equipos industriales. La norma ISO 14224 proporciona el estándar de facto para la recolección e intercambio de datos de confiabilidad y mantenimiento. Aunque originada en la industria del petróleo y gas, su adopción en la minería es generalizada para estructurar los sistemas ERP (como SAP PM) y CMMS.   
+  
+  La norma establece una jerarquía taxonómica que permite descomponer un activo complejo en unidades manejables. Esta estructura es vital para el diseño de la base de datos vectorial del sistema RAG, ya que permite la creación de metadatos precisos para el filtrado de búsquedas (Metadata Filtering).
+  
+  #table(
+    columns: (1.5fr, 2fr, 2fr),
+    inset: 10pt,
+    align: horizon,
+    stroke: 0.5pt + gray,
+    fill: (col, row) => if row == 0 { rgb("#2d5a27").lighten(90%) }, // Color suave para el encabezado
+    
+    [*Nivel Taxonómico (ISO 14224)*], 
+    [*Ejemplo en Planta Concentradora*], 
+    [*Aplicación en Sistema RAG*],
+  
+    [Nivel 3: Instalación], 
+    [Planta Concentradora de Cobre], 
+    [Contexto global del sistema.],
+  
+    [Nivel 4: Sistema], 
+    [Circuito de Molienda SAG], 
+    [Delimitación del alcance de la consulta.],
+  
+    [Nivel 5: Sub-sistema], 
+    [Sistema de Lubricación de Chumaceras], 
+    [Agrupación funcional de documentos.],
+  
+    [Nivel 6: Equipo (Unit)], 
+    [Unidad de Bombeo de Alta Presión], 
+    [Entidad principal de consulta (Subject).],
+  
+    [Nivel 7: Sub-unidad], 
+    [Bomba de desplazamiento positivo], 
+    [Componente específico de falla.],
+  
+    [Nivel 8: Pieza (Part)], 
+    [Sello Mecánico / Empaquetadura], 
+    [Objeto de la instrucción de recambio.],
+  
+    [Nivel 9: Ítem Mantenible], 
+    [Anillo tórico (O-ring)], 
+    [Detalle granular para repuestos.],
+  )
 
 
 == Estado del Arte
