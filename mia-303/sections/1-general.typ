@@ -23,7 +23,3 @@
 + *DURACION ESTIMADA:*\ #meta.project.duration
 
 #pagebreak()
-
-// Add table of content
-
-= Agregar Tabla de Contenidos

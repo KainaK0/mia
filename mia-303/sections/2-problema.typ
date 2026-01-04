@@ -36,6 +36,20 @@ Esta limitación tecnológica deriva en una baja precisión y retrabajo  en las 
 
 + ¿En qué medida se reduce el tiempo de búsqueda de información crítica (procedimientos, especificaciones de repuestos y herramientas) para la planificación de mantenimiento al utilizar el asistente conversacional basado en RAG?
 
+=== Justificación y Alcances
+==== Justificación
+La presenta investigación se justifica ante la creciente complejidad de la documentación técnica en entornos industriales y de ingeniería, donde la información crítica reside en manuales técnicos con información heterogénea (texto, imagenes, planos, etc.) esta información crítica escencial para toma de decisiones toma tiempo largo de extraer con metodos convencionales y los sistemas RAG(Retrieval-Augmented Generation) multimodales tienen la capacidad de entender y responder de forma rapida reduciendo esta brecha de tiempo entre la información y la toma de decisiones o acciones realies en la empresa industrial.
+Desde una perspectiva técnica y operativa, el proyecto contribuye en el tiempo de busqueda de información lo cual genera un incremento positivo en el % wrench time del equipo de mantenimiento como lo describe @palmerMaintenancePlanningSchedulingHandbookFourth2019 en su libro el wrench time(tiempo efectivo de mantenimiento) representa en el mejor de los casos del 55% del tiempo total disponible por el equipo técnico de mantenimiento, donde el 45% de tiempo restante corresponde a actividades de traslado, demoras entre sub procesos y *busqueda de información técnica* para ejecutar la actividad de mantenimiento, por lo que el proyecto va a contribuir en la eficiencia y utilización de las HHs del personal técnico de mantenimiento.
+Desde una perspectiva economica la reducción de tiempo de busqueda de información va a ayudar en una rapida y mejor toma de decisiones lo cual contribuye en una respuesta mas rapida ante emergencias contribuyendo positivamente en la disponibilidad global de las plantas concentradora y con ello la producción asociada.
+
+==== Alcances
+El proyecto pretende generar un sistema RAG multimodal y Fine-Tuning (LoRa) para manuales de mantenimiento en planta concentradora con manuales facilitados por el stakeholder el cual pretende tener un anonimato y que la información tenga un estandar de confidencialidad, por lo que el stakeholder va a brindar los manuales que se requieren para este proyecto:  
+ Limitaciones:
+ - Solo se van a procesar PDF como tipo de información (ingesta de datos).
+ - Base de conocimiento (corpus) es estricta a los manuales facilidados por el stakehokder.
+ - El sistema no pretende generar nuevos diagramas, planos o imagenes.
+ - Base de datos y sistemas va a ser proporsionada por el stakeholder solo en la etapa de producción, la etapa de prototipo se va a realizar un proceso interno de validación de financiamiento.
+
 == Objetivo General
 Desarrollar un Sistema de Consultas Multimodal basado en arquitectura RAG (Retrieval-Augmented Generation) para optimizar la eficiencia y precisión en la recuperación de información técnica de los manuales de mantenimiento en plantas concentradoras de cobre.
 == Objetivo Especifico

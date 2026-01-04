@@ -5,7 +5,15 @@
 
 // Aplicamos la plantilla
 #show: doc => project(meta, doc)
-
+ 
+// --- AQUÍ SE AGREGA LA TABLA DE CONTENIDO ---
+#outline(
+  title: "Índice General", // Título personalizado
+  indent: auto,            // Indenta subsecciones (1.1, 1.1.1)
+  depth: 4                 // (Opcional) Qué tan profundo mostrar niveles
+)
+#pagebreak()               // Salto de página después del índice
+                           // 
 // Importamos las secciones en orden
 // #include "sections/1-general.typ"
 // #pagebreak()
