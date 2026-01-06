@@ -229,6 +229,7 @@ version: 1},
 	title = {{ReqRAG}: {Enhancing} {Software} {Release} {Management} through {Retrieval}-{Augmented} {LLMs}: {An} {Industrial} {Study}},
 	abstract = {Context and Motivation] Engineers often need to refer back to release notes, manuals, and system architecture documents to understand, modify, or upgrade functionalities in alignment with new software releases. This is crucial to ensure that new stakeholder requirements align with the existing system, maintaining compatibility and preventing integration issues. [Problem] In practice, the manual process of retrieving the relevant information from technical documentation is time-intensive and frequently results in inefficient software release management. [Principal ideas/results] In this paper, we propose a question-answering chatbot, ReqRAG, leveraging Retrieval Augmented Generation (RAG) with Large Language Models (LLMs) to deliver accurate and up-to-date information from technical documents in response to given queries. We employ various context retrieval techniques paired with state-of-the-art LLMs to evaluate the ReqRAG approach in industrial settings. Furthermore, we conduct human evaluations of the results in collaboration with experts from Alstom to gain practical insights. Our results indicate that, on average, 70\% of the generated responses are adequate, useful, and relevant to the practitioners. [Contribution] Fewer studies have comprehensively evaluated RAG-based approaches in industrial settings. Therefore, this work provides technical considerations for domain-specific chatbots, guiding researchers and practitioners facing similar challenges.},
 	language = {en},
+	year = {2025},
 	author = {Ibtasham, Saleh and Bashir, Sarmad and Abbas, Muhammad and Haider, Zulqarnain and Saadatmand, Mehrdad and Cicchetti, Antonio},
 	file = {PDF:files/576/Ibtasham et al. - ReqRAG Enhancing Software Release Management through Retrieval-Augmented LLMs An Industrial Study.pdf:application/pdf},
 }
@@ -358,6 +359,7 @@ version: 1},
   author = {Drushchak, Nazarii and Polyakovska, Nataliya and Bautina, Maryna and Semenchenko, Taras and Koscielecki, Jakub and Sykala, Wojciech and Wegrzynowski, Michal},
   abstract = {Retrieval-augmented generation (RAG) is a powerful paradigm for leveraging external data to enhance the capabilities of large language models (LLMs). However, most existing RAG solutions are tailored for single-modality or limited multimodal scenarios, restricting their applicability in real-world contexts where diverse data sources---including text, tables, images, and videos---must be integrated seamlessly. In this work, we propose a unified Multimodal Retrieval-augmented generation (mRAG) system designed to unify information processing across all four modalities. Our pipeline ingests and indexes data from PDFs and videos using tools like Amazon Textract, Transcribe, Langfuse, and multimodal LLMs (e.g., Claude 3.5 Sonnet) for structured extraction and semantic enrichment. The dataset includes text queries, table lookups, image-based questions, and videos. Evaluation with the Deepeval framework shows improved retrieval accuracy and response quality, especially for structured text and tables. While performance on image and video queries is lower, the multimodal integration framework remains robust, underscoring the value of unified pipelines for diverse data.},
   langid = {english},
+  year = {2025},
   file = {files/752/Drushchak et al. - Multimodal Retrieval-Augmented Generation Unified Information Processing Across Text, Image, Table,.pdf}
 }
 
@@ -381,15 +383,53 @@ version: 1},
 # Marco teórico
 
 
-@book{palmerMaintenancePlanningSchedulingHandbookFourth2019,
-  title = {Maintenance {{Planning}} and {{Scheduling Handbook}}, {{Fourth Edition}}},
-  author = {Palmer, Doc},
-  year = 2019,
-  edition = {4th edition.},
-  publisher = {McGraw-Hill Education,},
-  address = {New York, N.Y},
-  isbn = {978-1-260-13529-9},
-  langid = {english},
-  lccn = {658.202 PAL},
-  keywords = {Mechanical,Product life cycle,Production management,TECHNOLOGY & ENGINEERING}
+@book{palmer_maintenance_2019,
+	address = {New York, N.Y},
+	edition = {4th edition.},
+	title = {Maintenance {Planning} and {Scheduling} {Handbook}, {Fourth} {Edition}},
+	isbn = {978-1-260-13529-9},
+	language = {eng},
+	publisher = {McGraw-Hill Education,},
+	author = {Palmer, Doc},
+	year = {2019},
+	keywords = {Mechanical, Product life cycle, Production management, TECHNOLOGY \& ENGINEERING},
 }
+
+@book{rajaraman_mining_2011,
+	title = {Mining of {Massive} {Datasets}},
+	url = {https://biblioteca.unisced.edu.mz/handle/123456789/2674},
+	abstract = {La minería de datos (DM, Data Mining) consiste en la extracción no trivial de información que reside de manera implícita en los datos. Dicha información era previamente desconocida y podrá resultar útil para algún proceso. En otras palabras, la minería de datos prepara, sondea y explora los datos para sacar la información oculta en ellos.
+
+Bajo el nombre de minería de datos se engloba todo un conjunto de técnicas encaminadas a la extracción de conocimiento procesable, implícito en las bases de datos. Está fuertemente ligado con la supervisión de procesos industriales ya que resulta muy útil para aprovechar los datos almacenados en las bases de datos.
+
+Las bases de la minería de datos se encuentran en la inteligencia artificial y en el análisis estadístico. Mediante los modelos extraídos utilizando técnicas de minería de datos se aborda la solución a problemas de predicción, clasificación y segmentación.},
+	language = {en},
+	urldate = {2026-01-06},
+	publisher = {Autoedicion},
+	author = {Rajaraman, Anand and Ullman, Jeﬀrey D.},
+	month = nov,
+	year = {2011},
+	note = {Accepted: 2023-04-15T09:58:31Z},
+	file = {Full Text PDF:C\:\\Users\\johan\\Zotero\\storage\\3WH3VG87\\Rajaraman and Ullman - 2011 - Mining of Massive Datasets.pdf:application/pdf},
+}
+
+@article{robertson_probabilistic_2009,
+	title = {The {Probabilistic} {Relevance} {Framework}: {BM25} and {Beyond}},
+	volume = {3},
+	issn = {1554-0669, 1554-0677},
+	shorttitle = {The {Probabilistic} {Relevance} {Framework}},
+	url = {https://www.nowpublishers.com/article/Details/INR-019},
+	doi = {10.1561/1500000019},
+	abstract = {The Probabilistic Relevance Framework: BM25 and Beyond},
+	language = {English},
+	number = {4},
+	urldate = {2026-01-06},
+	journal = {Foundations and Trends® in Information Retrieval},
+	author = {Robertson, Stephen and Zaragoza, Hugo},
+	month = dec,
+	year = {2009},
+	note = {Publisher: Now Publishers, Inc.},
+	pages = {333--389},
+	file = {Full Text PDF:C\:\\Users\\johan\\Zotero\\storage\\Y3RET952\\Robertson and Zaragoza - 2009 - The Probabilistic Relevance Framework BM25 and Beyond.pdf:application/pdf},
+}
+
