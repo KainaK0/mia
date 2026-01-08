@@ -2,63 +2,15 @@
 
 == Cronograma
 
-#let x = align(center + horizon)[*X*]
-
-#align(center)[
-  #text(1.5em, weight: "bold")[Cronograma de Actividades 2025-2026]
-  #v(1em)
-  
-  #table(
-    columns: (auto, ..range(14).map(_ => 1fr)), // 1 columna auto + 14 columnas iguales
-    align: (col, row) => (
-      if col == 0 { left + horizon } else { center + horizon }
-    ),
-    stroke: 0.5pt + black,
-    inset: 8pt,
-
-    // --- Encabezados ---
-    // Fila 1: Años
-    [], 
-    table.cell(colspan: 2, fill: luma(240))[2025], 
-    table.cell(colspan: 12, fill: luma(230))[2026],
-
-    // Fila 2: Meses
-    table.cell(fill: luma(220))[*Actividades*],
-    [Nov], [Dic], // 2025
-    [Ene], [Feb], [Mar], [Abr], [May], [Jun], [Jul], [Ago], [Set], [Oct], [Nov], [Dic], // 2026
-
-    // --- Datos / Marcas ---
-    
-    // Actividad 1 (Nov, Dic)
-    [actividad 1 asfadfasdfa sd], x, x, [], [], [], [], [], [], [], [], [], [], [], [],
-
-    // Actividad 2 (Dic, Ene, Feb, Mar)
-    [actividad 2 asdasdfasdddd dddddd], [], x, x, x, x, [], [], [], [], [], [], [], [], [],
-
-    // Actividad 3 (Feb, Mar, Abr)
-    [actividad 3 adfasdfasd fasdfasd fasd], [], [], [], x, x, x, [], [], [], [], [], [], [], [],
-
-    // Actividad 4 (Mar, Abr, May, Jun)
-    [actividad 4 adfasdf fasdfasdf afadfasdf], [], [], [], [], x, x, x, x, [], [], [], [], [], [],
-
-    // Actividad 5 (May, Jun, Jul, Ago)
-    [actividad 5], [], [], [], [], [], [], x, x, x, x, [], [], [], [],
-
-    // Actividad 6 (Jun, Jul, Ago, Set)
-    [actividad 6], [], [], [], [], [], [], [], x, x, x, x, [], [], [],
-
-    // Actividad 7 (Ago, Set, Oct)
-    [actividad 7], [], [], [], [], [], [], [], [], [], x, x, x, [], [],
-
-    // Actividad 8 (Set, Oct, Nov, Dic)
-    [actividad 8], [], [], [], [], [], [], [], [], [], [], x, x, x, x,
-  )
-]
+#figure(image("../assets/cronograma.png"), caption:[Cronograma de implementación de proyecto])
 
 == Presupuesto
 
+#figure(image("../assets/budget.png"), caption:[Presupuesto de implementación de proyecto])
+
 
 == Financiamiento
+El stakeholder va a sustentar al área de finanzas en un proceso de caso de negocio para poder financiar el proyecto, sin embargo de cumplir con las espectativas de los usuarios el área de TI se compromete a crear un espacio para la implementación en el sistema de la compañia (Azure).
 
 // Desactivamos numeración para lo final
 #set heading(numbering: none)
@@ -66,5 +18,92 @@
 // = Referencias Bibliográficas
 // Listado de referencias según normas APA o IEEE.
 
-= Anexos
-Matriz de consistencia
+= Anexos:
+
+== Resumen Ejecutivo
+Breve descripción del objetivo del sprint y el alcance alcanzado en el desarrollo del sistema RAG multimodal.
+
+Para la implementación de Sistema de consulta Multimodal basado en RAG para Manuales de Mantenimiento en Plantas Concentradoras de Cobre, se realiza la solicitud y descarga de documentos provistos por el sponsor de manuales e información técnica.
+
+= Sprint Planning
+*Objetivo del Sprint:* Establecer el flujo de ingesta y un modelo de recuperación base.
+
+#table(
+  columns: (auto, 1fr, auto, auto),
+  inset: 10pt,
+  align: horizon,
+  fill: (x, y) => if y == 0 { gray.lighten(80%) },
+  [*ID*], [*Historia / Tarea*], [*Responsable*], [*Estado*],
+  [1], [Solicitar la data de manuales de equipos - Planta Sulfuros], [Johan Callomamani], [Hecho],
+  [2], [Descarga de manuales vía Aconex - Transmittals (5TB)], [Johan Callomamani], [En Proceso],
+  [4], [Limpieza inicial de manuales (PDF/Imágenes)], [Johan Callomamani], [Por Empezar],
+  [5], [Análisis de la data y vectorización ], [Johan Callomamani], [Por Empezar],
+  [6], [Implementación de Baseline RAG], [Johan Callomamani], [Por Empezar],
+)
+
+== Data Pipeline Básico
++ *Descripción:* 
+  - Procesamiento de transmittals descargados del Aconex.
+  - Se realiza un análisis de los archivos generando una archivo csv con características de los archivos.
++ *Entregable:* 
+   - Lista de archivos transmittal `aconex_file.zip`
+   - `list_files.csv`
++ *Comentarios/Problemas:* Los documentos no son solo manuales, se tienen documentos adicionales, de no interés para el proyecto:
+  - Información de ordenes de compra.
+  - Solicitudes de transporte de componentes.
+  - Documentos de aceptación de reportes y aceptación de proyectos.
+  - Gantts de inspección/QA.
+  - Invoices.
+  - Monthly reports (avances de la etapa de proyecto).
+
+== EDA Rápido
+- *Hallazgos:*
+  - Total de documentos 139474 archivos con un peso total 3.18 TB.
+  - Alta densidad de documentos PDF con un total 78.53%.
+  - Se encontró que no todos los archivos son manuales, el 22% son pagos y solo el 60% corresponde a información técnica relevante.
+
+- *Visualizaciones:*.
+
+// #figure(image("assets/eda_plots/Picture1.png", width: 80%), caption: [Distribución de tokens por manual]) <grafico-eda>
+// #figure(image("assets/eda_plots/Picture2.png", width: 80%), caption: [Distribución de tokens por manual]) <grafico-eda>
+- *Entregables:*
+  - Graficas(Figura 1 y Figura 2).
+  
+== Modelo Baseline\
+*{En Proceso}*\
++ *Tipo:* RAG Multimodal, LoRA-Tuned.
++ *Configuración:* 03 Datasets:
+  - Multi-turn QA
+  - Simple QA
+  - visual-text QA
++ *Entregable:* `notebooks/02_baseline_model.ipynb`
+
+== Pruebas Iniciales\
+*{PENDIENTE DE REALIZAR}*\
++ *Protocolo:* Hold-out (80/20) sobre el set de preguntas y respuestas sintéticas.
++ Resultados por fold (si aplica) y media ± std. Ejemplo:
+  #table(
+    columns: (auto, auto, auto, auto, auto, auto, auto),
+    inset: 7pt,
+    align: center,
+    fill: (x, y) => if x == 6 { blue.lighten(90%) },
+    [*Métrica*], [*F1*], [*F2*], [*F3*], [*F4*], [*F5*], [*Media ± Std*],
+    [Accuracy], [0.78], [0.81], [0.80], [0.79], [0.82], [$0.80 plus.minus 0.015$],
+    [F1-score], [0.75], [0.80], [0.79], [0.77], [0.81], [$0.78 plus.minus 0.017$],
+  )
++ *Entregables:* Tabla de resultados, boxplot de la distribución de scores.
++ *Observaciones:* Identificación de outliers o folds problemáticos.
+
+
+== Avance de la Demo Interna\
+*{PENDIENTE DE REALIZAR}*\
+- *Qué se mostró:* Interfaz básica de consulta sobre un manual de chancadora.
+- *Feedback:*
+  - *Puntos fuertes:* Velocidad de respuesta.
+  - *Puntos a mejorar:* Precisión en la recuperación de códigos de parte en tablas.
+
+= Plan para siguiente semana
+
++ Revisión he implementación de algoritmo para detectar archivos que son manuales y documentos técnicos relevantes.
++ Revisión de integridad de archivos, se detecto archivos corructos que no se pueden abrir.
++ Iniciar con el planteamiento y estrategia de extracción de información con herramienta OCR.

@@ -22,6 +22,6 @@
 #include "sections/3-marco.typ"
 #include "sections/4-metodologia.typ"
 #include "sections/5-admin.typ"
+// #include "sections/7-anexo.typ"
 #include "sections/6-referencias.typ"
-#include "sections/7-anexo.typ"
 
