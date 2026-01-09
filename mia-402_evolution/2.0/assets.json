@@ -1,0 +1,10 @@
+[
+  {"asset_id": "AS01", "name": "Chancadora Primaria", "area": "Chancado", "criticality": "Alta"},
+  {"asset_id": "AS02", "name": "Molino SAG", "area": "Molienda", "criticality": "Alta"},
+  {"asset_id": "AS03", "name": "Sistema de Fajas Transportadoras", "area": "Fajas", "criticality": "Media"},
+  {"asset_id": "AS04", "name": "Sistema de Bombas", "area": "Bombas", "criticality": "Alta"},
+  {"asset_id": "AS05", "name": "Sistema Eléctrico de Potencia", "area": "Electricidad", "criticality": "Alta"},
+  {"asset_id": "AS06", "name": "Sistema de Instrumentación y Control", "area": "Instrumentación", "criticality": "Media"},
+  {"asset_id": "AS07", "name": "Estructuras Metálicas de Planta", "area": "Estructuras", "criticality": "Media"},
+  {"asset_id": "AS08", "name": "Integración General de Planta", "area": "Integración", "criticality": "Crítica"}
+]

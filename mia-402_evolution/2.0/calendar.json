@@ -1,0 +1,31 @@
+{
+  "working_hours_per_day": 24,
+  "working_days_per_week": 7,
+  "shifts": [
+    {
+      "shift_id": "S1",
+      "name": "Turno Día",
+      "start_hour": 6,
+      "end_hour": 14
+    },
+    {
+      "shift_id": "S2",
+      "name": "Turno Tarde",
+      "start_hour": 14,
+      "end_hour": 22
+    },
+    {
+      "shift_id": "S3",
+      "name": "Turno Noche",
+      "start_hour": 22,
+      "end_hour": 6
+    }
+  ],
+  "non_working_periods": [
+    {
+      "description": "Ventana de Seguridad Crítica",
+      "start_hour": 240,
+      "end_hour": 252
+    }
+  ]
+}

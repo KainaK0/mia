@@ -1,0 +1,61 @@
+[
+  { "material_id": "MAT01", "name": "Liners Molino SAG", "stock_initial": 0, "unit_cost": 22000, "lead_time_hours": 72 },
+
+  { "material_id": "MAT02", "name": "Rodamientos Chancadora", "stock_initial": 0, "unit_cost": 13500, "lead_time_hours": 36 },
+
+  { "material_id": "MAT03", "name": "Sellos Hidráulicos", "stock_initial": 1, "unit_cost": 6500, "lead_time_hours": 18 },
+
+  { "material_id": "MAT04", "name": "Motores Eléctricos", "stock_initial": 0, "unit_cost": 24000, "lead_time_hours": 60 },
+
+  { "material_id": "MAT05", "name": "Cables de Potencia", "stock_initial": 2, "unit_cost": 4200, "lead_time_hours": 16 },
+
+  { "material_id": "MAT06", "name": "Bombas Auxiliares", "stock_initial": 0, "unit_cost": 17500, "lead_time_hours": 48 },
+
+  { "material_id": "MAT07", "name": "Sensores Instrumentación", "stock_initial": 1, "unit_cost": 8200, "lead_time_hours": 30 },
+
+  { "material_id": "MAT08", "name": "Estructuras Metálicas", "stock_initial": 0, "unit_cost": 26000, "lead_time_hours": 72 },
+
+  { "material_id": "MAT09", "name": "Lubricantes Especiales", "stock_initial": 3, "unit_cost": 2300, "lead_time_hours": 12 },
+
+  { "material_id": "MAT10", "name": "Pernos Alta Resistencia", "stock_initial": 4, "unit_cost": 3800, "lead_time_hours": 14 },
+
+  { "material_id": "MAT11", "name": "Fajas Transportadoras", "stock_initial": 0, "unit_cost": 19500, "lead_time_hours": 60 },
+
+  { "material_id": "MAT12", "name": "Poleas Industriales", "stock_initial": 1, "unit_cost": 15000, "lead_time_hours": 36 },
+
+  { "material_id": "MAT13", "name": "Válvulas Hidráulicas", "stock_initial": 1, "unit_cost": 9800, "lead_time_hours": 28 },
+
+  { "material_id": "MAT14", "name": "Aceites Especiales", "stock_initial": 2, "unit_cost": 3200, "lead_time_hours": 10 },
+
+  { "material_id": "MAT15", "name": "Paneles Eléctricos", "stock_initial": 0, "unit_cost": 21500, "lead_time_hours": 54 },
+
+  { "material_id": "MAT16", "name": "Transformadores", "stock_initial": 0, "unit_cost": 30000, "lead_time_hours": 72 },
+
+  { "material_id": "MAT17", "name": "Tuberías Acero", "stock_initial": 2, "unit_cost": 7400, "lead_time_hours": 26 },
+
+  { "material_id": "MAT18", "name": "Conectores Eléctricos", "stock_initial": 5, "unit_cost": 2700, "lead_time_hours": 8 },
+
+  { "material_id": "MAT19", "name": "Filtros Industriales", "stock_initial": 2, "unit_cost": 4800, "lead_time_hours": 12 },
+
+  { "material_id": "MAT20", "name": "Actuadores", "stock_initial": 1, "unit_cost": 12000, "lead_time_hours": 40 },
+
+  { "material_id": "MAT21", "name": "Celdas de Carga", "stock_initial": 0, "unit_cost": 16500, "lead_time_hours": 36 },
+
+  { "material_id": "MAT22", "name": "Sensores Vibración", "stock_initial": 1, "unit_cost": 10200, "lead_time_hours": 30 },
+
+  { "material_id": "MAT23", "name": "Planchas Acero", "stock_initial": 2, "unit_cost": 6500, "lead_time_hours": 24 },
+
+  { "material_id": "MAT24", "name": "Repuestos Bombas", "stock_initial": 1, "unit_cost": 18500, "lead_time_hours": 36 },
+
+  { "material_id": "MAT25", "name": "Cajas Reductoras", "stock_initial": 0, "unit_cost": 28000, "lead_time_hours": 72 },
+
+  { "material_id": "MAT26", "name": "Válvulas de Control", "stock_initial": 1, "unit_cost": 13500, "lead_time_hours": 36 },
+
+  { "material_id": "MAT27", "name": "Sensores Presión", "stock_initial": 2, "unit_cost": 7500, "lead_time_hours": 12 },
+
+  { "material_id": "MAT28", "name": "Sellos Mecánicos", "stock_initial": 1, "unit_cost": 7200, "lead_time_hours": 18 },
+
+  { "material_id": "MAT29", "name": "Módulos PLC", "stock_initial": 0, "unit_cost": 19500, "lead_time_hours": 60 },
+
+  { "material_id": "MAT30", "name": "Gabinetes Eléctricos", "stock_initial": 0, "unit_cost": 24000, "lead_time_hours": 60 }
+]

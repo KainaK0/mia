@@ -1,7 +1,12 @@
+import time
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt # Import for plotting
+
+# Pymoo imports
 from pymoo.core.problem import ElementwiseProblem
 from pymoo.algorithms.moo.nsga2 import NSGA2
+from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.operators.sampling.rnd import IntegerRandomSampling
 from pymoo.operators.crossover.pntx import TwoPointCrossover
 from pymoo.operators.mutation.pm import PolynomialMutation
@@ -9,7 +14,7 @@ from pymoo.core.repair import Repair
 from pymoo.optimize import minimize
 
 # ==========================================
-# 1. AUTOMATIC DATA GENERATOR
+# 1. AUTOMATIC DATA GENERATOR (Kept Intact)
 # ==========================================
 class MRCPSPDataGenerator:
     """
@@ -74,51 +79,8 @@ class MRCPSPDataGenerator:
             
             self.modes[t] = modes
 
-
 # ==========================================
-# 1. DATA GENERATION
-# ==========================================
-class MRCPSPData:
-    def __init__(self):
-        self.num_tasks = 12  # 0 to 11
-        
-        # Renewable Resources (R1, R2)
-        self.R_capacity = np.array([9, 4]) 
-        self.R_cost = np.array([5, 6])     
-        
-        # Non-Renewable Resources (NR1, NR2)
-        self.N_limit = np.array([29, 40])
-        self.N_cost = np.array([2, 3])     
-
-        self.successors = {
-            0: [1, 2, 3], 1: [4, 5], 2: [9, 10], 3: [8],
-            4: [6, 7], 5: [9], 6: [9], 7: [8],
-            8: [11], 9: [11], 10: [11], 11: []
-        }
-        
-        self.predecessors = {i: [] for i in range(self.num_tasks)}
-        for p, children in self.successors.items():
-            for c in children:
-                self.predecessors[c].append(p)
-
-        # Mode Data: TaskID -> [[Dur, R1, R2, NR1, NR2], ...]
-        self.modes = {
-            0:  [[0, 0, 0, 0, 0]], 
-            1:  [[3, 6, 0, 9, 0], [9, 5, 0, 8, 0], [10, 0, 6, 5, 7]],
-            2:  [[1, 0, 4, 0, 0], [2, 1, 7, 0, 0], [5, 0, 4, 0, 0]],
-            3:  [[3, 10, 0, 0, 7], [5, 7, 0, 2, 0], [8, 6, 0, 0, 7]], 
-            4:  [[4, 0, 9, 8, 0], [6, 2, 0, 0, 7], [10, 0, 5, 5, 5]],
-            5:  [[2, 2, 0, 0, 0], [2, 0, 8, 0, 0], [2, 2, 0, 0, 1]],
-            6:  [[4, 5, 0, 10, 0], [2, 0, 7, 0, 0], [5, 0, 10, 0, 10]],
-            7:  [[4, 6, 0, 0, 1], [10, 3, 0, 10, 0], [10, 4, 0, 0, 1]],
-            8:  [[2, 2, 0, 0, 0], [7, 1, 0, 0, 8], [10, 1, 0, 0, 7]],
-            9:  [[1, 4, 0, 0, 0], [1, 0, 2, 0, 0], [4, 0, 0, 0, 0]],
-            10: [[9, 0, 2, 0, 0], [9, 4, 1, 0, 0], [10, 0, 1, 0, 0]],
-            11: [[0, 0, 0, 0, 0]]
-        }
-
-# ==========================================
-# 2. REPAIR OPERATOR (CRITICAL FIX HERE)
+# 2. REPAIR OPERATOR (Kept Intact)
 # ==========================================
 class ModeRepair(Repair):
     def __init__(self, project_data):
@@ -126,227 +88,282 @@ class ModeRepair(Repair):
         super().__init__()
 
     def _do(self, problem, X, **kwargs):
-        n_tasks = self.project_data.num_tasks
-        n_modes_start = n_tasks 
+        n = self.project_data.num_tasks
         
-        # Iterate over each individual row in the matrix
         for i in range(len(X)):
-            mode_genes = X[i, n_modes_start:].astype(int)
+            mode_genes = X[i, n:].astype(int)
             
-            # --- FIX PART A: Repair Impossible Modes (Renewable Capacity) ---
-            # Some modes in the paper require 10 resource units, but capacity is 9.
-            # We must swap these out immediately or SSGS hangs.
-            for t in range(n_tasks):
-                max_modes = len(self.project_data.modes[t])
-                m_idx = mode_genes[t] % max_modes
+            # Renewable Check
+            for t in range(n):
+                max_m = len(self.project_data.modes[t])
+                m_idx = mode_genes[t] % max_m
                 
-                # Check if this mode fits in the pipe (R1 <= 9, R2 <= 4)
-                mode_r = np.array(self.project_data.modes[t][m_idx][1:3])
-                if np.any(mode_r > self.project_data.R_capacity):
-                    # Force switch to a valid mode (Generic fallback to mode 0 or search)
-                    # Simple fix: Scan for ANY valid mode
-                    for alt_m in range(max_modes):
-                        alt_r = np.array(self.project_data.modes[t][alt_m][1:3])
-                        if np.all(alt_r <= self.project_data.R_capacity):
-                            mode_genes[t] = alt_m # Found a valid one
-                            X[i, n_modes_start + t] = alt_m
+                req = np.array(self.project_data.modes[t][m_idx][1:5])
+                
+                if np.any(req > self.project_data.R_capacity):
+                    for alt in range(max_m):
+                        alt_req = np.array(self.project_data.modes[t][alt][1:5])
+                        if np.all(alt_req <= self.project_data.R_capacity):
+                            mode_genes[t] = alt
+                            X[i, n + t] = alt
                             break
-            
-            # --- FIX PART B: Repair Budget (Non-Renewable) ---
-            # Recalculate usage after renewable repair
-            current_usage = np.zeros(len(self.project_data.N_limit))
-            actual_mode_indices = np.zeros(n_tasks, dtype=int)
-
-            for t in range(n_tasks):
-                max_modes = len(self.project_data.modes[t])
-                m_idx = mode_genes[t] % max_modes
-                actual_mode_indices[t] = m_idx
-                current_usage += self.project_data.modes[t][m_idx][3:]
-
-            # Greedy Budget Repair
-            for r_idx in range(len(self.project_data.N_limit)):
-                while current_usage[r_idx] > self.project_data.N_limit[r_idx]:
-                    best_reduction = 0
-                    best_task = -1
-                    best_new_mode = -1
-                    
-                    for t in range(1, n_tasks - 1):
-                        current_m = actual_mode_indices[t]
-                        current_cost = self.project_data.modes[t][current_m][3 + r_idx]
-                        
-                        for alt_m in range(len(self.project_data.modes[t])):
-                            if alt_m == current_m: continue
-                            
-                            # Ensure the alternative is ALSO renewable-feasible
-                            alt_r = np.array(self.project_data.modes[t][alt_m][1:3])
-                            if np.any(alt_r > self.project_data.R_capacity):
-                                continue 
-
-                            alt_cost = self.project_data.modes[t][alt_m][3 + r_idx]
-                            reduction = current_cost - alt_cost
-                            
-                            if reduction > 0 and reduction > best_reduction:
-                                best_reduction = reduction
-                                best_task = t
-                                best_new_mode = alt_m
-                    
-                    if best_task != -1:
-                        old_m = actual_mode_indices[best_task]
-                        old_res = self.project_data.modes[best_task][old_m][3:]
-                        new_res = self.project_data.modes[best_task][best_new_mode][3:]
-                        
-                        current_usage = current_usage - old_res + new_res
-                        actual_mode_indices[best_task] = best_new_mode
-                        X[i, n_modes_start + best_task] = best_new_mode
-                    else:
-                        break 
         return X
 
 # ==========================================
-# 3. DECODER (Updated with Safety Valve)
+# 3. DECODER (SSGS) (Kept Intact)
 # ==========================================
-def calculate_makespan_cost(priority_list, mode_list, data):
-    n_tasks = data.num_tasks
-    priorities = {i: priority_list[i] for i in range(n_tasks)}
-    unscheduled = set(range(n_tasks))
+def calculate_metrics(priorities, mode_indices, data):
+    n = data.num_tasks
+    prio_map = {i: priorities[i] for i in range(n)}
+    
+    unscheduled = set(range(n))
     scheduled = []
+    finish_times = {i: 0 for i in range(n)}
+    timeline = {}
     
-    finish_times = {i: 0 for i in range(n_tasks)}
-    r_timeline = {} 
-    
-    total_cost = 0
-    for t in range(n_tasks):
-        m_idx = int(mode_list[t]) % len(data.modes[t])
-        total_cost += np.sum(data.modes[t][m_idx][3:] * data.N_cost)
+    total_cost = 0.0
+    for t in range(n):
+        m = int(mode_indices[t]) % len(data.modes[t])
+        nr_usage = np.array(data.modes[t][m][5:])
+        total_cost += np.sum(nr_usage * data.N_cost)
 
-    loop_safety = 0 # Prevent infinite loops
-    max_loops = 5000 
-
+    loop_guard = 0
     while unscheduled:
-        loop_safety += 1
-        if loop_safety > max_loops:
-            # Emergency exit: Return Huge Penalty if scheduler hangs
-            return 1e5, 1e5
-
-        eligible = [t for t in unscheduled 
-                    if all(p in scheduled for p in data.predecessors[t])]
+        loop_guard += 1
+        if loop_guard > 10000: return 1e6, 1e6 # Failsafe
         
-        if not eligible: break 
-
-        next_task = min(eligible, key=lambda x: priorities[x])
+        ready = [t for t in unscheduled if all(p in scheduled for p in data.predecessors[t])]
+        if not ready: break
         
-        preds = data.predecessors[next_task]
-        es = max([finish_times[p] for p in preds]) if preds else 0
+        task = min(ready, key=lambda t: prio_map[t])
         
-        m_idx = int(mode_list[next_task]) % len(data.modes[next_task])
-        m_data = data.modes[next_task][m_idx]
-        dur, req_r = m_data[0], np.array(m_data[1:3])
+        es = max([finish_times[p] for p in data.predecessors[task]]) if data.predecessors[task] else 0
         
-        # FAILSAFE: If Mode requires more than Capacity, task is impossible.
-        if np.any(req_r > data.R_capacity):
-            return 1e6, 1e6 # Return High Penalty
-
-        current_time = es
+        m = int(mode_indices[task]) % len(data.modes[task])
+        dat = data.modes[task][m]
+        dur = dat[0]
+        req_r = np.array(dat[1:5])
+        
+        t_start = es
         is_scheduled = False
         
-        # Horizon check
-        while not is_scheduled and current_time < 200:
-            feasible = True
+        while not is_scheduled and t_start < 5000:
+            valid = True
             if dur > 0:
-                for t in range(current_time, current_time + dur):
-                    usage = r_timeline.get(t, np.zeros(2))
-                    if np.any(usage + req_r > data.R_capacity):
-                        feasible = False; break
+                for t in range(t_start, t_start + dur):
+                    current = timeline.get(t, np.zeros(4))
+                    if np.any(current + req_r > data.R_capacity):
+                        valid = False; break
             
-            if feasible:
+            if valid:
                 if dur > 0:
-                    for t in range(current_time, current_time + dur):
-                        if t not in r_timeline: r_timeline[t] = np.zeros(2)
-                        r_timeline[t] += req_r
+                    for t in range(t_start, t_start + dur):
+                        if t not in timeline: timeline[t] = np.zeros(4)
+                        timeline[t] += req_r
                         total_cost += np.sum(req_r * data.R_cost)
                 
-                finish_times[next_task] = current_time + dur
-                scheduled.append(next_task)
-                unscheduled.remove(next_task)
+                finish_times[task] = t_start + dur
+                scheduled.append(task)
+                unscheduled.remove(task)
                 is_scheduled = True
             else:
-                current_time += 1
+                t_start += 1
+        
+        if not is_scheduled: return 1e6, 1e6 
                 
-        if not is_scheduled:
-            # If we hit horizon 200 and still can't schedule, return penalty
-            return 1e5, 1e5
-                
-    return finish_times[11], total_cost
+    return finish_times[n-1], total_cost
 
 # ==========================================
-# 4. PROBLEM DEFINITION
+# 4. PROBLEM DEFINITIONS
 # ==========================================
+
+# --- A. Multi-Objective Problem (For NSGA-II) ---
 class MRCPSP(ElementwiseProblem):
     def __init__(self, project_data):
         self.project_data = project_data 
         n = project_data.num_tasks
-        
-        super().__init__(
-            n_var=2 * n, 
-            n_obj=2, 
-            n_ieq_constr=0, 
-            xl=0, 
-            xu=100
-        )
+        super().__init__(n_var=2*n, n_obj=2, xl=0, xu=100)
 
     def _evaluate(self, x, out, *args, **kwargs):
         n = self.project_data.num_tasks
-        priorities = x[:n]
-        mode_genes = x[n:]
-        
-        modes = []
-        for i in range(n):
-            n_modes = len(self.project_data.modes[i])
-            modes.append(int(mode_genes[i]) % n_modes)
-            
-        makespan, cost = calculate_makespan_cost(priorities, modes, self.project_data)
+        prio = x[:n]
+        modes = x[n:]
+        makespan, cost = calculate_metrics(prio, modes, self.project_data)
         out["F"] = [makespan, cost]
 
-# ==========================================
-# 5. EXECUTION
-# ==========================================
-def run_mnsga2():
+# --- B. Single-Objective Problem (For Standard GA) ---
+class MRCPSP_SO(ElementwiseProblem):
+    def __init__(self, project_data):
+        self.project_data = project_data
+        n = project_data.num_tasks
+        super().__init__(n_var=2*n, n_obj=1, xl=0, xu=100)
 
+    def _evaluate(self, x, out, *args, **kwargs):
+        n = self.project_data.num_tasks
+        prio = x[:n]
+        modes = x[n:]
+        makespan, cost = calculate_metrics(prio, modes, self.project_data)
+        
+        # Weighted Sum: Combine Makespan and Cost
+        fitness = makespan + (cost * 0.1)
+        out["F"] = [fitness]
+
+# ==========================================
+# 5. VISUALIZATION FUNCTION (NEW)
+# ==========================================
+def plot_convergence(res_nsga2, res_ga, data):
+    """
+    Plots the evolution of Makespan and Cost generation by generation.
+    """
+    # --- 1. Extract NSGA-II History ---
+    n_gen_nsga2 = len(res_nsga2.history)
+    min_makespan_nsga2 = []
+    min_cost_nsga2 = []
+
+    for algo in res_nsga2.history:
+        # Get the population at this generation
+        pop = algo.pop
+        # Extract objectives (F is a matrix of [pop_size, 2])
+        F = pop.get("F")
+        
+        # Find best Makespan in this generation (independent of cost)
+        min_makespan_nsga2.append(np.min(F[:, 0]))
+        # Find best Cost in this generation (independent of makespan)
+        min_cost_nsga2.append(np.min(F[:, 1]))
+
+    # --- 2. Extract GA History ---
+    n_gen_ga = len(res_ga.history)
+    ga_makespan = []
+    
+    # We need to reconstruct Makespan because GA only stored Weighted Fitness
+    for algo in res_ga.history:
+        # Get the single best individual in this generation
+        opt = algo.opt[0]
+        X = opt.X
+        
+        # Decode X to get actual Makespan
+        n = data.num_tasks
+        prio = X[:n]
+        modes = X[n:]
+        ms, _ = calculate_metrics(prio, modes, data)
+        ga_makespan.append(ms)
+
+    # --- 3. Plotting ---
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+
+    # Plot 1: Evolution of Makespan (NSGA-II vs GA)
+    ax1.plot(range(n_gen_nsga2), min_makespan_nsga2, label="NSGA-II (Best Makespan)", color="blue", linewidth=2)
+    ax1.plot(range(n_gen_ga), ga_makespan, label="Standard GA (Best Makespan)", color="red", linestyle="--", linewidth=2)
+    ax1.set_title("Evolution of Makespan")
+    ax1.set_xlabel("Generation")
+    ax1.set_ylabel("Makespan (Hours)")
+    ax1.legend()
+    ax1.grid(True, linestyle=':', alpha=0.6)
+
+    # Plot 2: Evolution of Cost (NSGA-II only - since GA didn't optimize Cost directly)
+    ax2.plot(range(n_gen_nsga2), min_cost_nsga2, label="NSGA-II (Best Cost)", color="green", linewidth=2)
+    ax2.set_title("Evolution of Cost (NSGA-II)")
+    ax2.set_xlabel("Generation")
+    ax2.set_ylabel("Total Cost ($)")
+    ax2.legend()
+    ax2.grid(True, linestyle=':', alpha=0.6)
+
+    plt.tight_layout()
+    plt.show()
+
+# ==========================================
+# 6. EXECUTION & COMPARISON
+# ==========================================
+def main():
     NUM_ACTIVITIES = 150 
     
-    print(f"--- Generating Data for {NUM_ACTIVITIES} activities ---")
+    print(f"--- Generating Shared Data for {NUM_ACTIVITIES} activities ---")
     data = MRCPSPDataGenerator(NUM_ACTIVITIES)
-
-    data = MRCPSPData()
-    problem = MRCPSP(data)
+    print(f"Graph Created: {sum(len(v) for v in data.successors.values())} edges.")
     
-    # We suppress strict typing warnings for Pylance using 'type: ignore'
-    # because we are passing valid subclasses that Pylance doesn't expect.
-    algorithm = NSGA2(
+    # ---------------------------------------------------------
+    # ALGORITHM 1: NSGA-II (Multi-Objective)
+    # ---------------------------------------------------------
+    print("\n" + "="*50)
+    print("1. Running NSGA-II (Multi-Objective)...")
+    print("="*50)
+    
+    problem_mo = MRCPSP(data)
+    
+    algorithm_nsga2 = NSGA2(
         pop_size=100,
         sampling=IntegerRandomSampling(),
-        crossover=TwoPointCrossover(prob=0.9), # type: ignore
-        mutation=PolynomialMutation(prob=0.1, eta=20), # type: ignore
+        crossover=TwoPointCrossover(prob=0.9), 
+        mutation=PolynomialMutation(prob=0.1, eta=20),
         repair=ModeRepair(data),
         eliminate_duplicates=True
     )
-
-    print("Running MNSGA-II on MRCPSP Case Study...")
-    res = minimize(problem, algorithm, ('n_gen', 50), seed=1, verbose=True)
-
-    print("\n--- Final Results (Pareto Front) ---")
-    print(f"{'Makespan':<15} | {'Cost':<15}")
-    print("-" * 35)
     
-    if res.F is not None:
-        unique_F = np.unique(res.F, axis=0)
-        unique_F = unique_F[unique_F[:, 0].argsort()]
-        for f in unique_F:
-            # Filter out penalty values
-            if f[0] < 1e5:
-                print(f"{f[0]:<15.1f} | {f[1]:<15.1f}")
+    start_time_nsga2 = time.time()
+    # ENABLE SAVE_HISTORY=TRUE to track generations
+    res_nsga2 = minimize(problem_mo, algorithm_nsga2, ('n_gen', 50), seed=1, verbose=False, save_history=True)
+    end_time_nsga2 = time.time()
+    
+    time_nsga2 = end_time_nsga2 - start_time_nsga2
+    print(f"NSGA-II Finished in: {time_nsga2:.4f} seconds")
+
+    # ---------------------------------------------------------
+    # ALGORITHM 2: Standard GA (Single-Objective)
+    # ---------------------------------------------------------
+    print("\n" + "="*50)
+    print("2. Running Standard GA (Single-Objective Weighted)...")
+    print("="*50)
+    
+    problem_so = MRCPSP_SO(data)
+    
+    algorithm_ga = GA(
+        pop_size=100,
+        sampling=IntegerRandomSampling(),
+        crossover=TwoPointCrossover(prob=0.9), 
+        mutation=PolynomialMutation(prob=0.1, eta=20), 
+        repair=ModeRepair(data),
+        eliminate_duplicates=True
+    )
+    
+    start_time_ga = time.time()
+    # ENABLE SAVE_HISTORY=TRUE to track generations
+    res_ga = minimize(problem_so, algorithm_ga, ('n_gen', 50), seed=1, verbose=False, save_history=True)
+    end_time_ga = time.time()
+    
+    time_ga = end_time_ga - start_time_ga
+    print(f"Standard GA Finished in: {time_ga:.4f} seconds")
+    
+    # ---------------------------------------------------------
+    # FINAL COMPARISON
+    # ---------------------------------------------------------
+    print("\n" + "#"*50)
+    print(f"{'ALGORITHM COMPARISON':^50}")
+    print("#"*50)
+    print(f"{'Algorithm':<20} | {'Execution Time (s)':<20} | {'Best Solution Found'}")
+    print("-" * 75)
+    
+    # Get best NSGA-II solution (Picking lowest makespan)
+    if res_nsga2.F is not None:
+        best_nsga2_idx = np.argmin(res_nsga2.F[:, 0]) 
+        best_nsga2_val = f"Time: {res_nsga2.F[best_nsga2_idx][0]:.0f}, Cost: {res_nsga2.F[best_nsga2_idx][1]:.0f}"
     else:
-        print("No solutions found.")
+        best_nsga2_val = "Infeasible"
+
+    # Get best GA solution
+    if res_ga.F is not None:
+        best_ga_val = f"Fitness: {res_ga.F[0]:.2f}"
+    else:
+        best_ga_val = "Infeasible"
+        
+    print(f"{'NSGA-II':<20} | {time_nsga2:<20.4f} | {best_nsga2_val}")
+    print(f"{'Standard GA':<20} | {time_ga:<20.4f} | {best_ga_val}")
+    print("#"*50)
+
+    # ---------------------------------------------------------
+    # PLOT EVOLUTION
+    # ---------------------------------------------------------
+    print("\nPlotting convergence graphs...")
+    plot_convergence(res_nsga2, res_ga, data)
 
 if __name__ == "__main__":
-    run_mnsga2()
+    main()

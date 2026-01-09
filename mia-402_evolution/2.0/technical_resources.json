@@ -1,0 +1,30 @@
+[
+  { "resource_id": "RT01", "name": "Grúa Principal", "capacity": 1, "cost_per_hour": 340 },
+  { "resource_id": "RT02", "name": "Camión Pluma", "capacity": 1, "cost_per_hour": 280 },
+
+  { "resource_id": "RT03", "name": "Equipo de Soldadura", "capacity": 2, "cost_per_hour": 110 },
+
+  { "resource_id": "RT04", "name": "Equipo de Izaje Pesado", "capacity": 1, "cost_per_hour": 260 },
+
+  { "resource_id": "RT05", "name": "Banco de Pruebas Mecánicas", "capacity": 1, "cost_per_hour": 210 },
+
+  { "resource_id": "RT06", "name": "Compresor Industrial", "capacity": 2, "cost_per_hour": 165 },
+
+  { "resource_id": "RT07", "name": "Equipo Torque Hidráulico", "capacity": 1, "cost_per_hour": 235 },
+
+  { "resource_id": "RT08", "name": "Plataforma Elevadora", "capacity": 2, "cost_per_hour": 185 },
+
+  { "resource_id": "RT09", "name": "Equipo de Medición Eléctrica", "capacity": 1, "cost_per_hour": 175 },
+
+  { "resource_id": "RT10", "name": "Equipo de Alineamiento Láser", "capacity": 1, "cost_per_hour": 215 },
+
+  { "resource_id": "RT11", "name": "Equipo de Corte Plasma", "capacity": 1, "cost_per_hour": 225 },
+
+  { "resource_id": "RT12", "name": "Equipo de Montaje Estructural", "capacity": 1, "cost_per_hour": 245 },
+
+  { "resource_id": "RT13", "name": "Sistema de Pruebas Hidráulicas", "capacity": 1, "cost_per_hour": 205 },
+
+  { "resource_id": "RT14", "name": "Equipo NDT", "capacity": 1, "cost_per_hour": 255 },
+
+  { "resource_id": "RT15", "name": "Equipo de Balanceo Dinámico", "capacity": 1, "cost_per_hour": 290 }
+]

@@ -1,0 +1,21 @@
+{
+  "indirect_costs_per_hour": [
+    {
+      "concept": "Pérdida de Producción",
+      "cost_per_hour": 4500
+    },
+    {
+      "concept": "Costos de Supervisión General",
+      "cost_per_hour": 1200
+    },
+    {
+      "concept": "Costos de Seguridad Industrial",
+      "cost_per_hour": 800
+    },
+    {
+      "concept": "Costos de Energía y Servicios",
+      "cost_per_hour": 600
+    }
+  ],
+  "description": "Costos indirectos asociados al tiempo total de la parada de planta."
+}

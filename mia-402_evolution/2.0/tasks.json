@@ -1,0 +1,1281 @@
+[
+  {
+    "section": "CHANCADO",
+    "tasks": [
+      {
+        "task_id": "T001",
+        "task_name": "Desmontaje Chancadora Primaria",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 11, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T002",
+        "task_name": "Retiro Componentes Chancadora",
+        "precedences": ["T001"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T003",
+        "task_name": "Inspección Mecánica Chancadora",
+        "precedences": ["T002"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T004",
+        "task_name": "Cambio Rodamientos Chancadora",
+        "precedences": ["T003"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 7, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 10, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 14, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T005",
+        "task_name": "Soldadura Estructural Chancadora",
+        "precedences": ["T003"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T006",
+        "task_name": "Montaje Componentes Chancadora",
+        "precedences": ["T004", "T005"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 9, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 13, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T007",
+        "task_name": "Alineamiento Chancadora",
+        "precedences": ["T006"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T008",
+        "task_name": "Instalación Eléctrica Chancadora",
+        "precedences": ["T002"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T009",
+        "task_name": "Conexionado Instrumentación",
+        "precedences": ["T008"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T010",
+        "task_name": "Pruebas en Vacío Chancadora",
+        "precedences": ["T007", "T009"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T011",
+        "task_name": "Correcciones Post Prueba",
+        "precedences": ["T010"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T012",
+        "task_name": "Lubricación General",
+        "precedences": ["T006"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T013",
+        "task_name": "Pruebas con Carga",
+        "precedences": ["T011", "T012"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T014",
+        "task_name": "Ajustes Finales",
+        "precedences": ["T013"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T015",
+        "task_name": "Liberación Operacional Chancado",
+        "precedences": ["T014"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 1, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 2, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 3, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "MOLIENDA",
+    "tasks": [
+      {
+        "task_id": "T016",
+        "task_name": "Desmontaje Molino SAG",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 7, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 10, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 14, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T017",
+        "task_name": "Retiro Revestimientos Molino",
+        "precedences": ["T016"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 11, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T018",
+        "task_name": "Inspección Interna Molino",
+        "precedences": ["T017"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T019",
+        "task_name": "Cambio Liners Molino",
+        "precedences": ["T018"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 8, "resource_factor": 1.5 },
+          { "mode_id": "normal", "duration_hours": 12, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 17, "resource_factor": 0.65 }
+        ]
+      },
+      {
+        "task_id": "T020",
+        "task_name": "Montaje Liners Molino",
+        "precedences": ["T019"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 7, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 10, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 14, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T021",
+        "task_name": "Torqueo Pernos Molino",
+        "precedences": ["T020"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T022",
+        "task_name": "Alineamiento Molino",
+        "precedences": ["T021"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T023",
+        "task_name": "Instalación Motores Molino",
+        "precedences": ["T017"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 11, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T024",
+        "task_name": "Conexionado Eléctrico Molino",
+        "precedences": ["T023"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T025",
+        "task_name": "Instalación Instrumentación Molino",
+        "precedences": ["T024"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T026",
+        "task_name": "Pruebas en Vacío Molino",
+        "precedences": ["T022", "T025"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T027",
+        "task_name": "Correcciones Molino",
+        "precedences": ["T026"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T028",
+        "task_name": "Lubricación Molino",
+        "precedences": ["T020"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T029",
+        "task_name": "Pruebas con Carga Molino",
+        "precedences": ["T027", "T028"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 12, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T030",
+        "task_name": "Liberación Operacional Molienda",
+        "precedences": ["T029"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "FAJAS",
+    "tasks": [
+      {
+        "task_id": "T031",
+        "task_name": "Desmontaje Faja Principal",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T032",
+        "task_name": "Cambio Faja Transportadora",
+        "precedences": ["T031"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 9, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 13, "resource_factor": 0.7 }
+        ]
+      },
+
+      {
+        "task_id": "T033",
+        "task_name": "Alineamiento Faja",
+        "precedences": ["T032"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T034",
+        "task_name": "Cambio Poleas",
+        "precedences": ["T032"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T035",
+        "task_name": "Instalación Motores Faja",
+        "precedences": ["T034"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T036",
+        "task_name": "Conexionado Eléctrico Faja",
+        "precedences": ["T035"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T037",
+        "task_name": "Instalación Sensores Faja",
+        "precedences": ["T036"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.8 }
+        ]
+      },
+
+      {
+        "task_id": "T038",
+        "task_name": "Pruebas Movimiento Faja",
+        "precedences": ["T033", "T037"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T039",
+        "task_name": "Correcciones Faja",
+        "precedences": ["T038"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T040",
+        "task_name": "Lubricación Rodillos",
+        "precedences": ["T034"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T041",
+        "task_name": "Pruebas Continuas Faja",
+        "precedences": ["T039", "T040"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T042",
+        "task_name": "Ajustes Finales Faja",
+        "precedences": ["T041"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T043",
+        "task_name": "Inspección Seguridad Faja",
+        "precedences": ["T042"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T044",
+        "task_name": "Pruebas Operativas Faja",
+        "precedences": ["T043"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T045",
+        "task_name": "Liberación Operacional Fajas",
+        "precedences": ["T044"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 1, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 2, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 3, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "BOMBAS",
+    "tasks": [
+      {
+        "task_id": "T046",
+        "task_name": "Desmontaje Bombas",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T047",
+        "task_name": "Inspección Bombas",
+        "precedences": ["T046"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T048",
+        "task_name": "Cambio Sellos Bombas",
+        "precedences": ["T047"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T049",
+        "task_name": "Cambio Rodamientos Bombas",
+        "precedences": ["T047"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T050",
+        "task_name": "Montaje Bombas",
+        "precedences": ["T048", "T049"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T051",
+        "task_name": "Alineamiento Bombas",
+        "precedences": ["T050"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T052",
+        "task_name": "Conexionado Hidráulico",
+        "precedences": ["T051"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T053",
+        "task_name": "Instalación Instrumentación Bombas",
+        "precedences": ["T052"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T054",
+        "task_name": "Pruebas en Vacío Bombas",
+        "precedences": ["T053"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T055",
+        "task_name": "Correcciones Bombas",
+        "precedences": ["T054"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T056",
+        "task_name": "Lubricación Bombas",
+        "precedences": ["T050"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T057",
+        "task_name": "Pruebas con Carga Bombas",
+        "precedences": ["T055", "T056"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T058",
+        "task_name": "Ajustes Finales Bombas",
+        "precedences": ["T057"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T059",
+        "task_name": "Inspección Seguridad Bombas",
+        "precedences": ["T058"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T060",
+        "task_name": "Liberación Operacional Bombas",
+        "precedences": ["T059"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 1, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 2, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 3, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "ELECTRICIDAD",
+    "tasks": [
+      {
+        "task_id": "T061",
+        "task_name": "Desmontaje Paneles Eléctricos",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T062",
+        "task_name": "Inspección Paneles",
+        "precedences": ["T061"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T063",
+        "task_name": "Cambio Componentes Eléctricos",
+        "precedences": ["T062"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 11, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T064",
+        "task_name": "Instalación Nuevos Paneles",
+        "precedences": ["T063"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.7 }
+        ]
+      },
+
+      {
+        "task_id": "T065",
+        "task_name": "Conexionado Potencia",
+        "precedences": ["T064"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T066",
+        "task_name": "Conexionado Control",
+        "precedences": ["T064"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T067",
+        "task_name": "Pruebas Aislamiento",
+        "precedences": ["T065", "T066"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T068",
+        "task_name": "Pruebas Continuidad",
+        "precedences": ["T067"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T069",
+        "task_name": "Pruebas Energización",
+        "precedences": ["T068"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T070",
+        "task_name": "Correcciones Eléctricas",
+        "precedences": ["T069"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T071",
+        "task_name": "Pruebas Finales Eléctricas",
+        "precedences": ["T070"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+
+      {
+        "task_id": "T072",
+        "task_name": "Ajustes Finales Eléctricos",
+        "precedences": ["T071"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T073",
+        "task_name": "Inspección QA/QC Eléctrica",
+        "precedences": ["T072"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T074",
+        "task_name": "Validación Seguridad Eléctrica",
+        "precedences": ["T073"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T075",
+        "task_name": "Liberación Operacional Electricidad",
+        "precedences": ["T074"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 1, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 2, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 3, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "INSTRUMENTACION",
+    "tasks": [
+      {
+        "task_id": "T076",
+        "task_name": "Desmontaje Instrumentos",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T077",
+        "task_name": "Inspección Instrumentos",
+        "precedences": ["T076"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T078",
+        "task_name": "Instalación Sensores Nuevos",
+        "precedences": ["T077"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T079",
+        "task_name": "Conexionado Instrumentación",
+        "precedences": ["T078"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T080",
+        "task_name": "Calibración Instrumentos",
+        "precedences": ["T079"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T081",
+        "task_name": "Pruebas Señales",
+        "precedences": ["T080"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.8 }
+        ]
+      },
+
+      {
+        "task_id": "T082",
+        "task_name": "Correcciones Instrumentación",
+        "precedences": ["T081"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T083",
+        "task_name": "Pruebas Integradas",
+        "precedences": ["T081"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+
+      {
+        "task_id": "T084",
+        "task_name": "Validación Lazos Control",
+        "precedences": ["T082", "T083"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T085",
+        "task_name": "Ajustes Finales Instrumentación",
+        "precedences": ["T084"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T086",
+        "task_name": "Inspección QA/QC Instrumentación",
+        "precedences": ["T085"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T087",
+        "task_name": "Pruebas Operativas Instrumentación",
+        "precedences": ["T086"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T088",
+        "task_name": "Correcciones Finales",
+        "precedences": ["T087"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T089",
+        "task_name": "Validación Seguridad Instrumentación",
+        "precedences": ["T088"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T090",
+        "task_name": "Liberación Operacional Instrumentación",
+        "precedences": ["T089"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 1, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 2, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 3, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "ESTRUCTURAS",
+    "tasks": [
+      {
+        "task_id": "T091",
+        "task_name": "Inspección Estructural",
+        "precedences": [],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 8, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T092",
+        "task_name": "Refuerzo Estructural",
+        "precedences": ["T091"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.4 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 11, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T093",
+        "task_name": "Soldadura Estructural",
+        "precedences": ["T091"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T094",
+        "task_name": "Montaje Estructuras",
+        "precedences": ["T092", "T093"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T095",
+        "task_name": "Torqueo Estructuras",
+        "precedences": ["T094"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T096",
+        "task_name": "Alineamiento Estructural",
+        "precedences": ["T095"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+
+      {
+        "task_id": "T097",
+        "task_name": "Pintura Industrial",
+        "precedences": ["T094"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T098",
+        "task_name": "Secado Pintura",
+        "precedences": ["T097"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.9 }
+        ]
+      },
+
+      {
+        "task_id": "T099",
+        "task_name": "Inspección QA/QC Estructural",
+        "precedences": ["T096", "T098"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T100",
+        "task_name": "Correcciones Estructurales",
+        "precedences": ["T099"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T101",
+        "task_name": "Montaje Final Estructuras",
+        "precedences": ["T100"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T102",
+        "task_name": "Pruebas Estructurales",
+        "precedences": ["T101"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T103",
+        "task_name": "Ajustes Finales Estructuras",
+        "precedences": ["T102"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.35 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.75 }
+        ]
+      },
+      {
+        "task_id": "T104",
+        "task_name": "Validación Seguridad Estructural",
+        "precedences": ["T103"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      },
+      {
+        "task_id": "T105",
+        "task_name": "Liberación Operacional Estructuras",
+        "precedences": ["T104"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 1, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 2, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 3, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  },
+
+  {
+    "section": "INTEGRACION_FINAL",
+    "tasks": [
+      {
+        "task_id": "T106",
+        "task_name": "Integración Sistemas Mecánicos",
+        "precedences": ["T015", "T030", "T045", "T060"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.5 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.65 }
+        ]
+      },
+      {
+        "task_id": "T107",
+        "task_name": "Integración Sistemas Eléctricos",
+        "precedences": ["T075", "T090"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.5 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.65 }
+        ]
+      },
+
+      {
+        "task_id": "T108",
+        "task_name": "Integración Control Planta",
+        "precedences": ["T107"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.5 },
+          { "mode_id": "normal", "duration_hours": 7, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 10, "resource_factor": 0.65 }
+        ]
+      },
+      {
+        "task_id": "T109",
+        "task_name": "Pruebas Integradas Planta",
+        "precedences": ["T106", "T108"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 5, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 12, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T110",
+        "task_name": "Correcciones Integradas",
+        "precedences": ["T109"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.7 }
+        ]
+      },
+
+      {
+        "task_id": "T111",
+        "task_name": "Pruebas Continuas Planta",
+        "precedences": ["T110"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 7, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 10, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 14, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T112",
+        "task_name": "Ajustes Finales Planta",
+        "precedences": ["T111"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T113",
+        "task_name": "Inspección QA/QC Final",
+        "precedences": ["T112"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.85 }
+        ]
+      },
+      {
+        "task_id": "T114",
+        "task_name": "Validación Seguridad Global",
+        "precedences": ["T113"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 3, "resource_factor": 1.25 },
+          { "mode_id": "normal", "duration_hours": 4, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 6, "resource_factor": 0.85 }
+        ]
+      },
+
+      {
+        "task_id": "T115",
+        "task_name": "Pruebas Arranque Planta",
+        "precedences": ["T114"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 6, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 8, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 12, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T116",
+        "task_name": "Correcciones Arranque",
+        "precedences": ["T115"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T117",
+        "task_name": "Pruebas Producción Inicial",
+        "precedences": ["T116"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 7, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 10, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 14, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T118",
+        "task_name": "Ajustes Producción",
+        "precedences": ["T117"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.45 },
+          { "mode_id": "normal", "duration_hours": 6, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 9, "resource_factor": 0.7 }
+        ]
+      },
+      {
+        "task_id": "T119",
+        "task_name": "Validación Producción",
+        "precedences": ["T118"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 4, "resource_factor": 1.3 },
+          { "mode_id": "normal", "duration_hours": 5, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 7, "resource_factor": 0.8 }
+        ]
+      },
+      {
+        "task_id": "T120",
+        "task_name": "Liberación Operacional Planta",
+        "precedences": ["T119"],
+        "modes": [
+          { "mode_id": "fast", "duration_hours": 2, "resource_factor": 1.2 },
+          { "mode_id": "normal", "duration_hours": 3, "resource_factor": 1.0 },
+          { "mode_id": "eco", "duration_hours": 4, "resource_factor": 0.9 }
+        ]
+      }
+    ]
+  }
+]

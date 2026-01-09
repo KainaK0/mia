@@ -1,0 +1,14 @@
+{
+  "objectives": [
+    {
+      "id": "F1",
+      "name": "Minimizar Makespan",
+      "description": "Reducir el tiempo total de la parada de planta (horas)."
+    },
+    {
+      "id": "F2",
+      "name": "Minimizar Costo Total",
+      "description": "Reducir el costo total asociado al uso de recursos humanos, equipos y materiales."
+    }
+  ]
+}

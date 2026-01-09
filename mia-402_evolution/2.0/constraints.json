@@ -1,0 +1,31 @@
+{
+  "max_parallel_tasks": 20,
+  "safety_constraints": {
+    "max_heavy_lifts_parallel": 2,
+    "resources_considered_heavy": ["RT01", "RT02", "RT04"]
+  },
+  "supervision_constraints": {
+    "max_tasks_per_supervisor": 5,
+    "supervisor_resource_id": "RH05"
+  },
+  "integration_constraints": {
+    "integration_tasks_must_be_last": true,
+    "integration_task_ids": [
+      "T106",
+      "T107",
+      "T108",
+      "T109",
+      "T110",
+      "T111",
+      "T112",
+      "T113",
+      "T114",
+      "T115",
+      "T116",
+      "T117",
+      "T118",
+      "T119",
+      "T120"
+    ]
+  }
+}

@@ -1,11 +1,12 @@
 import time
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Pymoo imports
 from pymoo.core.problem import ElementwiseProblem
 from pymoo.algorithms.moo.nsga2 import NSGA2
-from pymoo.algorithms.soo.nonconvex.ga import GA  # Import Standard GA
+from pymoo.algorithms.soo.nonconvex.ga import GA
 from pymoo.operators.sampling.rnd import IntegerRandomSampling
 from pymoo.operators.crossover.pntx import TwoPointCrossover
 from pymoo.operators.mutation.pm import PolynomialMutation
@@ -13,7 +14,7 @@ from pymoo.core.repair import Repair
 from pymoo.optimize import minimize
 
 # ==========================================
-# 1. AUTOMATIC DATA GENERATOR
+# 1. AUTOMATIC DATA GENERATOR (Kept Intact)
 # ==========================================
 class MRCPSPDataGenerator:
     """
@@ -79,7 +80,7 @@ class MRCPSPDataGenerator:
             self.modes[t] = modes
 
 # ==========================================
-# 2. REPAIR OPERATOR
+# 2. REPAIR OPERATOR (Kept Intact)
 # ==========================================
 class ModeRepair(Repair):
     def __init__(self, project_data):
@@ -109,7 +110,7 @@ class ModeRepair(Repair):
         return X
 
 # ==========================================
-# 3. DECODER (SSGS)
+# 3. DECODER (SSGS) (Kept Intact)
 # ==========================================
 def calculate_metrics(priorities, mode_indices, data):
     n = data.num_tasks
@@ -210,7 +211,82 @@ class MRCPSP_SO(ElementwiseProblem):
         out["F"] = [fitness]
 
 # ==========================================
-# 5. EXECUTION & COMPARISON
+# 5. VISUALIZATION FUNCTION
+# ==========================================
+def plot_convergence(res_nsga2, res_ga, data):
+    """
+    Plots the evolution of Makespan and Cost generation by generation.
+    Saves the output to 'convergence_comparison.png'.
+    """
+    # --- 1. Extract NSGA-II History ---
+    n_gen_nsga2 = len(res_nsga2.history)
+    min_makespan_nsga2 = []
+    min_cost_nsga2 = []
+
+    for algo in res_nsga2.history:
+        pop = algo.pop
+        F = pop.get("F")
+        # Filter out penalties (infeasible solutions > 1e5)
+        valid_indices = np.where(F[:, 0] < 1e5)
+        
+        if valid_indices[0].size > 0:
+            # We take the best makespan and best cost in the ENTIRE population
+            # independently (they might belong to different solutions)
+            min_makespan_nsga2.append(np.min(F[valid_indices, 0]))
+            min_cost_nsga2.append(np.min(F[valid_indices, 1]))
+        else:
+            # Fallback if generation has no valid solutions
+            last_ms = min_makespan_nsga2[-1] if min_makespan_nsga2 else 1e5
+            last_co = min_cost_nsga2[-1] if min_cost_nsga2 else 1e5
+            min_makespan_nsga2.append(last_ms)
+            min_cost_nsga2.append(last_co)
+
+    # --- 2. Extract GA History ---
+    n_gen_ga = len(res_ga.history)
+    ga_makespan = []
+    
+    for algo in res_ga.history:
+        # GA in pymoo stores the best individual of generation in algo.opt
+        opt = algo.opt[0]
+        X = opt.X
+        
+        # We must decode X to get actual Makespan (since GA optimizes weighted Fitness)
+        n = data.num_tasks
+        prio = X[:n]
+        modes = X[n:]
+        ms, _ = calculate_metrics(prio, modes, data)
+        ga_makespan.append(ms)
+
+    # --- 3. Plotting ---
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
+
+    # Plot 1: Evolution of Makespan
+    ax1.plot(range(n_gen_nsga2), min_makespan_nsga2, label="NSGA-II (Best Makespan)", color="blue", linewidth=2)
+    ax1.plot(range(n_gen_ga), ga_makespan, label="Standard GA (Best Makespan)", color="red", linestyle="--", linewidth=2)
+    ax1.set_title("Evolution of Makespan")
+    ax1.set_xlabel("Generation")
+    ax1.set_ylabel("Makespan (Hours)")
+    ax1.legend()
+    ax1.grid(True, linestyle=':', alpha=0.6)
+
+    # Plot 2: Evolution of Cost (NSGA-II only)
+    ax2.plot(range(n_gen_nsga2), min_cost_nsga2, label="NSGA-II (Best Cost)", color="green", linewidth=2)
+    ax2.set_title("Evolution of Cost (NSGA-II)")
+    ax2.set_xlabel("Generation")
+    ax2.set_ylabel("Total Cost ($)")
+    ax2.legend()
+    ax2.grid(True, linestyle=':', alpha=0.6)
+
+    plt.tight_layout()
+    
+    # Save to file
+    filename = "convergence_comparison.png"
+    plt.savefig(filename)
+    print(f"\n[Success] Plot saved to '{filename}'")
+    plt.close()
+
+# ==========================================
+# 6. EXECUTION & COMPARISON
 # ==========================================
 def main():
     NUM_ACTIVITIES = 150 
@@ -231,14 +307,15 @@ def main():
     algorithm_nsga2 = NSGA2(
         pop_size=100,
         sampling=IntegerRandomSampling(),
-        crossover=TwoPointCrossover(prob=0.9), # type: ignore
-        mutation=PolynomialMutation(prob=0.1, eta=20), # type: ignore
+        crossover=TwoPointCrossover(prob=0.9), 
+        mutation=PolynomialMutation(prob=0.1, eta=20),
         repair=ModeRepair(data),
         eliminate_duplicates=True
     )
     
     start_time_nsga2 = time.time()
-    res_nsga2 = minimize(problem_mo, algorithm_nsga2, ('n_gen', 50), seed=1, verbose=False)
+    # ENABLE SAVE_HISTORY=TRUE to track generations
+    res_nsga2 = minimize(problem_mo, algorithm_nsga2, ('n_gen', 50), seed=1, verbose=False, save_history=True)
     end_time_nsga2 = time.time()
     
     time_nsga2 = end_time_nsga2 - start_time_nsga2
@@ -253,18 +330,18 @@ def main():
     
     problem_so = MRCPSP_SO(data)
     
-    # Use standard Genetic Algorithm (minimized weighted sum)
     algorithm_ga = GA(
         pop_size=100,
         sampling=IntegerRandomSampling(),
-        crossover=TwoPointCrossover(prob=0.9), # type: ignore
-        mutation=PolynomialMutation(prob=0.1, eta=20), # type: ignore
+        crossover=TwoPointCrossover(prob=0.9), 
+        mutation=PolynomialMutation(prob=0.1, eta=20), 
         repair=ModeRepair(data),
         eliminate_duplicates=True
     )
     
     start_time_ga = time.time()
-    res_ga = minimize(problem_so, algorithm_ga, ('n_gen', 50), seed=1, verbose=False)
+    # ENABLE SAVE_HISTORY=TRUE to track generations
+    res_ga = minimize(problem_so, algorithm_ga, ('n_gen', 50), seed=1, verbose=False, save_history=True)
     end_time_ga = time.time()
     
     time_ga = end_time_ga - start_time_ga
@@ -279,19 +356,15 @@ def main():
     print(f"{'Algorithm':<20} | {'Execution Time (s)':<20} | {'Best Solution Found'}")
     print("-" * 75)
     
-    # Get best NSGA-II solution (Picking the one with lowest makespan for comparison)
+    # Get best NSGA-II solution (Picking lowest makespan)
     if res_nsga2.F is not None:
-        best_nsga2_idx = np.argmin(res_nsga2.F[:, 0]) # Min Makespan
+        best_nsga2_idx = np.argmin(res_nsga2.F[:, 0]) 
         best_nsga2_val = f"Time: {res_nsga2.F[best_nsga2_idx][0]:.0f}, Cost: {res_nsga2.F[best_nsga2_idx][1]:.0f}"
     else:
         best_nsga2_val = "Infeasible"
 
     # Get best GA solution
     if res_ga.F is not None:
-        # GA minimizes a weighted sum, so we reconstruct approximate Time/Cost or just show fitness
-        # Since we only get the scalar fitness back in F, we print that.
-        # To get exact Time/Cost, we'd need to re-evaluate or modify the problem to store history.
-        # For simplicity, we just show the Fitness value.
         best_ga_val = f"Fitness: {res_ga.F[0]:.2f}"
     else:
         best_ga_val = "Infeasible"
@@ -299,6 +372,12 @@ def main():
     print(f"{'NSGA-II':<20} | {time_nsga2:<20.4f} | {best_nsga2_val}")
     print(f"{'Standard GA':<20} | {time_ga:<20.4f} | {best_ga_val}")
     print("#"*50)
+
+    # ---------------------------------------------------------
+    # PLOT EVOLUTION
+    # ---------------------------------------------------------
+    print("\nPlotting convergence graphs...")
+    plot_convergence(res_nsga2, res_ga, data)
 
 if __name__ == "__main__":
     main()

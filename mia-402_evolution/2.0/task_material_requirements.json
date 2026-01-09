@@ -1,0 +1,65 @@
+[
+  {
+    "section": "CHANCADO",
+    "materials": [
+      { "task_id": "T004", "material_id": "MAT02", "units_required": 1 },
+      { "task_id": "T005", "material_id": "MAT23", "units_required": 2 },
+      { "task_id": "T006", "material_id": "MAT01", "units_required": 1 }
+    ]
+  },
+  {
+    "section": "MOLIENDA",
+    "materials": [
+      { "task_id": "T019", "material_id": "MAT01", "units_required": 2 },
+      { "task_id": "T020", "material_id": "MAT10", "units_required": 2 },
+      { "task_id": "T021", "material_id": "MAT10", "units_required": 1 }
+    ]
+  },
+  {
+    "section": "FAJAS",
+    "materials": [
+      { "task_id": "T032", "material_id": "MAT11", "units_required": 2 },
+      { "task_id": "T034", "material_id": "MAT12", "units_required": 2 }
+    ]
+  },
+  {
+    "section": "BOMBAS",
+    "materials": [
+      { "task_id": "T048", "material_id": "MAT03", "units_required": 2 },
+      { "task_id": "T049", "material_id": "MAT28", "units_required": 1 },
+      { "task_id": "T050", "material_id": "MAT06", "units_required": 1 }
+    ]
+  },
+  {
+    "section": "ELECTRICIDAD",
+    "materials": [
+      { "task_id": "T063", "material_id": "MAT15", "units_required": 1 },
+      { "task_id": "T064", "material_id": "MAT18", "units_required": 3 },
+      { "task_id": "T065", "material_id": "MAT05", "units_required": 2 }
+    ]
+  },
+  {
+    "section": "INSTRUMENTACION",
+    "materials": [
+      { "task_id": "T078", "material_id": "MAT07", "units_required": 2 },
+      { "task_id": "T080", "material_id": "MAT22", "units_required": 1 }
+    ]
+  },
+  {
+    "section": "ESTRUCTURAS",
+    "materials": [
+      { "task_id": "T092", "material_id": "MAT08", "units_required": 1 },
+      { "task_id": "T093", "material_id": "MAT23", "units_required": 2 },
+      { "task_id": "T097", "material_id": "MAT14", "units_required": 1 }
+    ]
+  },
+  {
+    "section": "INTEGRACION_FINAL",
+    "materials": [
+      { "task_id": "T108", "material_id": "MAT29", "units_required": 1 },
+      { "task_id": "T109", "material_id": "MAT21", "units_required": 1 },
+      { "task_id": "T111", "material_id": "MAT09", "units_required": 2 },
+      { "task_id": "T115", "material_id": "MAT16", "units_required": 1 }
+    ]
+  }
+]

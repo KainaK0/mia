@@ -1,0 +1,24 @@
+[
+  { "resource_id": "RH01", "name": "Mecánico Senior", "capacity": 3, "cost_per_hour": 130 },
+  { "resource_id": "RH02", "name": "Mecánico Junior", "capacity": 6, "cost_per_hour": 75 },
+  { "resource_id": "RH03", "name": "Electricista", "capacity": 3, "cost_per_hour": 120 },
+  { "resource_id": "RH04", "name": "Instrumentista", "capacity": 2, "cost_per_hour": 125 },
+
+  { "resource_id": "RH05", "name": "Supervisor de Mantenimiento", "capacity": 2, "cost_per_hour": 180 },
+
+  { "resource_id": "RH06", "name": "Soldador Certificado", "capacity": 3, "cost_per_hour": 110 },
+  { "resource_id": "RH07", "name": "Operador de Grúa", "capacity": 1, "cost_per_hour": 160 },
+  { "resource_id": "RH08", "name": "Técnico de Lubricación", "capacity": 2, "cost_per_hour": 95 },
+  { "resource_id": "RH09", "name": "Ayudante Mecánico", "capacity": 8, "cost_per_hour": 55 },
+
+  { "resource_id": "RH10", "name": "Especialista en Fajas", "capacity": 2, "cost_per_hour": 115 },
+  { "resource_id": "RH11", "name": "Técnico Hidráulico", "capacity": 2, "cost_per_hour": 135 },
+
+  { "resource_id": "RH12", "name": "Planner de Mantenimiento", "capacity": 1, "cost_per_hour": 160 },
+
+  { "resource_id": "RH13", "name": "Inspector QA/QC", "capacity": 1, "cost_per_hour": 155 },
+
+  { "resource_id": "RH14", "name": "Técnico de Bombas", "capacity": 2, "cost_per_hour": 120 },
+
+  { "resource_id": "RH15", "name": "Coordinador de Seguridad", "capacity": 1, "cost_per_hour": 165 }
+]

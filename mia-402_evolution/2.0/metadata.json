@@ -1,0 +1,6 @@
+{
+  "project_name": "Parada Mayor Planta Minera – Mantenimiento Integral Escala Industrial",
+  "location": "Unidad Minera Andina – Perú",
+  "planning_horizon_hours": 600,
+  "description": "Modelo RCPSP multiobjetivo para optimizar tiempo y costo durante una parada mayor de planta minera, considerando múltiples frentes de trabajo, recursos humanos y técnicos limitados, y materiales críticos con lead time."
+}

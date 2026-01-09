@@ -1,0 +1,329 @@
+[
+  {
+    "section": "CHANCADO",
+    "assignments": [
+      { "task_id": "T001", "resource_id": "RH01", "units_required": 2 },
+      { "task_id": "T001", "resource_id": "RH07", "units_required": 1 },
+      { "task_id": "T001", "resource_id": "RT01", "units_required": 1 },
+
+      { "task_id": "T002", "resource_id": "RH02", "units_required": 3 },
+      { "task_id": "T002", "resource_id": "RH09", "units_required": 2 },
+      { "task_id": "T002", "resource_id": "RT02", "units_required": 1 },
+
+      { "task_id": "T003", "resource_id": "RH01", "units_required": 1 },
+      { "task_id": "T003", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T004", "resource_id": "RH01", "units_required": 2 },
+      { "task_id": "T004", "resource_id": "RH06", "units_required": 1 },
+      { "task_id": "T004", "resource_id": "RT03", "units_required": 1 },
+
+      { "task_id": "T005", "resource_id": "RH06", "units_required": 2 },
+      { "task_id": "T005", "resource_id": "RT11", "units_required": 1 },
+
+      { "task_id": "T006", "resource_id": "RH02", "units_required": 3 },
+      { "task_id": "T006", "resource_id": "RH09", "units_required": 3 },
+      { "task_id": "T006", "resource_id": "RT04", "units_required": 1 },
+
+      { "task_id": "T007", "resource_id": "RH01", "units_required": 2 },
+
+      { "task_id": "T008", "resource_id": "RH03", "units_required": 2 },
+      { "task_id": "T008", "resource_id": "RT09", "units_required": 1 },
+
+      { "task_id": "T009", "resource_id": "RH04", "units_required": 2 },
+      { "task_id": "T009", "resource_id": "RT09", "units_required": 1 },
+
+      { "task_id": "T010", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T010", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T011", "resource_id": "RH02", "units_required": 2 },
+      { "task_id": "T011", "resource_id": "RH09", "units_required": 2 },
+
+      { "task_id": "T012", "resource_id": "RH08", "units_required": 2 },
+
+      { "task_id": "T013", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T013", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T014", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T015", "resource_id": "RH13", "units_required": 1 }
+    ]
+  },
+
+  {
+    "section": "MOLIENDA",
+    "assignments": [
+      { "task_id": "T016", "resource_id": "RH01", "units_required": 3 },
+      { "task_id": "T016", "resource_id": "RT01", "units_required": 1 },
+
+      { "task_id": "T017", "resource_id": "RH02", "units_required": 4 },
+      { "task_id": "T017", "resource_id": "RH09", "units_required": 3 },
+
+      { "task_id": "T018", "resource_id": "RH01", "units_required": 2 },
+
+      { "task_id": "T019", "resource_id": "RH01", "units_required": 3 },
+      { "task_id": "T019", "resource_id": "RT04", "units_required": 1 },
+
+      { "task_id": "T020", "resource_id": "RH02", "units_required": 4 },
+      { "task_id": "T020", "resource_id": "RT08", "units_required": 1 },
+
+      { "task_id": "T021", "resource_id": "RH06", "units_required": 2 },
+
+      { "task_id": "T022", "resource_id": "RH01", "units_required": 2 },
+
+      { "task_id": "T023", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T024", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T025", "resource_id": "RH04", "units_required": 2 },
+
+      { "task_id": "T026", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T026", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T027", "resource_id": "RH02", "units_required": 2 },
+      { "task_id": "T027", "resource_id": "RH09", "units_required": 2 },
+
+      { "task_id": "T028", "resource_id": "RH08", "units_required": 2 },
+
+      { "task_id": "T029", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T029", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T030", "resource_id": "RH13", "units_required": 1 }
+    ]
+  },
+
+  {
+    "section": "FAJAS",
+    "assignments": [
+      { "task_id": "T031", "resource_id": "RH10", "units_required": 3 },
+      { "task_id": "T031", "resource_id": "RT02", "units_required": 1 },
+
+      { "task_id": "T032", "resource_id": "RH10", "units_required": 4 },
+      { "task_id": "T032", "resource_id": "RH09", "units_required": 2 },
+      { "task_id": "T032", "resource_id": "RT08", "units_required": 1 },
+
+      { "task_id": "T033", "resource_id": "RH01", "units_required": 2 },
+
+      { "task_id": "T034", "resource_id": "RH02", "units_required": 3 },
+      { "task_id": "T034", "resource_id": "RT02", "units_required": 1 },
+
+      { "task_id": "T035", "resource_id": "RH03", "units_required": 2 },
+      { "task_id": "T035", "resource_id": "RT08", "units_required": 1 },
+
+      { "task_id": "T036", "resource_id": "RH03", "units_required": 2 },
+      { "task_id": "T036", "resource_id": "RT09", "units_required": 1 },
+
+      { "task_id": "T037", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T038", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T038", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T039", "resource_id": "RH10", "units_required": 2 },
+
+      { "task_id": "T040", "resource_id": "RH08", "units_required": 1 },
+
+      { "task_id": "T041", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T041", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T042", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T043", "resource_id": "RH15", "units_required": 1 },
+
+      { "task_id": "T044", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T044", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T045", "resource_id": "RH13", "units_required": 1 }
+    ]
+  }
+  ,
+  {
+    "section": "BOMBAS",
+    "assignments": [
+      { "task_id": "T046", "resource_id": "RH14", "units_required": 3 },
+      { "task_id": "T046", "resource_id": "RT02", "units_required": 1 },
+
+      { "task_id": "T047", "resource_id": "RH14", "units_required": 2 },
+
+      { "task_id": "T048", "resource_id": "RH11", "units_required": 2 },
+
+      { "task_id": "T049", "resource_id": "RH01", "units_required": 2 },
+
+      { "task_id": "T050", "resource_id": "RH14", "units_required": 3 },
+      { "task_id": "T050", "resource_id": "RT02", "units_required": 1 },
+
+      { "task_id": "T051", "resource_id": "RH14", "units_required": 2 },
+
+      { "task_id": "T052", "resource_id": "RH11", "units_required": 2 },
+
+      { "task_id": "T053", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T054", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T054", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T055", "resource_id": "RH02", "units_required": 2 },
+
+      { "task_id": "T056", "resource_id": "RH08", "units_required": 1 },
+
+      { "task_id": "T057", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T057", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T058", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T059", "resource_id": "RH15", "units_required": 1 },
+
+      { "task_id": "T060", "resource_id": "RH13", "units_required": 1 }
+    ]
+  },
+
+  {
+    "section": "ELECTRICIDAD",
+    "assignments": [
+      { "task_id": "T061", "resource_id": "RH03", "units_required": 3 },
+      { "task_id": "T061", "resource_id": "RT08", "units_required": 1 },
+
+      { "task_id": "T062", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T063", "resource_id": "RH03", "units_required": 3 },
+      { "task_id": "T063", "resource_id": "RT09", "units_required": 1 },
+
+      { "task_id": "T064", "resource_id": "RH03", "units_required": 2 },
+      { "task_id": "T064", "resource_id": "RH09", "units_required": 2 },
+
+      { "task_id": "T065", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T066", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T067", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T068", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T069", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T069", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T070", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T071", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T071", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T072", "resource_id": "RH03", "units_required": 1 },
+
+      { "task_id": "T073", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T074", "resource_id": "RH15", "units_required": 1 },
+
+      { "task_id": "T075", "resource_id": "RH13", "units_required": 1 }
+    ]
+  },
+
+  {
+    "section": "INSTRUMENTACION",
+    "assignments": [
+      { "task_id": "T076", "resource_id": "RH04", "units_required": 2 },
+      { "task_id": "T076", "resource_id": "RT08", "units_required": 1 },
+
+      { "task_id": "T077", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T078", "resource_id": "RH04", "units_required": 2 },
+
+      { "task_id": "T079", "resource_id": "RH04", "units_required": 2 },
+      { "task_id": "T079", "resource_id": "RT09", "units_required": 1 },
+
+      { "task_id": "T080", "resource_id": "RH04", "units_required": 2 },
+
+      { "task_id": "T081", "resource_id": "RH04", "units_required": 2 },
+
+      { "task_id": "T082", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T083", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T083", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T084", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T085", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T086", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T087", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T087", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T088", "resource_id": "RH04", "units_required": 1 },
+
+      { "task_id": "T089", "resource_id": "RH15", "units_required": 1 },
+
+      { "task_id": "T090", "resource_id": "RH13", "units_required": 1 }
+    ]
+  },
+
+  {
+    "section": "ESTRUCTURAS",
+    "assignments": [
+      { "task_id": "T091", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T092", "resource_id": "RH01", "units_required": 2 },
+      { "task_id": "T092", "resource_id": "RH06", "units_required": 1 },
+
+      { "task_id": "T093", "resource_id": "RH06", "units_required": 2 },
+
+      { "task_id": "T094", "resource_id": "RH02", "units_required": 3 },
+
+      { "task_id": "T095", "resource_id": "RH02", "units_required": 2 },
+
+      { "task_id": "T096", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T097", "resource_id": "RH09", "units_required": 2 },
+
+      { "task_id": "T098", "resource_id": "RH09", "units_required": 1 },
+
+      { "task_id": "T099", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T100", "resource_id": "RH02", "units_required": 2 },
+
+      { "task_id": "T101", "resource_id": "RH02", "units_required": 2 },
+
+      { "task_id": "T102", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T102", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T103", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T104", "resource_id": "RH15", "units_required": 1 },
+
+      { "task_id": "T105", "resource_id": "RH13", "units_required": 1 }
+    ]
+  },
+
+  {
+    "section": "INTEGRACION_FINAL",
+    "assignments": [
+      { "task_id": "T106", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T106", "resource_id": "RH12", "units_required": 1 },
+
+      { "task_id": "T107", "resource_id": "RH03", "units_required": 2 },
+
+      { "task_id": "T108", "resource_id": "RH04", "units_required": 2 },
+
+      { "task_id": "T109", "resource_id": "RH05", "units_required": 1 },
+      { "task_id": "T109", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T110", "resource_id": "RH02", "units_required": 2 },
+
+      { "task_id": "T111", "resource_id": "RH05", "units_required": 1 },
+
+      { "task_id": "T112", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T113", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T114", "resource_id": "RH15", "units_required": 1 },
+
+      { "task_id": "T115", "resource_id": "RH05", "units_required": 1 },
+
+      { "task_id": "T116", "resource_id": "RH02", "units_required": 2 },
+
+      { "task_id": "T117", "resource_id": "RH05", "units_required": 1 },
+
+      { "task_id": "T118", "resource_id": "RH01", "units_required": 1 },
+
+      { "task_id": "T119", "resource_id": "RH13", "units_required": 1 },
+
+      { "task_id": "T120", "resource_id": "RH13", "units_required": 1 }
+    ]
+  }
+]
