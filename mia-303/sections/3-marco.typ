@@ -112,16 +112,16 @@
   Validación realizada por expertos del dominio (técnicos/ingenieros) mediante escalas Likert para medir satisfacción, claridad y utilidad.
 
 == Estado del Arte
-=== Taxonomía de métodos en IA aplicada \
+=== Taxonomía de métodos en IA aplicada 
 
-  La Generación Aumentada por Recuperación (RAG) ha emergido como un paradigma fundamental para mitigar las alucinaciones y limitaciones de conocimiento en los Grandes Modelos de Lenguaje (LLMs). La investigación reciente ha trascendido las implementaciones "ingenuas" (Naive RAG), avanzando hacia arquitecturas especializadas que integran datos multimodales, estructuras de grafos de conocimiento y estrategias de recuperación híbrida para satisfacer las demandas de precisión en sectores industriales, automotrices y médicos. \
+  La Generación Aumentada por Recuperación (RAG) ha emergido como un paradigma fundamental para mitigar las alucinaciones y limitaciones de conocimiento en los Grandes Modelos de Lenguaje (LLMs). La investigación reciente ha trascendido las implementaciones basicas (Naive RAG), avanzando hacia arquitecturas especializadas que integran datos multimodales, estructuras de grafos de conocimiento y estrategias de recuperación híbrida para satisfacer las demandas de precisión en sectores industriales, automotrices y médicos. \
   // Aplicaciones en Dominios Industriales y Técnicos
   La implementación de RAG en entornos industriales enfrenta desafíos únicos debido a la complejidad de la documentación técnica y la necesidad de precisión operativa.
   En el sector automotriz, @nam_lora-tuned_2025 desarrollaron un sistema RAG multimodal adaptado al dominio para manuales técnicos de vehículos (caso de estudio Hyundai Staria). Su enfoque utiliza el ajuste fino eficiente en parámetros (LoRA) sobre el modelo bLLossom-8B y embeddings BAAI-bge-m3, logrando mejoras significativas en métricas como BERTScore y ROUGE-L al integrar texto e imágenes para escenarios de resolución de problemas. Simultáneamente, @knollmeyer_hybrid_2025 abordaron la gestión de conocimientos en la planificación de producción (caso de estudio Audi). Identificaron que los modelos de embedding multilingües estándar tienen un rendimiento inferior en documentos técnicos en alemán en comparación con el inglés. Su solución propuesta es un enfoque de recuperación híbrida que combina búsqueda vectorial densa con búsqueda de texto completo, mejorando la precisión de recuperación en un 20% para documentos en alemán.
 
   En el ámbito de la ingeniería de software y ferroviaria, @ibtasham_reqrag_nodate propusieron "ReqRAG", un chatbot diseñado para la gestión de lanzamientos de software en Alstom. Este sistema utiliza documentos técnicos (notas de lanzamiento, arquitectura) para responder consultas sobre trazabilidad de requisitos, demostrando que el 70% de las respuestas generadas fueron consideradas adecuadas y útiles por expertos industriales.
 
-  En la minería, @shu_utilizing_2024 presentaron un marco para la construcción de Grafos de Conocimiento Hiper-Relacionales destinados al análisis de fallas en montacargas de minas. Su metodología utiliza LLMs (GPT) para extraer entidades y relaciones complejas, optimizando los datos mediante predicción de enlaces para superar la escasez de datos en manuales de mantenimiento.
+  En la minería, @shu_utilizing_2024 presentaron un marco para la construcción de Grafos de Conocimiento Hiper-Relacionales destinados al análisis de fallas en sistemas de izajes mineros. Su metodología utiliza LLMs (GPT) para extraer entidades y relaciones complejas, optimizando los datos mediante predicción de enlaces para superar la escasez de datos en manuales de mantenimiento.
 
   // 3. Estrategias de Recuperación Híbrida y Optimización del Contexto
   La literatura actual destaca que la recuperación puramente vectorial es insuficiente para capturar matices semánticos específicos o terminología exacta en dominios especializados.
@@ -243,7 +243,7 @@ Otro vacío es la falta de técnicas Parameter-Efficient Fine-Tuning (PEFT) el c
 
     // --- DATOS ---
     [@nam_lora-tuned_2025 Hyundai],
-    [mRAG+LoRA Fine Tuning (0.1%)],
+    [mRAG+LoRA Fine Tuning (0.1%) \ Embeddings: BAAI-bge-m3 \ LLM: bLLossom-8B + LoRA],
     [Manuales Hyundai Staria PDF. \ \ simple QA dataset, \ multi-turn QA dataset, \ RAG QA dataset],
     [ROUGE-L: 27.12% \ BERT: 78.11% \ Encuesta: 4.4/5],
     [
@@ -257,7 +257,7 @@ Otro vacío es la falta de técnicas Parameter-Efficient Fine-Tuning (PEFT) el c
     ],
 
     [@knollmeyer_hybrid_2025 (2025) hybrid],
-    [Hybrid Retrieval 30/70 \ (búsqueda vectorial Amazon Titan + búsqueda texto completo BM25F/TF-IDF)],
+    [Hybrid Retrieval 30/70 \ (búsqueda vectorial Amazon Titan + búsqueda texto completo BM25F/TF-IDF) \ Embeddings: Cohere M-3.5 multilingual],
     [18 normas y estándares de VDA. \ Corpus idénticos en alemán e inglés. \ Data sintética QA (Claude Sonnet 3.5)],
     [Precisión: 0.79 \ MMR: 0.64],
     [

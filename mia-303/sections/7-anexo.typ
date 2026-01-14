@@ -1,11 +1,13 @@
 = Anexos:
 
-== Resumen Ejecutivo
+== Sprint 1 - Modelo Baseline
+===  Resumen Ejecutivo
+En el sigueinte reporte dddd
 Breve descripción del objetivo del sprint y el alcance alcanzado en el desarrollo del sistema RAG multimodal.
 
 Para la implementación de Sistema de consulta Multimodal basado en RAG para Manuales de Mantenimiento en Plantas Concentradoras de Cobre, se realiza la solicitud y descarga de documentos provistos por el sponsor de manuales e información técnica.
 
-= Sprint Planning
+===  Sprint Planning
 *Objetivo del Sprint:* Establecer el flujo de ingesta y un modelo de recuperación base.
 
 #table(
